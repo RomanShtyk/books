@@ -133,3 +133,6 @@ Polymorphism - Polymorphism
 Pure fabrication - not an entity
 Indirection - dependency inversion
 Protected Variation - use 8 previous
+
+Prototype pattern is just Kotlin’s data class .copy()
+Repository using different strategies of saving objects(sharedPrefs, db, backend) is Strategy pattern

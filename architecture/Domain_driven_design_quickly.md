@@ -1,31 +1,27 @@
-Domain Driven Design Quickly [Marinescu, Floyd, Avram, Abel]:
+# Domain-Driven Design Quickly [Marinescu, Floyd, Avram, Abel]:
+
 7/10 - not bad, gives some common sense rules for architecture design
 
-The Ubiquitous Language - glossary for devs and business people
+## Key Concepts
 
-Entity is unique object with identity
+* **The Ubiquitous Language:** A shared glossary for developers and business stakeholders.
+* **Entity:** A uniquely identifiable object.
+* **Value Object:**  Represents a value, must be immutable.
+* **Object Size:**  Keep objects focused by grouping properties conceptually (e.g., address,
+  personalInfo).
+* **Cohesion:**
+    * **Communicational cohesion:**  Group things that change for the same reason.
+    * **Functional cohesion:** Group things that work together to achieve a single purpose.
 
-Value object in not meant to be entity but must be immutable
+## Patterns & Strategies
 
-Don’t make huge objects, divide properties by concept (address, personalInfo, etc.)
+* **Customer-Supplier Pattern:** Manage dependencies between teams.
+* **Anti-Corruption Layer:** Translate between different domain models.
+* **Core Domain:** Focus on the essential heart of your system.
 
-*Communicational cohesion and Functional cohesion*
+## Best Practices
 
-Customer-supplier pattern for team that depend on another team
-
-*Anti corruption layer
-
-Boil down domain into small core
-
-Stay hands-on. Modelers need to code.
-
-Focus on concrete scenarios. Abstract thinking has to be
-anchored in concrete cases.
-
-Don't try to apply DDD to everything. Draw a context map
-and decide on where you will make a push for DDD and where
-you will not. And then don't worry about it outside those
-boundaries.
-
-Experiment a lot and expect to make lots of mistakes.
-Modeling is a creative process.
+* **Hands-on Modeling:**  Modelers should actively code.
+* **Concrete Scenarios:** Base abstract thinking on real-world use cases.
+* **Focused Application:** Use DDD strategically, not for everything.
+* **Embrace Experimentation:**  Iterate and expect to learn from mistakes.

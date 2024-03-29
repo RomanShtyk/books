@@ -61,3 +61,16 @@ Strong Contracts, Loose Coupling: Modules should have clear interfaces (contract
 dependencies on each other's internals.
 Hiding Implementation Details: Encapsulation within modules keeps the system maintainable and allows
 for change without cascading effects.
+
+Chapter 5: Microservices
+Microservices promise modularity, scalability, and team autonomy. However, they introduce massive complexity:
+
+Distributed systems are inherently difficult (network issues, data consistency).
+Managing many small services creates logistical burdens.
+Finding the right service boundaries is a tricky challenge.
+Microservices aren't a magic solution. Before adopting them, consider:
+
+Does your team have the experience to handle distributed systems?
+Is your system easily broken into clear, independent domains?
+Can you handle the operational overhead amid rapid change?
+The key takeaway: Carefully weigh the tradeoffs of microservices against your specific project needs. They might not be the best fit for everyone.
