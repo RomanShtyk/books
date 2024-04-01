@@ -1,76 +1,78 @@
-#book Software Architecture: The Hard Parts by Neal Ford
+# Software Architecture: The Hard Parts by Neal Ford
 
-“software architecture is the stuff that’s hard to change later.”
+**Key Quote:** "Software architecture is the stuff that’s hard to change later."
 
-ADR: A short record noun phrase containing the architecture decision
-Context
-In this section of the ADR we will add a short one- or two-sentence description of the problem, and
-list the alternative solutions.
-Decision
-In this section we will state the architecture decision and provide a detailed justification of the
-decision.
-Consequences
-In this section of the ADR we will describe any consequences after the decision is applied, and also
-discuss the trade-offs that were considered.
+## ADRs (Architecture Decision Records)
 
-Modern trade-off analysis:
+* **Context:**  Briefly describe the problem and potential solutions.
+* **Decision:**  Clearly state the chosen architectural decision with a detailed rationale.
+* **Consequences:**  Discuss the impacts of the decision and the considered trade-offs.
 
-1. Find what parts are entangled together.
-2. Analyze how they are coupled to one another.
-3. Assess trade-offs by determining the impact of change on interdependent systems.
+## Modern Trade-off Analysis
 
-Why is more important than how
+1. **Identify Entanglement:** Determine what system parts are interconnected.
+2. **Analyze Coupling:**  Understand how services interact.
+3. **Assess Trade-offs:**  Evaluate the impact of change on dependent systems.
 
-static coupling describes how services are wired together, whereas dynamic coupling describes how
-services call one another at runtime
+## Why Over How
 
-general advice: try to avoid cross-service transactions
+Prioritize understanding the underlying rationale before implementation details.
 
-If the codebase is decomposable, the next step is to determine if the source code is largely an
-unstructured mess with no clearly definable components. If that’s the case, then tactical forking is
-probably the right approach. However, if the source code files are structured in a way that combines
-like functionality within well-defined components, then use a component-based decomposition
-approach.
+## Coupling
 
-Chapter 1: What Does an Architect Do?
-Architects Shape Systems: Rather than simply designing, architects influence the form and evolution
-of software systems through key decisions.
-Tradeoffs are Central: Architecture is about navigating tradeoffs. There's rarely a single "right"
-answer, but understanding the consequences of these choices is crucial.
-Communication is Key: Architects must effectively communicate complex ideas to diverse stakeholders,
-from developers to business executives.
+* **Static Coupling:**  How services are linked.
+* **Dynamic Coupling:**  How services interact at runtime.
 
-Chapter 2: Evolutionary Architecture
-Embrace Change: Software systems constantly evolve. Architectures must be adaptable, not rigid.
-Fitness Functions: Define clear quality attributes (scalability, performance, etc.) to guide
-decision-making and measure an architecture's "fitness" over time.
-Incremental Change: Favor small, iterative architectural changes. This allows for course correction
-and reduces the risk of big failures.
+**General Advice:**  Minimize cross-service transactions when possible.
 
-Chapter 3: Architecting for Scale
-It's Not Just About Technology: Scaling involves people and processes as much as technology choices.
-Data is Often the Bottleneck: Data storage and access patterns can become scaling limits if not
-carefully designed.
-Premature Scaling is Risky: Obsessing over scaling too early can lead to over-engineered solutions
-that stifle agility.
+## Core Concepts Overview
 
-Chapter 4: Modular Architectures
-Build with Small, Cohesive Modules: Well-defined modules promote reusability, independent
-development, and easier understanding of the system.
-Strong Contracts, Loose Coupling: Modules should have clear interfaces (contracts) while minimizing
-dependencies on each other's internals.
-Hiding Implementation Details: Encapsulation within modules keeps the system maintainable and allows
-for change without cascading effects.
+* **Chapter 1: What Does an Architect Do?**
+  * **Architects Shape Systems:** Influence software development through critical decisions.
+  * **Tradeoffs are Central:** Navigating tradeoffs is at the heart of architecture.
+  * **Communication is Key:**  Architects must effectively convey complex concepts.
 
-Chapter 5: Microservices
-Microservices promise modularity, scalability, and team autonomy. However, they introduce massive complexity:
+* **Chapter 2: Evolutionary Architecture**
+  * **Embrace Change:**  Architectures must be adaptable.
+  * **Fitness Functions:**  Define quality attributes to guide decision-making.
+  * **Incremental Change:**  Favor smaller, iterative improvements to manage risk.
 
-Distributed systems are inherently difficult (network issues, data consistency).
-Managing many small services creates logistical burdens.
-Finding the right service boundaries is a tricky challenge.
-Microservices aren't a magic solution. Before adopting them, consider:
+* **Chapter 3: Architecting for Scale**
+  * **It's Not Just About Technology:**  Consider people and processes alongside technology.
+  * **Data is Often the Bottleneck:**   Storage and access need careful design for scalability.
+  * **Premature Scaling is Risky:**  Focus on agility first.
 
-Does your team have the experience to handle distributed systems?
-Is your system easily broken into clear, independent domains?
-Can you handle the operational overhead amid rapid change?
-The key takeaway: Carefully weigh the tradeoffs of microservices against your specific project needs. They might not be the best fit for everyone.
+* **Chapter 4: Modular Architectures**
+  * **Small, Cohesive Modules:**  Promote reusability, independent development, and understanding.
+  * **Strong Contracts, Loose Coupling:**  Prioritize clear interfaces, minimize internal
+    dependencies.
+  * **Encapsulation:** Keep the system maintainable by hiding implementation details.
+
+* **Chapter 5: Microservices**
+  * **Promises:** Modularity, scalability, and team autonomy.
+  * **Complexities:**  Inherent challenges of distributed systems, logistical overhead, service
+    boundaries.
+  * **Not a Magic Solution:**  Carefully assess suitability based on team experience, system
+    structure, and operational capacity.
+
+## Decomposition Strategies
+
+* **Tactical Forking:**  Suitable for unstructured codebases. Duplicate services and then remove
+  redundancy.
+* **Component-Based Decomposition:**  Preferred when source code demonstrates clear, well-defined
+  components.
+
+![img.png](res/Component-based decomposition.webp)
+
+## Component-based decomposition
+
+1. **Identify and Size Components Pattern**
+2. **Gather Common Domain Components Pattern**
+3. **Flatten Components Pattern** The Flatten Components decomposition pattern is used to move
+   orphaned classes to create well-defined components that exist only as leaf nodes of a directory
+   or name‐ space, creating well-defined subdomains (root namespaces) in the process. **Regardless** of
+   the direction of flattening, make sure source code files reside only in leaf node namespaces or
+   directories so that source code can always be identified within a specific component.
+4. **Determine Component Dependencies Pattern**
+5. **Create Component Domains Pattern**
+6. **Create Domain Services Pattern** 
