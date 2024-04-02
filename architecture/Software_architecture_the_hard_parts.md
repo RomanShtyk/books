@@ -67,12 +67,28 @@ Prioritize understanding the underlying rationale before implementation details.
 ## Component-based decomposition
 
 1. **Identify and Size Components Pattern**
+   * Not too big, not too small == ~ 1-2 standard deviation from average.
+   * Size == # statements.
+   * Too big –> split.
 2. **Gather Common Domain Components Pattern**
+   * To eliminate duplication.
+   * Shared domain logic, not infrastructure.
+   * Mostly a manual process.
 3. **Flatten Components Pattern** The Flatten Components decomposition pattern is used to move
    orphaned classes to create well-defined components that exist only as leaf nodes of a directory
    or name‐ space, creating well-defined subdomains (root namespaces) in the process. **Regardless** of
    the direction of flattening, make sure source code files reside only in leaf node namespaces or
    directories so that source code can always be identified within a specific component.
 4. **Determine Component Dependencies Pattern**
+   * Coupling is the most significant factor in determining the overall success and feasibility of
+     breaking a monolith.
+   * Both afferent and efferent coupling.
+   * Consider refactor to reduce coupling (like splitting a component in two).
 5. **Create Component Domains Pattern**
-6. **Create Domain Services Pattern** 
+   * Domains =~ service.
+   * Package structure: ss.customer.billing.payments.MonthlyBilling,
+     app.domain.subdomain.component.class
+   * Move components to appropriate domain.
+6. **Create Domain Services Pattern**
+   Service-based architecture.
+   Don’t apply this pattern until all domains have been identified and refactored.

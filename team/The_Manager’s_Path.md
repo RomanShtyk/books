@@ -68,26 +68,41 @@ Explain, don't diminish: Take time to share knowledge with the team.
 Pre-plan AND Iterate: Planning is crucial, but be ready to adapt as the project unfolds.
 Regular 1:1s: Provide structured feedback and mentorship for team members.
 
-#book The Manager’s Path by Camille Fournier
+Managing People
 
-The Crux of Managing People
-Invest in Individual Growth: Regular 1-1s, proactive feedback, and aiding learning are key to
-developing a capable team and fostering engagement.
-Build Trust: Get to know new hires, and communicate expectations and your management style clearly
-from the start.
-Know Your Team: Understand their strengths, weaknesses, goals, and what motivates them to provide
-tailored guidance and feedback.
-Prioritize Positivity: Recognize achievements regularly. Deliver corrective feedback constructively,
-focusing on future improvement.
-Delegation as Development: Delegate strategically to build trust and provide team members with
-growth opportunities while maintaining oversight for success.
-Transparent Career Conversations: Cultivate growth paths, advocate for promotions, and honestly
-assess when a team member's progress may be better served elsewhere.
-Document, But Don't Overdo It: Keep 1-1 records and feedback logs to maintain clarity, consistency,
-and protect yourself in underperformance situations.
+Invest in Individuals: A healthy team starts with healthy team members.
+Key Responsibilities:
+Welcoming new hires
+Holding regular 1-1 meetings
+Providing feedback for growth
+Supporting learning and development
+Building Strong Relationships
 
-Key Takeaways
-People-Focused: A good manager prioritizes the individual development of their team members.
-Communication is Key: Regular, proactive communication fosters trust and sets the tone for growth.
-Balance: Find the right balance between empowering delegation and providing necessary
-guidance/oversight.
+Start Right: Build trust, create a plan together (especially for senior members).
+Open Communication: Understand your style, set expectations, and actively seek feedback from your team.
+1-1 Meetings
+
+Frequency: Weekly is standard, adjust based on seniority and needs.
+
+Styles:
+To-do List: Efficient, forces prep
+Catch Up: Open-ended, discussion-focused
+Feedback: Focused on growth
+Important: Document key points, don't rely on memory
+Feedback
+
+Continuous Feedback: Address issues promptly, balance positive and corrective.
+Performance Reviews: Supplement, not replace, feedback. Gather 360-degree feedback, be specific, avoid surprises.
+Cultivating Careers
+
+Your Role: Be an advocate, understand your company's process.
+Growth Opportunities: Match projects to promotion potential, challenge your team to grow.
+Challenging Situations
+
+Underperformance: Performance improvement plans (PIPs) might be necessary, prioritize clear documentation.
+Coaching Out: Help employees find roles that better match their skills and goals.
+Tips
+
+The Micromanagement Trap: Find balance between necessary control and fostering autonomy.
+Delegation Done Right: Involve yourself as needed for success, not to control every detail.
+Know Your People: Understanding goals and strengths is key for good feedback and growth opportunities.
