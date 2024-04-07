@@ -85,6 +85,7 @@ Prioritize understanding the underlying rationale before implementation details.
     * **NewSQL:** Scalability of NoSQL with ACID properties.
     * **Cloud Native:** A mix of database solutions.
     * **Time-Series:** Optimized for time-based data.
+      ![img.png](res/img.png)
 
 ## Decomposition Strategies
 
