@@ -164,3 +164,5 @@ the team from burnout.
   **Realistic expectations:** account for time dedicated to sustaining engineering (e.g., testing,
   tech debt).
   Learn to say "no" and cut scope strategically to meet deadlines.
+
+## todo proceed from page 140
