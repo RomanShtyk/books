@@ -77,15 +77,29 @@ Prioritize understanding the underlying rationale before implementation details.
     * **Cleanup:** Remove connections to the old database.
 
 * **Selecting Database Types:**
-    * **Relational:** Best for structured data, complex queries, consistency needs.
-    * **Key-Value:** Simple data access with high read/write throughput.
-    * **Document:** Rich document structures, multiple indexes.
-    * **Column Family:** High volume and high-performance needs.
-    * **Graph:** Modeling highly connected data.
-    * **NewSQL:** Scalability of NoSQL with ACID properties.
+    * **Relational:** Best for structured data, complex queries, consistency needs.(MySQL, Oracle,
+      Microsoft SQL Server, and PostgreSQL)
+    * **Key-Value:** Simple data access with high read/write throughput.(Redis, DynamoDB, Riak KV)
+    * **Document:** Rich document structures, multiple indexes.(MongoDB, CouchDB, Marklogic)
+    * **Column Family(Wide column databases or big table databases):** High volume and
+      high-performance needs.(Cassandra, Druid, Scylla)
+    * **Graph:** Modeling highly connected data.(Neo4j, Infinite Graph, Tigergraph)
+    * **NewSQL:** Scalability of NoSQL with ACID properties.(VoltDB, NuoDB, ClustrixDB)
     * **Cloud Native:** A mix of database solutions.
     * **Time-Series:** Optimized for time-based data.
       ![img.png](res/img.png)
+
+### ACID
+**A**tomic – Each transaction is either properly carried out or the process halts and the database reverts back to the state before the transaction started. This ensures that all data in the database is valid.
+**C**onsistent – A processed transaction will never endanger the structural integrity of the database.
+**I**solated – Transactions cannot compromise the integrity of other transactions by interacting with them while they are still in progress.
+**D**urable – The data related to the completed transaction will persist even in the cases of network or power outages. If a transaction fails, it will not impact the manipulated data.
+
+
+### BASE
+**Ba**sically Available – Rather than enforcing immediate consistency, BASE-modelled NoSQL databases will ensure availability of data by spreading and replicating it across the nodes of the database cluster.
+**S**oft State – Due to the lack of immediate consistency, data values may change over time. The BASE model breaks off with the concept of a database which enforces its own consistency, delegating that responsibility to developers.
+**E**ventually Consistent – The fact that BASE does not enforce immediate consistency does not mean that it never achieves it. However, until it does, data reads are still possible (even though they might not reflect the reality).
 
 ## Decomposition Strategies
 
