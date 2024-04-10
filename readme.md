@@ -10,6 +10,7 @@
 * [5 Dysfunction of a team](team/5_dysfunctions_of_a_team.md)
 * [Team Topologies](team/Team_Topologies.md)
 * [The Manager's path](team/The_Manager’s_Path.md)
+* [Staff Engineer](team/Staff_Engineer:_Leadership_beyond_the_management_track.md)
 
 **Tech**
 
