@@ -25,7 +25,7 @@ Prioritize understanding the underlying rationale before implementation details.
 
 **General Advice:**  Minimize cross-service transactions when possible.
 
-## Core Concepts Overview
+## Part I: Putting Things Apart (structure)
 
 * **Chapter 1: What Does an Architect Do?**
     * **Architects Shape Systems:** Influence software development through critical decisions.
@@ -111,8 +111,8 @@ Prioritize understanding the underlying rationale before implementation details.
         * DB transactions.
         * Workflow and choreography:
             * Too many inter-service callas:
-              * Less fault-tolerant.
-              * Less performant.
+                * Less fault-tolerant.
+                * Less performant.
         * Shared code (business code, not infrastructure).
         * Data relationships.
 
@@ -172,3 +172,24 @@ achieves it. However, until it does, data reads are still possible (even though 
 6. **Create Domain Services Pattern**
     * Service-based architecture.
     * Don’t apply this pattern until all domains have been identified and refactored.
+
+## Part II: Putting Things Back together (communication)
+
+* **Chapter 8 - Reuse Patterns**
+    * **Code replication:**
+        * Copy and paste between services.
+        * Use for simple static code that is unlikely to change.
+    * **Shared library:**
+        * Trade-off between dependency management and change control.
+        * In general, strive for fine-grained libraries.
+        * Use in homogeneous environments where shared code change is low to moderate.
+    * **Shared service:**
+        * Easier to deploy changes, but:
+            * Less performance, scalable, fault tolerant.
+            * Versioning can be more difficult.
+        * Good in:
+            * Polyglot environments.
+              *High number of changes in shared functionality.
+    * **Sidecars and service mesh:**
+        * Mostly for cross-cutting operational concerns.
+        * Reuse is derived via abstraction but operationalized by slow rate of change.
