@@ -176,20 +176,68 @@ achieves it. However, until it does, data reads are still possible (even though 
 ## Part II: Putting Things Back together (communication)
 
 * **Chapter 8 - Reuse Patterns**
-    * **Code replication:**
+    1. **Code replication:**
         * Copy and paste between services.
         * Use for simple static code that is unlikely to change.
-    * **Shared library:**
+    2. **Shared library:**
         * Trade-off between dependency management and change control.
         * In general, strive for fine-grained libraries.
         * Use in homogeneous environments where shared code change is low to moderate.
-    * **Shared service:**
+
+    3. **Shared service:**
         * Easier to deploy changes, but:
             * Less performance, scalable, fault tolerant.
             * Versioning can be more difficult.
         * Good in:
             * Polyglot environments.
-              *High number of changes in shared functionality.
-    * **Sidecars and service mesh:**
+            * High number of changes in shared functionality.
+    4. **Sidecars and service mesh:**
         * Mostly for cross-cutting operational concerns.
-        * Reuse is derived via abstraction but operationalized by slow rate of change.
+
+    * **Reuse is derived via abstraction but operationalized by slow rate of change.**
+
+* **Chapter 9 - Data Ownership and Distributed Transactions**
+    * In general, the service that performs writes owns the data.
+    * Scenarios:
+        1. Simple ownership:
+            * Only one writer.
+            * Writer owns the data.
+        2. Common ownership:
+            * Most services write to the table.
+            * Solution: create a new service that owns the data.
+        3. Joint ownership:
+            * Solutions:
+                1. Split table:
+                    * May required data replication/synchronization between services on delete/create of primary entity.
+                2. Data domain techniques:
+                    * Both services own the table, so keep as it is.
+                3. Delegate techniques:
+                    * One service owns the data, the other makes service calls.
+                    * Consider owner by primary domain or by operational characteristic.
+                4. Service consolidation technique:
+                    * Combine possible owners in a bigger service.
+    * Distribute transactions, eventual consistency patterns:
+        1. Background synchronization pattern:
+            * Separate external process or service that periodically check data sources and keeps them in sync.
+            * Pro: no inter-service communication.
+            * Cons:
+                * Slow eventual consistency.
+                * High coupling between sync process and all other processes.
+            * Complex implementation.
+        2. Orchestrated Request-Based Pattern:
+            * One process/service in charge of making synchronous requests to other services.
+            * Prefer a dedicated orchestrator.
+            * Pro:
+                * Services still decoupled, if orchestrator is standalone.
+                * Favours consistency over availability.
+                * Atomic business requests.
+                * Cons:
+                    * Slower responsiveness.
+                    * Complex error handling.
+                    * Usually requires compensating transactions.
+        3. Event-based pattern:
+            * Pro:
+                * Decoupled services.
+                * Fast data consistency.
+                * Fast responsiveness.
+            * Cons: complex error handling.
