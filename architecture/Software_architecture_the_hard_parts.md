@@ -240,4 +240,65 @@ achieves it. However, until it does, data reads are still possible (even though 
                 * Decoupled services.
                 * Fast data consistency.
                 * Fast responsiveness.
-            * Cons: complex error handling.
+            * Cons: very complex error handling.
+* **Chapter 10 - Distributed Data Access**
+    * Data access patterns:
+        1. Inter-service calls.
+            * Pro: Simple
+            * Cons: performance, scalability, no fault tolerance, adds contract
+        2. Column schema replication:
+            * Keep local copy of the other service data.
+            * Pros: performance, scalability, fault tolerance, no service deps
+            * Cons: data consistency, data ownership, data sync is required
+        3. Duplicated caching pattern:
+            * Same as (2) but in-memory and using some product (Hazelcast, Ignite).
+            * Pro: data remains consistent and ownership is preserved.
+                * How much I disagree on this?
+            * Cons: bad for volatile data, bad for high volume of data, startup latency
+        4. Data domain pattern:
+            * Share DB, same as joint ownership.
+            * Pros: consistent data, no performance issues
+            * Cons: security, data ownership is vague, broader bounded context
+* **Chapter 11 - Managing Distributed Workflow**
+    1. Orchestration communication style:
+        * AKA mediator.
+        * In microservices, one orchestrator per workflow.
+        * Responsibilities:
+            * Workflow state.
+            * Optional behaviour.
+            * Error handling.
+            * Notification.
+        * Pros: Centralized workflow, Error handling, Recoverability, State management
+        * Cons: Responsiveness, Fault tolerance, Scalability, Service coupling
+    2. Choreography communication style:
+        * Workflow state management patterns:
+            1. Front controller pattern(pseudo-orchestration):
+                * First called service owns the state.
+                * Other services may query and update the state.
+            2. Stateless choreography:
+                * Query individual services to know the state of the workflow.
+            3. Stamp coupling:
+                * Add workflow state in the message between services.
+                * Each service updates its part.
+                    * Pros: no controller, always available state
+                    * Cons: large contract
+        * ![img.png](res/choreograpy.png)
+    3. As workflow complexity goes up, the need for an orchestrator raises.
+* **Chapter 12 - Transactional Sagas**
+    * Types:
+        * Epic saga:
+            * “Traditional”.
+            * Avoid.
+        * Phone Tag:
+            * Like Epic but without a coordinator.
+        * Fairy Tale:
+            * As Epic but without distributed transactions.
+        * Fantasy Fiction:
+            * To improve the Epic saga performance, but it fails.
+        * Horror Story:
+            * Building atomicity on top of async + no mediator.
+    * R/A stands for Responsiveness/Availability.
+    * S/E stands for Scale/Elasticity.
+    * Consider state machines (instead of atomic distributed transactions) to know the current state of a transactional
+      saga.
+    * ![img.png](res/sagas.png)
