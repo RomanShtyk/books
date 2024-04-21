@@ -302,3 +302,4 @@ achieves it. However, until it does, data reads are still possible (even though 
     * Consider state machines (instead of atomic distributed transactions) to know the current state of a transactional
       saga.
     * ![img.png](res/sagas.png)
+    * 
