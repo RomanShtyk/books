@@ -302,4 +302,23 @@ achieves it. However, until it does, data reads are still possible (even though 
     * Consider state machines (instead of atomic distributed transactions) to know the current state of a transactional
       saga.
     * ![img.png](res/sagas.png)
-    * 
+* **Chapter 13 - Contracts**
+    * Anti-pattern: include in contract more information than needed.
+    * Strict contracts:
+        * Pros:
+            * Guaranteed contract fidelity.
+            * Versioned.
+            * Easier to verify at build time.
+            * Better documentation.
+        * Cons:
+        * Tight coupling.
+        * Versioned.
+    * Loose contracts:
+        * Pros:
+            * Highly decoupled.
+            * Easier to evolve.
+        * Cons:
+            * Contract management.
+            * Requires fitness functions.
+    * Tightly coupling violates one of the aspirational goals fo microservices, hence prefer loose contracts and
+      consider using consumer-driven contracts.
