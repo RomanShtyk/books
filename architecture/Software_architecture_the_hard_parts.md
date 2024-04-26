@@ -311,8 +311,8 @@ achieves it. However, until it does, data reads are still possible (even though 
             * Easier to verify at build time.
             * Better documentation.
         * Cons:
-        * Tight coupling.
-        * Versioned.
+            * Tight coupling.
+            * Versioned.
     * Loose contracts:
         * Pros:
             * Highly decoupled.
@@ -322,3 +322,34 @@ achieves it. However, until it does, data reads are still possible (even though 
             * Requires fitness functions.
     * Tightly coupling violates one of the aspirational goals fo microservices, hence prefer loose contracts and
       consider using consumer-driven contracts.
+* **Chapter 14 - Managing Analytical Data**
+    * Data Warehouse:
+        * Transform data at ingestion.
+        * Brittle integration.
+        * Usually failed to deliver.
+        * Technical partition.
+    * Data Lake:
+        * Transform data at usage time.
+        * Difficult to discover proper assets.
+        * PII and sensitive info issues.
+        * Technical partitioning.
+    * Data Mesh:
+        * Like microservices but for analytical data.
+        * Principles:
+            * Domain ownership of data:
+                * Distributed and shared in a peer-to-peer fashion.
+            * Data as a product:
+                * Data product quantum:
+                    * Adjacent and coupled to microservices.
+                    * Always async communication.
+                * Self-service platform:
+                    * Oriented to sharing and consuming data.
+                * Computational federated governance:
+                    * Policies automated and embedded as sidecars.
+* **Chapter 15 - Build Your Own Trade-off Analysis**
+    * Often, a solution has many beneficial aspects, but lacks critical capabilities that prevent success.
+    * Generic solutions are rarely useful in real-world architectures without applying additional situation-specific
+      context.
+    * Use concrete use cases.
+    * Reduce trade-off analysis to a few key points:
+        * Translate them to non-technical parlance for non-tech people.
