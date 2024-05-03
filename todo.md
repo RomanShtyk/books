@@ -8,7 +8,7 @@ lencioni's five dysfunctions of a team~~
 
 100%
 Patterns of Enterprise Application Architecture
-Java concurrency in action
+Java concurrency in practice
 Cracking the code interview
 Linux System Programming
 ~~Software Architecture: fundamentals~~ ~~Software Architecture: The Hard Parts~~ -> Understanding distributed
