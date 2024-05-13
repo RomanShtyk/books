@@ -203,3 +203,25 @@ by Brian Goetz
   indirectly publish the confined objects.
 * Using a private lock prohibits client code from acquiring it, whereas a publicly accessible lock allows client code to
   participate in its synchronization policy, perhaps incorrectly.
+
+##### 4.3: Delegating thread safety
+
+* A class with multiple independent thread-safe state variables and no operations that have any invalid state
+  transitions can delegate thread safety to the underlying state variables.
+* If a state variable is thread-safe, does not participate in any invariants that constrain its value, and has no
+  prohibited state transitions for any of its operations, then it can be safely published.
+
+##### 4.4: Adding functionality to existing thread-safe classes
+
+* Extending a class to support a thread-safe operation is more fragile than adding code directly to the class, as its
+  synchronization policy is now distributed over multiple source files.
+* Just as subclassing violates encapsulation of implementation, client-side locking violates encapsulation of
+  synchronization policy.
+
+##### 4.5: Documenting synchronization policies
+
+* Document a class's thread safety guarantees for its clients; document its synchronization policy for its maintainers.
+* If you want clients to be able to create new atomic operations on your class, you must document which locks they
+  should acquire to do so safely.
+* If you must guess whether a class is thread-safe, improve the quality of your guess by interpreting the specification
+  by someone who must implement it versus someone who will merely use it.
