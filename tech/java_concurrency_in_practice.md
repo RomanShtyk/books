@@ -249,4 +249,208 @@ by Brian Goetz
 
 ##### 5.5: Synchronizers
 
-* Latches
+* Latches: a latch acts as a gate: until the latch reaches the terminal state the gate is closed and no thread can pass,
+  and in the terminal state the gate opens, allowing all threads to pass.
+* Futures: is like futures everywhere
+* Semaphore: used to control the number of activities that can access a certain resource or perform a given action at
+  the same time.
+* Barriers: latches are for waiting for events; barriers are for waiting for other threads.
+
+#### Summary of Part I
+
+* It's the mutable state, stupid.
+* All concurrency issues boil down to coordinating access to mutable state. The less mutable state, the easier it is to
+  ensure thread safety.
+* Make fields final unless they need to be mutable.
+* Immutable objects are automatically thread‐safe.
+* Immutable objects simplify concurrent programming tremendously. They are simpler and safer, and can be shared freely
+  without locking or defensive copying.
+* Encapsulation makes it practical to manage the complexity.
+* You could write a thread‐safe program with all data stored in global variables, but why would you want to?
+  Encapsulating data within objects makes it easier to preserve their invariants; encapsulating synchronization within
+  objects makes it easier to comply with their synchronization policy.
+* Guard each mutable variable with a lock.
+* Guard all variables in an invariant with the same lock.
+* Hold locks for the duration of compound actions.
+* A program that accesses a mutable variable from multiple threads without synchronization is a broken program.
+* Don't rely on clever reasoning about why you don't need to synchronize.
+* Include thread safety in the design processor explicitly document that your class is not thread‐safe.
+* Document your synchronization policy.
+
+#### 6.1. Executing Tasks in Threads
+
+[//]: # (#### Chapter 10: Avoiding Liveness Hazards)
+
+[//]: # ()
+
+[//]: # (##### 10.1: Deadlock)
+
+[//]: # ()
+
+[//]: # (* When thread A holds lock L and tries to acquire lock M, but at the same time thread B holds lock M and tries to)
+
+[//]: # (  acquire L, this is deadlock, or *deadly embrace*.)
+
+[//]: # (* When a database system detects that a set of transactions has deadlocked by searching the is-waiting-for graph for)
+
+[//]: # (  cycles, it picks a victim and aborts that transaction, thereby releasing its held locks.)
+
+[//]: # (* A program will be free of lock-ordering deadlocks if all threads acquire the locks they need in a fixed global order.)
+
+[//]: # (  Sometimes we must induce this ordering.)
+
+[//]: # (* Invoking an alien method with a lock held is asking for liveness trouble. That method might risk deadlock by acquiring)
+
+[//]: # (  other locks, or block for an unexpectedly long time and stall other threads on the held lock.)
+
+[//]: # (* Calling a method with no locks held is called an *open call*, and classes that rely on open calls are more)
+
+[//]: # (  well-behaved and composable than classes that make calls with locks held.)
+
+[//]: # (* Resource deadlocks occur when thread A holds resource X and tries to acquire resource Y, but at the same time thread B)
+
+[//]: # (  holds resource Y and tries to acquire resource X.)
+
+[//]: # ()
+
+[//]: # (##### 10.2: Avoiding and diagnosing deadlocks)
+
+[//]: # ()
+
+[//]: # (* Try acquiring locks with a timeout. By using a timeout that is much longer than you expect acquiring the lock to take,)
+
+[//]: # (  you can regain control when something unexpected happens.)
+
+[//]: # (* Thread dumps not only include a stack trace for each running thread, but locking information such as which locks are)
+
+[//]: # (  held by a thread, and which lock a thread is waiting to acquire.)
+
+[//]: # ()
+
+[//]: # (##### 10.3: Other liveness hazards)
+
+[//]: # ()
+
+[//]: # (* *Starvation* is when a thread is perpetually denied access to resources it needs in order to make progress; the most)
+
+[//]: # (  commonly starved resource is CPU cycles.)
+
+[//]: # (* *Livelock* is a liveness failure in which a thread, while not blocked, still cannot make progress because it keeps)
+
+[//]: # (  retrying an operation that will always fail.)
+
+[//]: # (* Livelock can occur when multiple cooperating threads change their state in response to the others in such a way that)
+
+[//]: # (  no thread can ever make progress. The solution is to introduce randomness into the retry mechanism.)
+
+[//]: # ()
+
+[//]: # (### Chapter 11: Performance and Scalability)
+
+[//]: # ()
+
+[//]: # (##### 11.1: Thinking about performance)
+
+[//]: # ()
+
+[//]: # (* Improving performance means doing more work with fewer resources. When performance of an activity is limited by)
+
+[//]: # (  availability of a particular resource, it is *bound* by that resource.)
+
+[//]: # (* Using concurrency to achieve better performance means using the processing resources we have more effectively, and)
+
+[//]: # (  enable a program to exploit additional processing resources that become available.)
+
+[//]: # (* *Scalability* describes the ability to improve throughput or capacity when additional computing resources &#40;such as)
+
+[//]: # (  CPUs, memory, storage, or I/O bandwidth&#41; are added.)
+
+[//]: # (* The "how much" aspects like scalability, throughput, and capacity are concern for server applications. The "how fast")
+
+[//]: # (  aspects like service time or latency are concern for client applications.)
+
+[//]: # (* Most optimizations are premature because they are often undertaken before a clear set of requirements is available.)
+
+[//]: # (* Make it right, then make it fast. And if attempting to make it fast, measure. Don't guess.)
+
+[//]: # ()
+
+[//]: # (##### 11.2: Amdahl's law)
+
+[//]: # ()
+
+[//]: # (* Amdahl's law describes how much a program can theoretically be sped up by additional computing resources, based on the)
+
+[//]: # (  proportion of parallelizable to serial components.)
+
+[//]: # (* If F is the faction of the calculation that must be executed serially, then on a machine with N processors, we can)
+
+[//]: # (  achieve a speedup of most: 1/&#40;F+&#40;1-F&#41;/N&#41;.)
+
+[//]: # (* When evaluating an algorithm, thinking "in the limit" about what would happen with hundreds or thousands of processors)
+
+[//]: # (  can offer some insight into where scaling limits might appear.)
+
+[//]: # ()
+
+[//]: # (##### 11.3: Costs introduced by threads)
+
+[//]: # ()
+
+[//]: # (* When a new thread is switched in, the data it needs is unlikely to be in the local processor cache, and so a context)
+
+[//]: # (  switch causes a flurry of cache misses and runs a little slower at first.)
+
+[//]: # (* Schedulers give each runnable thread a certain minimum time quantum, thereby amortizing the cost of the context switch)
+
+[//]: # (  and its consequences over more interrupted execution time.)
+
+[//]: # (* A program that does more blocking has more of its threads suspended and switched out. The program therefore incurs)
+
+[//]: # (  more context switches, increasing scheduling overhead and reducing throughput.)
+
+[//]: # (* Special instructions called *memory barriers* can flush or invalidate caches and flush hardware write buffers. They)
+
+[//]: # (  inhibit compiler optimizations; most operations cannot be reordered with them.)
+
+[//]: # (* *Lock elision* optimizes away lock acquisitions. *Lock coarsening* merges together adjacent blocks holding the same)
+
+[//]: # (  lock, reducing synchronization overhead and helping the optimizer.)
+
+[//]: # (* When a lock is contended, the losing threads must block. This can be implemented either by *spin-waiting* or by)
+
+[//]: # (  *suspending* the blocked thread through the operating system.)
+
+[//]: # ()
+
+[//]: # (##### 11.4: Reducing lock contention)
+
+[//]: # ()
+
+[//]: # (* Two factors influence the likelihood of contention for a lock: How often that lock is requested, and how long it is)
+
+[//]: # (  held once acquired.)
+
+[//]: # (* *Lock splitting* and *lock striping* involve using separate locks to guard multiple independent state variables)
+
+[//]: # (  previously guarded by a single lock.)
+
+[//]: # (* Splitting a lock into two offers the greatest possibility for improvement when a lock is experiencing moderate but not)
+
+[//]: # (  heavy contention.)
+
+[//]: # (* Lock striping extends lock splitting by partitioning locking on a variable-sized set of independent objects. But)
+
+[//]: # (  locking the collection for exclusive access is more difficult and costly.)
+
+[//]: # (* If your class has a small number of hot fields that do not participate in invariants with other variables, then)
+
+[//]: # (  replacing them with atomic variables may improve scalability.)
+
+[//]: # (* Tools like `vmstat` or `mpstat` can show whether your application is CPU-bound, while tools like `iostat` or `perfmon`)
+
+[//]: # (  can show whether your application is I/O-bound.)
+
+[//]: # (* The tool `vmstat` has a column reporting the number of threads that are runnable but not currently running because a)
+
+[//]: # (  CPU is not available.)
