@@ -225,3 +225,28 @@ by Brian Goetz
   should acquire to do so safely.
 * If you must guess whether a class is thread-safe, improve the quality of your guess by interpreting the specification
   by someone who must implement it versus someone who will merely use it.
+* Atomic ref is almost the same with `volatile` but with more useful methods.
+
+#### Chapter 5: Building Blocks
+
+* Synchronized collections should be sync more for every compound operation like `getLastElement`
+
+##### 5.2: Concurrent Collections
+
+* Replacing synchronized collections with concurrent collections can offer dramatic scalability improvements with little
+  risk.
+* **Lock striping** is a technique where the locking occurs on several buckets or stripes, meaning that accessing a
+  bucket only locks that bucket and not the entire data structure. `ConcurrentHashMap` is an example.
+* Only if your application needs to lock the map for exclusive access is `ConcurrentHashMap` not an appropriate drop‐in
+  replacement.
+* Since a `ConcurrentHashMap` cannot be locked for exclusive access, we cannot use client‐side locking to create new
+  atomic operations such as put‐if‐absent.
+* `Work stealing` can be more scalable than a traditional producer‐consumer design because workers don't contend for a
+  shared work queue; most of the time they access only their own deque, reducing contention. When a worker has to access
+  another's queue, it does so from the tail rather than the head, further reducing contention.
+
+![img.png](../res/thread_lifecycle.png)
+
+##### 5.5: Synchronizers
+
+* Latches

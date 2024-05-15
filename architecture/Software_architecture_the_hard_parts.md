@@ -87,7 +87,7 @@ Prioritize understanding the underlying rationale before implementation details.
         * **NewSQL:** Scalability of NoSQL with ACID properties.(VoltDB, NuoDB, ClustrixDB)
         * **Cloud Native:** A mix of database solutions.(Snowflake, Amazon Redshift, Datomic, and Azure CosmosDB)
         * **Time-Series:** Optimized for time-based data.(InfluxDB, TimescaleDB)
-          ![img.png](res/img.png)
+          ![img.png](../res/img.png)
 
 * **Chapter 7: Service Granularity**
     * **Granularity == size == # of statements + # public interfaces.**
@@ -142,7 +142,7 @@ achieves it. However, until it does, data reads are still possible (even though 
 * **Component-Based Decomposition:**  Preferred when source code demonstrates clear, well-defined
   components.
 
-![img.png](res/Component-based decomposition.webp)
+![img.png](../res/Component-based decomposition.webp)
 
 ## Component-based decomposition
 
@@ -282,7 +282,7 @@ achieves it. However, until it does, data reads are still possible (even though 
                 * Each service updates its part.
                     * Pros: no controller, always available state
                     * Cons: large contract
-        * ![img.png](res/choreograpy.png)
+        * ![img.png](../res/choreograpy.png)
     3. As workflow complexity goes up, the need for an orchestrator raises.
 * **Chapter 12 - Transactional Sagas**
     * Types:
@@ -301,7 +301,7 @@ achieves it. However, until it does, data reads are still possible (even though 
     * S/E stands for Scale/Elasticity.
     * Consider state machines (instead of atomic distributed transactions) to know the current state of a transactional
       saga.
-    * ![img.png](res/sagas.png)
+    * ![img.png](../res/sagas.png)
 * **Chapter 13 - Contracts**
     * Anti-pattern: include in contract more information than needed.
     * Strict contracts:
