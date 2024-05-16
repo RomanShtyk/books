@@ -279,6 +279,26 @@ by Brian Goetz
 
 #### 6.1. Executing Tasks in Threads
 
+* meh, the sequential approach suffers from poor responsiveness and throughput, and the thread‐per‐task approach suffers
+  from poor resource management.
+
+#### 6.2. The Executor Framework
+
+* Using an Executor is usually the easiest path to implementing a producer‐consumer design in your application.
+
+##### 6.2.4. Executor Lifecycle
+
+* JVM can't exit until all the (non‐daemon) threads have terminated, so failing to shut down an Executor could prevent
+  the JVM from exiting.
+
+#### Chapter 7. Cancellation and Shutdown
+
+* There is nothing in the API or language specification that ties interruption to any specific cancellation semantics,
+  but in practice, using interruption for anything but cancellation is fragile and difficult to sustain in larger
+  applications.
+* Calling interrupt does not necessarily stop the target thread from doing what it is doing; it merely delivers the
+  message that interruption has been requested.
+
 [//]: # (#### Chapter 10: Avoiding Liveness Hazards)
 
 [//]: # ()
