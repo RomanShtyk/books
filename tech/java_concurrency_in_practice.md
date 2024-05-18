@@ -298,6 +298,10 @@ by Brian Goetz
   applications.
 * Calling interrupt does not necessarily stop the target thread from doing what it is doing; it merely delivers the
   message that interruption has been requested.
+* You can also override `interrupt` method to cancel everything needed in your custom thread.
+* Sensible encapsulation practices dictate that you should not manipulate a thread ‐ interrupt it, modify its priority,
+  etc. ‐ unless you own it. a poison pill: a recognizable object placed on the queue that means "when you get this,
+  stop." With a FIFO queue, poison pills ensure that consumers finish the work on their queue before shutting down
 
 [//]: # (#### Chapter 10: Avoiding Liveness Hazards)
 

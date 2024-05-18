@@ -1,5 +1,7 @@
 # Software Architecture: The Hard Parts by Neal Ford
 
+7/10 - good glossary
+
 **Key Quote:** "Software architecture is the stuff that’s hard to change later."
 
 ## ADRs (Architecture Decision Records)
