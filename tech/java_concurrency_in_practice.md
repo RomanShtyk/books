@@ -302,6 +302,15 @@ by Brian Goetz
 * Sensible encapsulation practices dictate that you should not manipulate a thread ‐ interrupt it, modify its priority,
   etc. ‐ unless you own it. a poison pill: a recognizable object placed on the queue that means "when you get this,
   stop." With a FIFO queue, poison pills ensure that consumers finish the work on their queue before shutting down
+* Daemon threads are **not** a good substitute for properly managing the lifecycle of services within an application.
+* Avoid finalizers.
+
+#### Chapter 8. Applying Thread Pools
+
+* Some tasks have characteristics that require or preclude a specific execution policy. Tasks that depend on other tasks
+  require that the thread pool be large enough that tasks are never queued or rejected; tasks that exploit thread
+  confinement require sequential execution. Document these requirements so that future maintainers do not undermine
+  safety or liveness by substituting an incompatible execution policy.
 
 [//]: # (#### Chapter 10: Avoiding Liveness Hazards)
 
