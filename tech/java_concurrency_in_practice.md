@@ -311,6 +311,19 @@ by Brian Goetz
   require that the thread pool be large enough that tasks are never queued or rejected; tasks that exploit thread
   confinement require sequential execution. Document these requirements so that future maintainers do not undermine
   safety or liveness by substituting an incompatible execution policy.
+* allowCoreThreadTimeOut allows you to request that all pool threads be able to time out; enable this feature with a
+  core size of zero if you want a bounded thread pool with a bounded work queue but still have all the threads torn down
+  when there is no work to do.
+* Sequential loop iterations are suitable for parallelization when each iteration is independent of the others and the
+  work done in each iteration of the loop body is significant enough to offset the cost of managing a new task.
+
+#### Chapter 9. GUI Applications
+
+* In the old days, GUI applications were single‐threaded and GUI events were processed from a "main event loop". Modern
+  GUI frameworks use a model that is only slightly different: they create a dedicated event dispatch thread (EDT) for
+  handling GUI events.
+* The Swing single‐thread rule: Swing components and models should be created, modified, and queried only from the
+  event‐dispatching thread.
 
 [//]: # (#### Chapter 10: Avoiding Liveness Hazards)
 
