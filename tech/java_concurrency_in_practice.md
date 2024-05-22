@@ -324,45 +324,35 @@ by Brian Goetz
   handling GUI events.
 * The Swing single‐thread rule: Swing components and models should be created, modified, and queried only from the
   event‐dispatching thread.
+* Consider a split‐model design when a data model must be shared by more than one thread and implementing a thread‐ safe
+  data model would be inadvisable because of blocking, consistency, or complexity reasons.
+* GUI frameworks are nearly always implemented as single‐threaded subsystems in which all presentation‐related code runs
+  as tasks in an event thread. Because there is only a single event thread, long‐running tasks can compromise
+  responsiveness and so should be executed in background threads. Helper classes like SwingWorker or the BackgroundTask
+  class built here, which provide support for cancellation, progress indication, and completion indication, can simplify
+  the development of long‐running tasks that have both GUI and non‐GUI components.
 
-[//]: # (#### Chapter 10: Avoiding Liveness Hazards)
+#### Chapter 10: Avoiding Liveness Hazards
 
-[//]: # ()
+##### 10.1: Deadlock
 
-[//]: # (##### 10.1: Deadlock)
-
-[//]: # ()
-
-[//]: # (* When thread A holds lock L and tries to acquire lock M, but at the same time thread B holds lock M and tries to)
-
-[//]: # (  acquire L, this is deadlock, or *deadly embrace*.)
-
-[//]: # (* When a database system detects that a set of transactions has deadlocked by searching the is-waiting-for graph for)
-
-[//]: # (  cycles, it picks a victim and aborts that transaction, thereby releasing its held locks.)
-
-[//]: # (* A program will be free of lock-ordering deadlocks if all threads acquire the locks they need in a fixed global order.)
-
-[//]: # (  Sometimes we must induce this ordering.)
-
-[//]: # (* Invoking an alien method with a lock held is asking for liveness trouble. That method might risk deadlock by acquiring)
-
-[//]: # (  other locks, or block for an unexpectedly long time and stall other threads on the held lock.)
-
-[//]: # (* Calling a method with no locks held is called an *open call*, and classes that rely on open calls are more)
-
-[//]: # (  well-behaved and composable than classes that make calls with locks held.)
-
-[//]: # (* Resource deadlocks occur when thread A holds resource X and tries to acquire resource Y, but at the same time thread B)
-
-[//]: # (  holds resource Y and tries to acquire resource X.)
-
-[//]: # ()
+* When thread A holds lock L and tries to acquire lock M, but at the same time thread B holds lock M and tries to
+  acquire L, this is deadlock, or *deadly embrace*.
+* When a database system detects that a set of transactions has deadlocked by searching the is-waiting-for graph for
+  cycles, it picks a victim and aborts that transaction, thereby releasing its held locks.
+* A program will be free of lock-ordering deadlocks if all threads acquire the locks they need in a fixed global order.
+  Sometimes we must induce this ordering.
+* Invoking an alien method with a lock held is asking for liveness trouble. That method might risk deadlock by acquiring
+  other locks, or block for an unexpectedly long time and stall other threads on the held lock.
+* Calling a method with no locks held is called an *open call*, and classes that rely on open calls are more
+  well-behaved and composable than classes that make calls with locks held.
+* Resource deadlocks occur when thread A holds resource X and tries to acquire resource Y, but at the same time thread B
+  holds resource Y and tries to acquire resource X.
+//10.1.4. Open Calls
 
 [//]: # (##### 10.2: Avoiding and diagnosing deadlocks)
 
 [//]: # ()
-
 [//]: # (* Try acquiring locks with a timeout. By using a timeout that is much longer than you expect acquiring the lock to take,)
 
 [//]: # (  you can regain control when something unexpected happens.)
@@ -372,11 +362,9 @@ by Brian Goetz
 [//]: # (  held by a thread, and which lock a thread is waiting to acquire.)
 
 [//]: # ()
-
 [//]: # (##### 10.3: Other liveness hazards)
 
 [//]: # ()
-
 [//]: # (* *Starvation* is when a thread is perpetually denied access to resources it needs in order to make progress; the most)
 
 [//]: # (  commonly starved resource is CPU cycles.)
@@ -388,8 +376,6 @@ by Brian Goetz
 [//]: # (* Livelock can occur when multiple cooperating threads change their state in response to the others in such a way that)
 
 [//]: # (  no thread can ever make progress. The solution is to introduce randomness into the retry mechanism.)
-
-[//]: # ()
 
 [//]: # (### Chapter 11: Performance and Scalability)
 
