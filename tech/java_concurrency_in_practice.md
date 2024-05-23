@@ -348,72 +348,39 @@ by Brian Goetz
   well-behaved and composable than classes that make calls with locks held.
 * Resource deadlocks occur when thread A holds resource X and tries to acquire resource Y, but at the same time thread B
   holds resource Y and tries to acquire resource X.
-//10.1.4. Open Calls
 
-[//]: # (##### 10.2: Avoiding and diagnosing deadlocks)
+##### 10.2: Avoiding and diagnosing deadlocks
 
-[//]: # ()
-[//]: # (* Try acquiring locks with a timeout. By using a timeout that is much longer than you expect acquiring the lock to take,)
+* Try acquiring locks with a timeout. By using a timeout that is much longer than you expect acquiring the lock to take,
+  you can regain control when something unexpected happens.
+* Thread dumps not only include a stack trace for each running thread, but locking information such as which locks are
+  held by a thread, and which lock a thread is waiting to acquire.
 
-[//]: # (  you can regain control when something unexpected happens.)
+##### 10.3: Other liveness hazards
 
-[//]: # (* Thread dumps not only include a stack trace for each running thread, but locking information such as which locks are)
+* Avoid the temptation to use thread priorities, since they increase platform dependence and can cause liveness
+  problems. Most concurrent applications can use the default priority for all threads.
+* *Starvation* is when a thread is perpetually denied access to resources it needs in order to make progress; the most
+  commonly starved resource is CPU cycles.
+* *Livelock* is a liveness failure in which a thread, while not blocked, still cannot make progress because it keeps
+  retrying an operation that will always fail.
+* Livelock can occur when multiple cooperating threads change their state in response to the others in such a way that
+  no thread can ever make progress. The solution is to introduce randomness into the retry mechanism.
 
-[//]: # (  held by a thread, and which lock a thread is waiting to acquire.)
+### Chapter 11: Performance and Scalability
 
-[//]: # ()
-[//]: # (##### 10.3: Other liveness hazards)
+##### 11.1: Thinking about performance
 
-[//]: # ()
-[//]: # (* *Starvation* is when a thread is perpetually denied access to resources it needs in order to make progress; the most)
-
-[//]: # (  commonly starved resource is CPU cycles.)
-
-[//]: # (* *Livelock* is a liveness failure in which a thread, while not blocked, still cannot make progress because it keeps)
-
-[//]: # (  retrying an operation that will always fail.)
-
-[//]: # (* Livelock can occur when multiple cooperating threads change their state in response to the others in such a way that)
-
-[//]: # (  no thread can ever make progress. The solution is to introduce randomness into the retry mechanism.)
-
-[//]: # (### Chapter 11: Performance and Scalability)
-
-[//]: # ()
-
-[//]: # (##### 11.1: Thinking about performance)
-
-[//]: # ()
-
-[//]: # (* Improving performance means doing more work with fewer resources. When performance of an activity is limited by)
-
-[//]: # (  availability of a particular resource, it is *bound* by that resource.)
-
-[//]: # (* Using concurrency to achieve better performance means using the processing resources we have more effectively, and)
-
-[//]: # (  enable a program to exploit additional processing resources that become available.)
-
-[//]: # (* *Scalability* describes the ability to improve throughput or capacity when additional computing resources &#40;such as)
-
-[//]: # (  CPUs, memory, storage, or I/O bandwidth&#41; are added.)
-
-[//]: # (* The "how much" aspects like scalability, throughput, and capacity are concern for server applications. The "how fast")
-
-[//]: # (  aspects like service time or latency are concern for client applications.)
-
-[//]: # (* Most optimizations are premature because they are often undertaken before a clear set of requirements is available.)
-
-[//]: # (* Make it right, then make it fast. And if attempting to make it fast, measure. Don't guess.)
-
-[//]: # ()
-
-[//]: # (##### 11.2: Amdahl's law)
-
-[//]: # ()
-
-[//]: # (* Amdahl's law describes how much a program can theoretically be sped up by additional computing resources, based on the)
-
-[//]: # (  proportion of parallelizable to serial components.)
+* Improving performance means doing more work with fewer resources. When performance of an activity is limited by
+  availability of a particular resource, it is *bound* by that resource.
+* Using concurrency to achieve better performance means using the processing resources we have more effectively, and
+  enable a program to exploit additional processing resources that become available.
+* *Scalability* describes the ability to improve throughput or capacity when additional computing resources (such as
+  CPUs, memory, storage, or I/O bandwidth) are added.
+* The "how much" aspects like scalability, throughput, and capacity are concern for server applications. The "how fast"
+  aspects like service time or latency are concern for client applications.
+* Most optimizations are premature because they are often undertaken before a clear set of requirements is available.
+* Make it right, then make it fast. And if attempting to make it fast, measure. Don't guess.
 
 [//]: # (* If F is the faction of the calculation that must be executed serially, then on a machine with N processors, we can)
 
