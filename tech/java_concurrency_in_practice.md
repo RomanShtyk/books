@@ -382,55 +382,56 @@ by Brian Goetz
 * Most optimizations are premature because they are often undertaken before a clear set of requirements is available.
 * Make it right, then make it fast. And if attempting to make it fast, measure. Don't guess.
 
-[//]: # (* If F is the faction of the calculation that must be executed serially, then on a machine with N processors, we can)
+##### 11.2: Amdahl's law
 
-[//]: # (  achieve a speedup of most: 1/&#40;F+&#40;1-F&#41;/N&#41;.)
+* Amdahl's law describes how much a program can theoretically be sped up by additional computing resources, based on the
+  proportion of parallelizable to serial components.
+* If F is the faction of the calculation that must be executed serially, then on a machine with N processors, we can
+  achieve a speedup of most: 1/(F+(1-F)/N).
+* When evaluating an algorithm, thinking "in the limit" about what would happen with hundreds or thousands of processors
+  can offer some insight into where scaling limits might appear.
 
-[//]: # (* When evaluating an algorithm, thinking "in the limit" about what would happen with hundreds or thousands of processors)
+//153
 
-[//]: # (  can offer some insight into where scaling limits might appear.)
+##### 11.3: Costs introduced by threads
 
-[//]: # ()
+* When a new thread is switched in, the data it needs is unlikely to be in the local processor cache, and so a context
+  switch causes a flurry of cache misses and runs a little slower at first.
+* Schedulers give each runnable thread a certain minimum time quantum, thereby amortizing the cost of the context switch
+  and its consequences over more interrupted execution time.
+* A program that does more blocking has more of its threads suspended and switched out. The program therefore incurs
+  more context switches, increasing scheduling overhead and reducing throughput.
+* Special instructions called *memory barriers* can flush or invalidate caches and flush hardware write buffers. They
+  inhibit compiler optimizations; most operations cannot be reordered with them.
+* *Lock elision* optimizes away lock acquisitions. *Lock coarsening* merges together adjacent blocks holding the same
+  lock, reducing synchronization overhead and helping the optimizer.
+* When a lock is contended, the losing threads must block. This can be implemented either by *spin-waiting* or by
+  *suspending* the blocked thread through the operating system.
+* High kernel usage (over 10%) often indicates heavy scheduling activity, which may be caused by blocking due to I/O or
+  lock contention.
 
-[//]: # (##### 11.3: Costs introduced by threads)
+##### 11.4: Reducing lock contention
 
-[//]: # ()
+* Two factors influence the likelihood of contention for a lock: How often that lock is requested, and how long it is
+  held once acquired.
+* *Lock splitting* and *lock striping* involve using separate locks to guard multiple independent state variables
+  previously guarded by a single lock.
+* Splitting a lock into two offers the greatest possibility for improvement when a lock is experiencing moderate but not
+  heavy contention.
+* Lock striping extends lock splitting by partitioning locking on a variable-sized set of independent objects. But
+  locking the collection for exclusive access is more difficult and costly.
+* If your class has a small number of hot fields that do not participate in invariants with other variables, then
+  replacing them with atomic variables may improve scalability.
+* Tools like `vmstat` or `mpstat` can show whether your application is CPU-bound, while tools like `iostat` or `perfmon`
+  can show whether your application is I/O-bound.
+* The tool `vmstat` has a column reporting the number of threads that are runnable but not currently running because a
+  CPU is not available.
+* Allocating objects is usually cheaper than synchronizing
 
-[//]: # (* When a new thread is switched in, the data it needs is unlikely to be in the local processor cache, and so a context)
+##### 11.5. Example: Comparing Map Performance
 
-[//]: # (  switch causes a flurry of cache misses and runs a little slower at first.)
-
-[//]: # (* Schedulers give each runnable thread a certain minimum time quantum, thereby amortizing the cost of the context switch)
-
-[//]: # (  and its consequences over more interrupted execution time.)
-
-[//]: # (* A program that does more blocking has more of its threads suspended and switched out. The program therefore incurs)
-
-[//]: # (  more context switches, increasing scheduling overhead and reducing throughput.)
-
-[//]: # (* Special instructions called *memory barriers* can flush or invalidate caches and flush hardware write buffers. They)
-
-[//]: # (  inhibit compiler optimizations; most operations cannot be reordered with them.)
-
-[//]: # (* *Lock elision* optimizes away lock acquisitions. *Lock coarsening* merges together adjacent blocks holding the same)
-
-[//]: # (  lock, reducing synchronization overhead and helping the optimizer.)
-
-[//]: # (* When a lock is contended, the losing threads must block. This can be implemented either by *spin-waiting* or by)
-
-[//]: # (  *suspending* the blocked thread through the operating system.)
-
-[//]: # ()
-
-[//]: # (##### 11.4: Reducing lock contention)
-
-[//]: # ()
-
-[//]: # (* Two factors influence the likelihood of contention for a lock: How often that lock is requested, and how long it is)
-
-[//]: # (  held once acquired.)
-
-[//]: # (* *Lock splitting* and *lock striping* involve using separate locks to guard multiple independent state variables)
+* Performance for the one‐thread case is comparable to ConcurrentHashMap, but once the load transitions from mostly
+  uncontended to mostly contended ‐ which happens here at two threads ‐ the synchronized collections suffer badly.
 
 [//]: # (  previously guarded by a single lock.)
 
