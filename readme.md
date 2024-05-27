@@ -4,6 +4,7 @@
 * [Domain Driven Design Quickly](architecture/Domain_driven_design_quickly.md)
 * [Fundamentals of software architecture. An Engineering approach](architecture/Fundamentals_of_Software_Architecture_An_Engineering_Approach.md)
 * [Software Architecture. The hard parts](architecture/Software_architecture_the_hard_parts.md)
+* [Patterns of enterprise application architecture](architecture/patterns_of_enterprise_application_architecture.md)
 
 **Team**
 
@@ -20,3 +21,4 @@
 * [Kotlin Coroutines Deep Dive](tech/Kotlin_Coroutines_Deep_Dive.md)
 * [Pragmatic Programmer](tech/Pragmatic_Programmer.md)
 * [Refactoring: Improving the design of existing code](tech/Refactoring_Improving_the_Design_of_existing_code.md)
+* [Java concurrency in practice](tech/Java_concurrency_in_practice)

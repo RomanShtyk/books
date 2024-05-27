@@ -391,8 +391,6 @@ by Brian Goetz
 * When evaluating an algorithm, thinking "in the limit" about what would happen with hundreds or thousands of processors
   can offer some insight into where scaling limits might appear.
 
-//153
-
 ##### 11.3: Costs introduced by threads
 
 * When a new thread is switched in, the data it needs is unlikely to be in the local processor cache, and so a context
@@ -433,24 +431,14 @@ by Brian Goetz
 * Performance for the one‐thread case is comparable to ConcurrentHashMap, but once the load transitions from mostly
   uncontended to mostly contended ‐ which happens here at two threads ‐ the synchronized collections suffer badly.
 
-[//]: # (  previously guarded by a single lock.)
+##### 11.6. Reducing Context Switch Overhead
 
-[//]: # (* Splitting a lock into two offers the greatest possibility for improvement when a lock is experiencing moderate but not)
+#### Chapter 12. Testing Concurrent Programs
 
-[//]: # (  heavy contention.)
-
-[//]: # (* Lock striping extends lock splitting by partitioning locking on a variable-sized set of independent objects. But)
-
-[//]: # (  locking the collection for exclusive access is more difficult and costly.)
-
-[//]: # (* If your class has a small number of hot fields that do not participate in invariants with other variables, then)
-
-[//]: # (  replacing them with atomic variables may improve scalability.)
-
-[//]: # (* Tools like `vmstat` or `mpstat` can show whether your application is CPU-bound, while tools like `iostat` or `perfmon`)
-
-[//]: # (  can show whether your application is I/O-bound.)
-
-[//]: # (* The tool `vmstat` has a column reporting the number of threads that are runnable but not currently running because a)
-
-[//]: # (  CPU is not available.)
+* Safety - "nothing bad ever happens". Liveness - "something good eventually happens".
+* Bugs that disappear when you add debugging or test code are playfully called Heisenbugs.
+* Tests should be run on multiprocessor systems to increase the diversity of potential interleavings. However, having
+  more than a few CPUs does not necessarily make tests more effective. To maximize the chance of detecting timing‐
+  sensitive data races, there should be more active threads than CPUs, so that at any given time some threads are
+  running and some are switched out, thus reducing the predictability of interactions between threads.
+  161
