@@ -475,4 +475,24 @@ by Brian Goetz
 * Spin loops. Code that does nothing but spin (busy wait) checking a field for an expected value can waste CPU time and,
   if the field is not volatile, is not guaranteed to terminate. Latches or condition waits are often a better technique
   when waiting for a state transition to occur.
-171
+
+#### Chapter 13: Explicit Locks
+
+* Performance is a moving target; yesterday's benchmark showing that X is faster than Y may already be out of date
+  today.
+* The ReentrantLock constructor offers a choice of two fairness options: create a nonfair lock (the default) or a fair
+  lock. Threads acquire a fair lock in the order in which they requested it, whereas a nonfair lock permits barging:
+  threads requesting a lock can jump ahead of the queue of waiting threads if the lock happens to be available when it
+  is requested.
+* ReentrantLock is an advanced tool for situations where intrinsic locking is not practical. Use it if you need its
+  advanced features: timed, polled, or interruptible lock acquisition, fair queuing, or non‐block‐structured locking.
+  Otherwise, prefer synchronized.
+* Explicit Locks offer an extended feature set compared to intrinsic locking, including greater flexibility in dealing
+  with lock unavailability and greater control over queuing behavior. But ReentrantLock is not a blanket substitute for
+  synchronized; use it only when you need features that synchronized lacks.
+  Read‐write locks allow multiple readers to access a guarded object concurrently, offering the potential for improved
+  scalability when accessing read‐mostly data structures.
+
+#### Chapter 14 - Building Custom Synchronizers
+
+183
