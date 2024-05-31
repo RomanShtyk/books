@@ -96,6 +96,8 @@ by Brian Goetz
   the value;
   • The variable does not participate in invariants with other state variables; and
   • Locking is not required for any other reason while the variable is being accessed.
+* Without using the volatile keyword, you might read the first 32 bits of a double or long written by one thread, and
+  the other 32 bits written by another thread, called word tearing, and clearly not atomic.
 
 ##### 3.2: Publication and escape
 
@@ -517,3 +519,20 @@ by Brian Goetz
 * Hazard warning: The equivalents of wait, notify, and notifyAll for Condition objects are await, signal, and signalAll.
   However, Condition extends Object, which means that it also has wait and notify methods. Be sure to
   use the proper versions ‐ await and signal instead!
+* If you need to implement a state‐dependent class ‐ one whose methods must block if a state‐based precondition does not
+  hold ‐ the best strategy is usually to build upon an existing library class such as Semaphore, BlockingQueue, or
+  CountDownLatch, as in ValueLatch on page 187. However, sometimes existing library classes do not provide a sufficient
+  foundation; in these cases, you can build your own synchronizers using intrinsic condition queues, explicit Condition
+  objects, or AbstractQueuedSynchronizer. Intrinsic condition queues are tightly bound to intrinsic locking, since the
+  mechanism for managing state dependence is necessarily tied to the mechanism for ensuring state consistency.
+  Similarly, explicit Conditions are tightly bound to explicit Locks, and offer an extended feature set compared to
+  intrinsic condition queues, including multiple wait sets per lock, interruptible or uninterruptible condition waits,
+  fair or nonfair queuing, and deadline‐based waiting.
+*
+
+#### Chapter 15. Atomic Variables and Non-blocking Synchronization
+
+* The optimistic approach is like the old saying, "It is easier to obtain forgiveness than permission", where "easier"
+  here means "more efficient".
+* The atomic variable classes also do not redefine hashCode or equals; each instance is distinct. Like most mutable
+  objects, they are not good candidates for keys in hash‐based collections.
