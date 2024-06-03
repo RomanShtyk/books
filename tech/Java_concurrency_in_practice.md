@@ -536,3 +536,53 @@ by Brian Goetz
   here means "more efficient".
 * The atomic variable classes also do not redefine hashCode or equals; each instance is distinct. Like most mutable
   objects, they are not good candidates for keys in hash‐based collections.
+* The **ABA** problem is an anomaly that can arise from the naive use of compare‐and‐swap in algorithms where nodes can
+  be
+  recycled (primarily in environments without garbage collection). AtomicStampedReference updates an object
+  reference‐integer pair, allowing "versioned" references that are immune to the **ABA** problem.
+* Non‐blocking algorithms maintain thread safety by using low‐level concurrency primitives such as compare‐and‐swap
+  instead of locks. These low‐level primitives are exposed through the atomic variable classes, which can also be used
+  as "better volatile variables" providing atomic update operations for integers and object references.
+  Non‐blocking algorithms are difficult to design and implement, but can offer better scalability under typical
+  conditions and greater resistance to liveness failures. Many of the advances in concurrent performance from one JVM
+  version to the next come from the use of non‐blocking algorithms, both within the JVM and in the platform libraries.
+
+#### Chapter 16. The Java Memory Model
+
+* The Java Language Specification requires the JVM to maintain within thread as‐if‐serial semantics: as long as the
+  program has the same result as if it were executed in program order in a strictly sequential environment, all these
+  games are permissible.
+* The rules for happens‐before are:
+    * Program order rule. Each action in a thread happens‐before every action in that thread that comes later in the
+      program order.
+    * Monitor lock rule. An unlock on a monitor lock happens‐before every subsequent lock on that same monitor lock.
+    * Volatile variable rule. A write to a volatile field happens‐before every subsequent read of that same field.
+    * Thread start rule. A call to Thread.start on a thread happens‐before every action in the started thread.
+    * Thread termination rule. Any action in a thread happens‐before any other thread detects that thread has
+      terminated, either by successfully return from Thread.join or by Thread.isAlive returning false.
+    * Interruption rule. A thread calling interrupt on another thread happens‐before the interrupted thread detects the
+      interrupt (either by having InterruptedException thrown, or invoking isInterrupted or interrupted).
+    * Finalizer rule. The end of a constructor for an object happens‐before the start of the finalizer for that object.
+    * Transitivity. If A happens‐before B, and B happens‐before C, then A happens‐before C.
+* Other happens‐before orderings guaranteed by the class library include:
+    * Placing an item in a thread‐safe collection happens‐before another thread retrieves that item from the collection;
+    * Counting down on a CountDownLatch happens‐before a thread returns from await on that latch;
+    * Releasing a permit to a Semaphore happens‐before acquiring a permit from that same Semaphore;
+    * Actions taken by the task represented by a Future happens‐before another thread successfully returns from
+      Future.get;
+    * Submitting a Runnable or Callable to an Executor happens‐before the task begins execution; and
+    * A thread arriving at a CyclicBarrier or Exchanger happens‐before the other threads are released from that
+      same barrier or exchange point. If CyclicBarrier uses a barrier action, arriving at the barrier happens‐before the
+      barrier action, which in turn happens‐before threads are released from the barrier.
+* Instead of Double-Checked Locking ![img.png](../res/lazyinit.png)
+* Initialization safety guarantees that for properly constructed objects, all threads will see the correct values of
+  final fields that were set by the constructor, regardless of how the object is published.
+* Initialization safety makes visibility guarantees only for the values that are reachable through final fields as of
+  the time the constructor finishes. For values reachable through non‐final fields, or values that may change after
+  construction, you must use synchronization to ensure visibility.
+* The Java Memory Model specifies when the actions of one thread on memory are guaranteed to be visible to another. The
+  specifics involve ensuring that operations are ordered by a partial ordering called happens‐before, which is specified
+  at the level of individual memory and synchronization operations. In the absence of sufficient synchronization, some
+  very strange things can happen when threads access shared data. However, the higher‐level rules offered in Chapters 2
+  and 3, such as @GuardedBy and safe publication, can be used to ensure thread safety without resorting to the low‐level
+  details of happens‐before.
