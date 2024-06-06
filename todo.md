@@ -12,9 +12,9 @@ lencioni's five dysfunctions of a team~~
 On hold:
 Patterns of Enterprise Application Architecture
 Staff Engineer
+Linux System Programming
 
 100%:
-Linux System Programming
 Cracking the code interview
 ~~Software Architecture: fundamentals~~ ~~Software Architecture: The Hard Parts~~ -> Understanding distributed
 systems -> DDIA

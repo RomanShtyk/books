@@ -1,6 +1,6 @@
-## Java Concurrency in Practice
+8/10 - Must read for JVM programmers, I don't like java code, though
 
-by Brian Goetz
+## Java Concurrency in Practice by Brian Goetz
 
 #### Chapter 1: Introduction
 
