@@ -1,5 +1,7 @@
 # Understanding_distributed_systems by Roberto Vitillo
 
+### Part I - Communication
+
 ##### Chapter 1 - Intro
 
 * “A distributed system is one in which the failure of a computer you didn’t even know existed can render your own
@@ -86,7 +88,42 @@
   blocks all
   streams (**HOL**), but with **HTTP 3** a packet loss interrupts only one stream, not all of them.
 * Request methods can be categorized based on whether they are safe and whether they are idempotent. A safe method
-  should not have any visible side effects and can safely be cached. An idem- potent method can be executed multiple
-  times, and the end result should be the same as if it was executed just a single time. Idem- potency is a crucial
+  should not have any visible side effects and can safely be cached. An idempotent method can be executed multiple
+  times, and the end result should be the same as if it was executed just a single time. Idempotency is a crucial
   aspect of APIs, and we will talk more about it later in section
-  * ![img.png](../res/request_methods_1.png) ![img.png](../res/request_method_2.png)
+    * ![img.png](../res/request_methods_1.png) ![img.png](../res/request_method_2.png)
+* REST APIs should be versioned to support breaking changes, e.g., by prefixing a version number in the URLs (
+  /v1/products/). However, as a general rule of thumb, APIs should evolve in a backward-compatible way unless there
+  is a very good reason. Although backward-compatible APIs tend not to be particularly elegant, they are practical.
+* An effective way for clients to deal with transient failures such as these is to retry the request one or more times
+  until they get a response back. Some HTTP request methods (e.g., PUT, DELETE) are considered inherently idempotent
+  as the effect of executing multiple identical requests is identical to executing only one request, but You can see how
+  this introduces a lot of complexity for the client. Instead of pushing this complexity to the client, a better
+  solution would be for the server to create the product only once by making the POST request idempotent, so that no
+  matter how many times that specific request is retried, it will appear as if it only executed once. (Add some UUID for
+  idempotency key)
+
+### Part II - Coordination
+
+##### Chapter 6 - System models
+
+* Similarly, we can model the behavior of processes based on the type of failures we expect to happen:
+    * The arbitrary-fault model assumes that a process can deviate from its algorithm in arbitrary ways, leading to
+      crashes or unexpected behaviors caused by bugs or malicious activity. For historical reasons, this model is also
+      referred to as the “Byzantine” model. More interestingly, it can be theoretically proven that a system using this
+      model can tolerate up to 1/3 of faulty processes1 and still operate correctly.
+    * The crash-recovery model assumes that a process doesn’t deviate from its algorithm but can crash and restart at
+      any time, losing its in-memory state.
+    * The crash-stop model assumes that a process doesn’t deviate from its algorithm but doesn’t come back online if it
+      crashes. Although this seems unrealistic for software crashes, it mod- els unrecoverable hardware faults and
+      generally makes the algorithms simpler.
+
+##### Chapter 7 - Failure detection
+
+* The Ping/echo tactic detects a fault by sending ping messages to receivers regularly. If a receiver does not respond
+  to the sender within a certain time period, the receiver is considered to be failed. The Heartbeat tactic detects a
+  fault by listening to heartbeat messages from monitored components periodically.
+
+##### Chapter 8 - Time
+
+* The simplest possible **logical** clock is a counter, incremented before an operation is executed.
