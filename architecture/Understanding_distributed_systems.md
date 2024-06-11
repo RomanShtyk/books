@@ -127,3 +127,14 @@
 ##### Chapter 8 - Time
 
 * The simplest possible **logical** clock is a counter, incremented before an operation is executed.
+* A vector clock4 is a logical clock that guarantees that if a logical timestamp is less than another, then the former
+  must have happened-before the latter.
+
+##### Chapter 9 - Leader Election
+
+##### Chapter 10 - Replication
+
+* Consistency models:
+    * Strong consistency;
+    * Sequential consistency;
+    * Eventual consistency.
