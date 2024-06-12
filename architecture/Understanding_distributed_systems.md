@@ -138,3 +138,42 @@
     * Strong consistency;
     * Sequential consistency;
     * Eventual consistency.
+* CAP theorem, which can be summarized as: “strong consistency, availability
+  and partition tolerance: pick two out of three.” In reality, the choice really is only between strong
+  consistency and availability, as network faults are a given and can’t be avoided.
+* The stronger the consistency guarantee is, the higher the latency of individual operations must be.
+
+##### Chapter 11 - Coordination avoidance
+
+* eager reliable broadcast:One way to implement reliable broadcast is to have each process retransmit the message to the
+  rest of the group the first time it is delivered ![img.png](../res/eager_broadcast.png)
+* Gossip broadcast: The number of messages can be reduced by retransmitting a message only to a random subset of
+  processes ![img_2.png](../res/gossip_broadcast.png)
+* Eventual consistency requires:
+    * eventual delivery — the guarantee that every update applied at a replica is eventually applied at all replicas,
+    * and convergence — the guarantee that replicas that have applied the same updates eventually reach the same
+      state.
+* **Strong** eventual consistency requires:
+    * eventual delivery — the same guarantee as in eventual consistency,
+    * and strong convergence — the guarantee that replicas that have executed the same updates have the same state (
+      i.e., every update is immediately persisted).
+* **Casual** consistency:
+    * For many applications, causal consistency is “consistent enough” and easier to work with than eventual
+      consistency.
+    * Causal consistency is provably the strongest consistency model that enables building systems that are also
+      available and partition tolerant.
+* **Dynamo**-style data stores: When a client wants to write an entry to the data store, it sends the request to all N
+  replicas in parallel but waits for an acknowledgment from just W replicas (a write quorum). Similarly, when a client
+  wants to read an entry from the data store, it sends the request to all replicas but waits just for R replies (a read
+  quorum) and returns the most recent entry to the client.
+* Merkle Trees, or Hash Trees, is a construct used for generating hashes of large amounts of data. This works whether
+  it’s a single large file, a lot of small files, or any scenario where we have a significant amount of data.Merkle
+  Trees can be an efficient way to verify the integrity of large quantities of
+  data.![img.png](../res/merkle_tree_example.png)
+* The **CALM** theorem states that a program has a consistent, coordination-free distributed implementation if and only
+  if it is monotonic.
+* CRDT - Conflict-free replicated data type
+* “Clusters of Order-Preserving Servers” (**COPS**), a key-value store that delivers causal consistency across
+  geographically distributed clusters.
+
+##### Chapter 12 - Transactions
