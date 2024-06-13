@@ -177,3 +177,17 @@
   geographically distributed clusters.
 
 ##### Chapter 12 - Transactions
+
+* Distributed transaction is a lot more challenging to implement
+* ACID - **Atomicity**, **Consistency**(a transaction can only transition a database from a correct state to another
+  correct state), **Isolation**(the concurrent execution of transactions doesn’t cause any race conditions),
+  **Durability**.
+* Optimistic concurrency control8(OCC) is arguably the best-known protocol in the space. In OCC, a transaction writes to
+  a local workspace without modifying the actual data store.
+* Two-phase commit13 (2PC) is a protocol used to implement atomic transaction commits across multiple processes.
+
+##### Chapter 13 - Asynchronous Transactions
+
+* A common pattern1 in modern applications is to replicate the same data to different data stores tailored to different
+  use cases.
+* AWS Step Functions11 or Azure Durable Functions - sagas
