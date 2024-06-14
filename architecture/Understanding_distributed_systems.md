@@ -191,3 +191,29 @@
 * A common pattern1 in modern applications is to replicate the same data to different data stores tailored to different
   use cases.
 * AWS Step Functions11 or Azure Durable Functions - sagas
+* Semantic locks13. The idea is that any data the saga modifies is marked with a dirty flag, which is only cleared at
+  the end of the transaction.
+* One is that failures are unavoidable in distributed systems, and the other is that coordination is expensive.
+* keeping coordination off the critical path, as chain replication does;
+* proceeding without coordination and “apologize” when an inconsistency is detected, as sagas do;
+* using protocols that guarantee some form of consistency without coordination, like CRDTs.
+
+##### Chapter 14 - HTTP Caching
+
+* To summarize, allowing clients to cache static resources has reduced the load on our server, and all we had to do
+  was to play with some HTTP headers!
+* A reverse proxy is a server-side proxy that intercepts all communications with clients. A common use case for a
+  reverse proxy is to cache static resources returned by the server. Since the cache is shared among the clients, it
+  will decrease the load of the server a lot more than any client-side cache ever could.
+
+##### Chapter 15 - Content delivery networks
+
+* Core routing protocol, BGP, was not designed with performance in mind. It primarily uses the number of hops to cost
+  how expensive a pth is with respect to another, without considering their latencies or congestions.
+* Global DNS load balancing4: an extension to DNS that considers the location of the client inferred from its IP, and
+  returns a list of the geographically closest clusters taking into account also the network congestion and the
+  clusters’ health.
+* CDN servers are also placed at internet exchange points, where ISPs connect to each other.
+
+##### Chapter 15 - Partitioning
+
