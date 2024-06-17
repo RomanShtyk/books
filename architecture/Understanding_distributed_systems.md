@@ -215,5 +215,39 @@
   clusters’ health.
 * CDN servers are also placed at internet exchange points, where ISPs connect to each other.
 
-##### Chapter 15 - Partitioning
+##### Chapter 16 - Partitioning
 
+* Partitioning is not a free lunch since it introduces a fair amount of complexity:
+  • A gateway service is required to route requests to the right nodes.
+  • To roll up data across partitions, it needs to be pulled from multiple partitions and aggregated (e.g., think of the
+  complexity of implementing a “group by” operation across partitions).
+  • Transactions are required to atomically update data that spans multiple partitions, limiting scalability.
+  • If a partition is accessed much more frequently than others, the system’s ability to scale is limited.
+  • Addingorremovingpartitionsatruntimebecomeschalleng- ing, since it requires moving data across nodes.
+* Use hash partitioning
+
+##### Chapter 17 - File storage
+
+* Using CDNs enables our files to be quickly accessible by clients. However, our server will run out of disk space as
+  the number of files we need to store increases. To work around this limit, we can use a managed file store such as AWS
+  S3 or Azure Blob Storage. Managed file stores scalable, highly available & offer strong durability guarantees. In
+  addition to that, managed file stores enable anyone with access to its URL to point to it, meaning we can point our
+  CDNs to the file store directly.
+
+##### Chapter 18 - Network load balancing
+
+* Scaling out a stateless application doesn’t require much effort, assuming its dependencies can scale accordingly as
+  well.
+* **As a general rule of thumb, we should try to keep our applications stateless by pushing state to third-party
+  services designed by teams with years of experience building such services. :)**
+* The algorithms used for routing requests can vary from round robin(a competition in which all the players play against
+  each other at least once) to consistent hashing to ones that take into
+  account the servers’ load.
+* The idea is to randomly pick two servers from the pool and route the request to the least-loaded one of the two. This
+  approach works remarkably well in practice
+* Watchdog - wakes up periodically and monitors the server’s health.
+* The one use case where DNS is used in practice to load-balance is for distributing traffic to different data centers
+  located in different regions (global DNS load balancing).
+* Transport layer load balancing - a load balancer that operates at the TCP level of the network stack (aka L4 load
+  balancer).
+* Virtual IP (VIP) addresses. A VIP, in turn, is associated with a pool of servers
