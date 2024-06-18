@@ -248,6 +248,34 @@
 * Watchdog - wakes up periodically and monitors the server’s health.
 * The one use case where DNS is used in practice to load-balance is for distributing traffic to different data centers
   located in different regions (global DNS load balancing).
-* Transport layer load balancing - a load balancer that operates at the TCP level of the network stack (aka L4 load
+* Transport layer load balancing - a load balancer that operates at the TCP level of the network stack (aka **L4** load
   balancer).
 * Virtual IP (VIP) addresses. A VIP, in turn, is associated with a pool of servers
+* An application layer load balancer (aka **L7** load balancer15) is an HTTP reverse proxy that distributes requests
+  over a pool of servers. The load balancer can do smart things with application traffic, like rate-limit requests based
+  on HTTP headers, terminate TLS connections, or force HTTP requests belonging to the same logical session to be routed
+  to the same backend server. The caveat is that sticky sessions can create hotspots, since some sessions can be much
+  more expensive to handle than others.
+* A L7 load balancer can be used as the backend of a L4 load balancer that load-balances requests received from the
+  internet. Although L7 load balancers have more capabilities than L4 load balancers, they also have lower throughput,
+  making L4 load balancers better suited to protect against certain DDoS attacks, like SYN floods.
+* If the load balancer goes down, the application behind it does too.
+
+##### Chapter 19 - Data storage
+
+* We can increase the read capacity of the database by creating **replicas**. The most common way of doing that is with
+  a leader-follower topology.
+* One caveat of replication is that it only helps to scale out reads, not writes.
+* **Partitioning** allows us to scale out a database for both reads and writes. Even though traditional (centralized)
+  relational databases generally don’t support it out of the box, we can implement it at the application layer in
+  principle.
+*
+
+##### Chapter 20 - Caching
+
+* What’s important to remember is that caching is an optimization, and the system needs to survive without it at the
+  cost of being slower.
+
+##### Chapter 21 - Microservices
+
+
