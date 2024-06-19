@@ -278,4 +278,33 @@
 
 ##### Chapter 21 - Microservices
 
+* We can hide the internal APIs behind a public one that acts as a facade, or proxy, for the internal services. The
+  service that exposes this public API is called the API **gateway** (a reverse proxy).
+* Gateway can **compose** api calls too, to reduce amount of call for client. But the data might be inconsistent, as
+  updates might not have propagated to all services yet; in that case, the gateway will have to resolve this discrepancy
+  somehow.
+* The API gateway can **translate** from one IPC mechanism to another. For example, it can translate a RESTful HTTP
+  request into an internal gRPC call.
+* As the API gateway is a reverse proxy, it can also implement crosscutting functionality that otherwise would have to
+  be part of each service. For example, it can cache frequently accessed resources or rate-limit requests to protect the
+  internal services from being overwhelmed.
+* One of the drawbacks of using an API gateway is that it can become a development bottleneck. Since it’s tightly
+  coupled with the APIs of the internal services it’s shielding, whenever an internal
+  API changes, the gateway needs to be modified as well. Another downside is that it’s one more service that needs to be
+  maintained. It also needs to scale to whatever the request rate is for all the services behind it.
+
+##### Chapter 22 - control planes and data planes
+
+* The control plane is the part of a network that controls how data is forwarded, while the data plane is the actual
+  forwarding process.
+* Control plane should be consistent and data plane should be performant.
+* The data plane needs to be designed to withstand control plane failures for the separation to be robust.
+* If the control plane is temporarily unavailable, the data plane should continue to run with a stale configuration
+  rather than stop. This concept is also referred to as **static** stability.
+* Another way is to use a scalable file store, like Azure Storage or S3, as a buffer between the control plane and the
+  data plane. The control plane periodically dumps its entire state to the file store regardless of whether it changed,
+  while the data plane reads the state periodically from it. Although this approach sounds naive and expensive, it tends
+  to be reliable and robust in practice. And, depending on the size of the state, it might be cheap too.
+
+##### Chapter 23 - Messaging
 
