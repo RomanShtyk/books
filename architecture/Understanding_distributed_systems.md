@@ -308,3 +308,38 @@
 
 ##### Chapter 23 - Messaging
 
+* Another benefit is that messaging enables to process multiple messages within a single batch or unit of work. Most
+  messaging brokers support this pattern by allowing clients to fetch up to N messages with a single read request.
+  Although batching degrades the processing latency of individual messages, it dramatically improves the application’s
+  throughput. So when we can afford the extra latency, batching is a no brainer.
+* Ordering is just one of the many tradeoffs a broker needs to make, such as:
+    * delivery guarantees, like at-most-once or at-least-once;
+    * message durability guarantees;
+    * latency;
+    * messaging standards supported, like AMQP4;
+    * support for competing consumer instances;
+    * broker limits, such as the maximum supported size of messages.
+* Consumer failures trigger message redelivery. To prevent infinite retries, a message counter can be used. Once the
+  maximum retry limit is reached, the message is sent to a dead letter queue for later analysis, preventing data loss
+  and improving consumer efficiency.
+* Message brokers offer robustness as producers can keep sending messages even if consumers are unavailable. However,
+  when consumers can't keep up, a backlog builds, creating a degraded system state. Backlogs grow over time, requiring
+  more resources to drain. Monitoring average message waiting times helps detect and address backlogs before they become
+  critical.
+* Poisonous messages, repeatedly failing to process, can create backlogs and degrade consumers. Identifying message
+  source allows filtering: messages from problematic sources can be sent to a low-priority queue, minimizing impact on
+  healthy messages.
+* Scalable applications rely on three key patterns: functional decomposition (separate services), partitioning (
+  distributed data), and replication (redundancy). These patterns, combined with managed cloud services, offer a
+  powerful foundation for building a wide range of scalable applications. While specific service names might differ
+  between cloud providers, core functionalities like compute instances, load balancers, storage options, and messaging
+  services remain consistent. This core, along with optimizations like caching, provides a solid base for building
+  scalable applications.
+
+#### Part IV - Resiliency
+
+* “Anything that can go wrong will go wrong.” – Murphy’s law
+
+##### Chapter 24 - Common failure causes
+
+* 
