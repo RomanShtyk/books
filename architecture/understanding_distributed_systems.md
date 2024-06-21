@@ -350,4 +350,17 @@
     3. The system must be able to run in degraded mode.
     4. The system must be able to return to fully redundant mode.
 
-//240
+##### Chapter 26 - Fault isolation
+
+* The use of partitions for fault isolation is also referred to as the bulkhead pattern, named after the compartments of
+  a ship’s hull.
+
+##### Chapter 27 - Downstream resiliency
+
+* In general, timeouts are a must-have for operations that can potentially never return, like acquiring a mutex.
+* To avoid spamming requests from multiple client at the same time, we can introduce random jitter delay = 𝑟𝑎𝑛𝑑𝑜𝑚(0,
+  𝑚𝑖𝑛(cap, initial-backoff ⋅ 2attempt))
+* ![img.png](../res/retry.png)
+
+##### Chapter 28 - Upstream resiliency
+
