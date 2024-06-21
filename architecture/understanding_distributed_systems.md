@@ -342,4 +342,12 @@
 
 ##### Chapter 24 - Common failure causes
 
-* 
+##### Chapter 25 - Redundancy
+
+* Marc Brooker lists four prerequisites1:
+    1. The complexity added by introducing redundancy mustn’t cost more availability than it adds.
+    2. Thesystemmustreliablydetectwhichoftheredundantcom- ponents are healthy and which are unhealthy.
+    3. The system must be able to run in degraded mode.
+    4. The system must be able to return to fully redundant mode.
+
+//240
