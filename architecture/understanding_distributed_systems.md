@@ -346,7 +346,7 @@
 
 * Marc Brooker lists four prerequisites1:
     1. The complexity added by introducing redundancy mustn’t cost more availability than it adds.
-    2. Thesystemmustreliablydetectwhichoftheredundantcom- ponents are healthy and which are unhealthy.
+    2. The system must reliably detect which of the redundant components are healthy and which are unhealthy.
     3. The system must be able to run in degraded mode.
     4. The system must be able to return to fully redundant mode.
 
@@ -364,3 +364,16 @@
 
 ##### Chapter 28 - Upstream resiliency
 
+* Load Shedding - When the server detects that it’s overloaded, it can reject incoming requests by failing fast and
+  returning a response with status code 503 (Service Unavailable).
+* Load Leveling - The idea is to introduce a messaging channel between the clients and the service. The channel
+  decouples the load directed to the service from its capacity, allowing it to process requests at its own pace.
+* Rate-limiting - or throttling, is a mechanism that rejects a request when a specific quota is exceeded. A service can
+  have multiple quotas, e.g., for the number of requests or bytes received within a time interval.
+
+##### Chapter 29 - Testing
+
+* A unit test should:
+    * use only the public interfaces of the **SUT** (System under test);
+    * test for state changes in the SUT (not predetermined sequences of actions);
+    * test for behaviors, i.e., how the SUT handles a given input when it’s in a specific state.
