@@ -377,3 +377,24 @@
     * use only the public interfaces of the **SUT** (System under test);
     * test for state changes in the SUT (not predetermined sequences of actions);
     * test for behaviors, i.e., how the SUT handles a given input when it’s in a specific state.
+
+#### Chapter 30 - Continuous delivery and deployment
+
+* Terraform allows the provisioning of infrastructure to be automated and infrastructure changes to be treated just like
+  any other software change. **Infrastructure as code.**
+* The pipeline should allow enough time to pass between one step and the next **(bake time)** to ensure that it was
+  successful, as some issues only appear after some time has passed
+
+#### Chapter 31 - Monitoring
+
+* A common black-box approach is to periodically run scripts (synthetics) that send test requests to external API
+  endpoints and monitor how long they took and whether they were successful.
+* For example, if the DNS server of a service were down, the issue would be visible to synthetics, since they wouldn’t
+  be able to resolve its IP address. However, the service itself would think everything was fine, and it was just
+  getting fewer requests than usual.
+* To optimize metrics gathering - If the aggregation (i.e., the sum in our example) were to happen with a period of one
+  hour, we would have one failureCount metric per serviceRegion, each containing one sample per hour, e.g.:
+  "00:00", 561,
+  "01:00", 42,
+  "02:00", 61,
+*
