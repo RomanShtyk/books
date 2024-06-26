@@ -397,4 +397,28 @@
   "00:00", 561,
   "01:00", 42,
   "02:00", 61,
-*
+* A service-level objective (**SLO**) defines a range of acceptable values for an SLI within which the service is
+  considered
+  to be in a healthy state
+* Service-level indicators (**SLIs**). An SLI is a metric that measures one aspect of the level of service provided by a
+  service to its users, like the response time, error rate, or through- put. SLIs are typically aggregated over a
+  rolling time window and represented with a summary statistic, like an average or percentile.
+* Alerting is the part of a monitoring system that triggers an action when a specific condition happens, like a metric
+  crossing a threshold.
+* **SLO** is a good candidate for an alert because it quantifies the impact on the users.
+
+#### Chapter 32 - Observability
+
+* A distributed system is never 100% healthy since, at any given time, there is always something failing.
+* Traces allow developers to:
+  • debug issues affecting very specific requests, which can be used to investigate failed requests raised by customers
+  in support tickets;
+  • debug rare issues that affect only an extremely small fraction of requests;
+  • debug issues that affect a large fraction of requests that have something in common, like high response times for
+  requests that hit a specific subset of service instances;
+  • identify bottlenecks in the end-to-end request path;
+  • identify which users hit which downstream services and in what proportion (also referred to as resource
+  attribution), which can be used for rate-limiting or billing purposes.
+
+#### Chapter 33 - Manageability
+
