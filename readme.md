@@ -13,6 +13,7 @@
 * [Team Topologies](team/Team_Topologies.md)
 * [The Manager's path](team/The_Manager’s_Path.md)
 * [Staff Engineer](team/Staff_Engineer:_Leadership_beyond_the_management_track.md)
+* [An Elegant Puzzle](team/elegant_puzzle.md)
 
 **Tech**
 
