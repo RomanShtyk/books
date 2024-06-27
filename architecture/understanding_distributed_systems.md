@@ -1,5 +1,7 @@
 # Understanding_distributed_systems by Roberto Vitillo
 
+8/10 - great for beginners, easy to read, wide scope
+
 ### Part I - Communication
 
 ##### Chapter 1 - Intro
@@ -422,3 +424,4 @@
 
 #### Chapter 33 - Manageability
 
+* remote config simply

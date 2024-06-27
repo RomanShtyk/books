@@ -16,8 +16,9 @@ Linux System Programming
 
 100%:
 Cracking the code interview
-~~Software Architecture: fundamentals~~ ~~Software Architecture: The Hard Parts~~ -> Understanding distributed
-systems -> DDIA
+~~Software Architecture: fundamentals~~ ~~Software Architecture: The Hard Parts~~ -> ~~Understanding distributed
+systems~~ -> DDIA
+System Design Interview
 Elegant puzzle
 
 50%
