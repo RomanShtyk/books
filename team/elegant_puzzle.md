@@ -21,4 +21,22 @@
           each piece of debt you repay leads to more time to repay more debt.
     * ![img.png](../res/four_stages.png)
 
-* 
+* More engineers, more problems
+* To make progress, above all else, you must ensure that some of your projects **finish**.
+* Succession planning:
+    * What do you do?:
+        * in a meetings during a week?
+        * look back for recurring processes
+        * how do you support individuals?
+        * audit communication channels that provide questions coming your way.
+        * analyze your to-do list over past six month
+        * think through external relations that is important for your work\
+    * Now cross out things that can readily be done by other people.
+    * Split what has left into 2 sections: easy(take less than 1 day to learn) and hard(where you are uniquely valuable
+      for company)
+    * Write a plan to close all of these easy gaps and few hard.
+    * You can even get a 2-3 week vacation to find out what you missed.
+
+#### Tools
+
+* In management, change is a catalyst of complexity
