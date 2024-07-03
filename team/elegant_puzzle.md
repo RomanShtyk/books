@@ -40,3 +40,24 @@
 #### Tools
 
 * In management, change is a catalyst of complexity
+* **Insight maker** is tool for modeling systems
+* Product management: ![img.png](../res/product_management.png)
+* Problem discovery: User's pain, User's purpose, benchmark, cohorts of users, competitive advantages, competitive
+  moats(An economic moat is a metaphor that refers to businesses being able to maintain a competitive advantage over
+  their competitors in order to preserve market share and profits), Compounding leverage.
+* Problem selection: Surviving the round, Surviving the next round, winning rounds, consider different timeframes,
+  industry trends, return on investment, experiments to learn
+* Solution validation: Write a customer letter, Identify prior art (safer to rely ion people you know, because info from
+  conference is usually misleading), Find reference users, Prefer experimentation over analysis, Find the path more
+  quickly travelled, justify switching consts.
+* Strategies are grounded documents which explain the trade-off and actions that will be take to address the specific
+  challenge.
+* Visions are aspirational documents that enable individuals that don't work closely together to make decisions that fit
+  together cleanly.
+* ![img.png](../res/strategiesAndVision.png)
+* Good goal: ![img.png](../res/goodGoal.png)![img.png](../res/goalExample.png)
+* An **SLO** (service level objective) is an agreement within an SLA about a specific metric like uptime or response
+  time.
+* OKRs stand for objectives and key results, a goal-setting framework that can help your team set and track measurable
+  goals.
+* 
