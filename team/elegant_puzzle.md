@@ -60,4 +60,7 @@
   time.
 * OKRs stand for objectives and key results, a goal-setting framework that can help your team set and track measurable
   goals.
+* Running good migrations: de-risk, enable, finish.
+* **Finish**: start by stopping bleeding, which ensures that all newly added code uses new approach.
+* Planning reorg: ![img.png](../res/reorganization.png)
 * 
