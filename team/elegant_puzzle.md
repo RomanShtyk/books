@@ -63,4 +63,56 @@
 * Running good migrations: de-risk, enable, finish.
 * **Finish**: start by stopping bleeding, which ensures that all newly added code uses new approach.
 * Planning reorg: ![img.png](../res/reorganization.png)
-* 
+* Management style: Model, Document, Share
+* Model: Start measuring team health and speed to have a baseline before your changes. Then start applying changes as an
+  experiment and have a courage to proceed enough and to stop when it its needed.
+* Document: Document your approach as detailed as possible, and check if it makes sense for other teams.
+* Share: Just present it via email or so. Don't require to stick to it for now.
+* You will spend much time refining your approach, then documenting it and likely almost no time in adoption.
+* Compared to Mandate approach (It's better to adopt good enough approach quickly) Model is it's better to adopt great
+  approach slowly, so if you don't have much capacity to adopt new approaches Model is better.
+* To solve inconsistency among teams Decision making group can be created (Core)
+* To know when core will be good, we need to know what is positive and negative freedoms
+* Positive freedom: is for example to be able to choose what programming language to use.
+* Negative freedom: is for example not to be obligated to support a programming language you don't like, but other teams
+  need it.
+* Questions for core:
+    * How will they influence results? Will they rely on natural authority of individuals or have an authority as a
+      team?
+    * How will other teams interact with core?
+    * How large this team should be?
+    * How much time members will spend working in core?
+    * Should members view their main role as a core member or continue identify themselves as their prev team?
+    * How will you select members for group?
+    * How long will members serve?
+    * How representative this group will be? This helps to avoid decisions with low skill in area.
+* Fail modes for core:
+    * Domineering groups significantly decrease individuals freedoms.
+    * Bottlenecked groups are helpful, but can't do as much as they want to.
+    * Status-oriented is being in a core makes more sense than actual contribute
+    * Inert - typically group is too busy with other stuff except core.
+* Presentation to senior leadership is a bit of a dark art.
+    * Communication is company-specific.
+    * Start with the conclusion.
+    * Frame why the topic matters.
+    * Everyone loves a narrative. Like "last year we had a trouble with ..., and we need this to fix ..., and it will be
+      done till ..."
+    * Prepare for detours.
+    * Answer directly. Instead of hiding problems, use them to share how you are going to deal with them.
+    * Deep in data.
+    * Derive actions from principles.
+    * Be ready to discuss the details.
+    * Prepare a lot, practice a little.
+    * Make a clear ask.
+    * Tie topic to business area to make them care.
+* Time management:
+    * Quarterly time retrospective: figure out how you invested your time.
+    * Prioritize long-term success over short-term quality.
+    * Finish small leveraged things.
+    * Size backward, not forward: Specify the number of hours instead of specifying the volume of work.
+    * Delegate working "in the system"
+    * Trust the system you've built.
+    * Decouple participation from productivity
+    * Hire until you are slightly ahead of growth.
+    * Use calendar blocking.
+    * Getting admin support
