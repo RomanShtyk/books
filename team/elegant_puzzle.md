@@ -116,3 +116,28 @@
     * Hire until you are slightly ahead of growth.
     * Use calendar blocking.
     * Getting admin support
+* Communities of learning:
+    * Be a facilitator, not a lecturer
+    * Brief presentation, long discussion: good time limit for discussion is 10 mins
+    * Small breakout groups
+    * Bring learning to the full group
+    * Choose topics that people already know about
+    * Encourage tenured folks to attend
+    * Optional pre-reads
+    * Checking in
+
+#### Approaches
+
+* Work the policy, not the exceptions:
+    * bad example "folks in office should prefer working on teams within that office"
+    * good example:
+        * Team is stated in 1 office
+        * Remote employees may work on any team
+        * Employees within 60 min of commute must work within the office.
+* Granting exceptions for some people undermines other peoples sense of fairness.
+* You should adjust policies to new circumstances (corona, war, etc.)
+* Saying no: you can say NO to smth that will destroy your teams morale, like firing person for a mistake during on-call
+  support.
+* Do the right thing to your company, do the right thing to your team, do the right thing to yourself, in this order.
+* 
+
