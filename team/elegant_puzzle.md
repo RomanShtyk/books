@@ -139,5 +139,9 @@
 * Saying no: you can say NO to smth that will destroy your teams morale, like firing person for a mistake during on-call
   support.
 * Do the right thing to your company, do the right thing to your team, do the right thing to yourself, in this order.
-* 
+
+#### Culture
+
+* Coffee breaks and team lunches are actually essential
+*
 
