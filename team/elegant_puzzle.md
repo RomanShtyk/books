@@ -143,5 +143,41 @@
 #### Culture
 
 * Coffee breaks and team lunches are actually essential
-*
+* Consider the team you have for senior positions
+* Negative Freedom: Freedom from external constraints, Removing obstacles from your path
+* Positive Freedom:  Ability to act and achieve goals, Giving you the tools and resources to walk the path
+* Hard work and breeding heroes for quickly fixing problems - do not work.
+* Let the failing project to fail and try to fix it after reset (questionable at least).
+
+#### Careers
+
+* Working in company for too much or too little is stigmatized, good rule not less than 2 years and 4 is the best.(But
+  outdated)
+* For Hiring Managers:
+    * Be Kind: Treat candidates with respect and courtesy throughout the interview process.
+    * Budget Enough Time: Allocate sufficient time for each interview to allow for in-depth discussions.
+    * Align on Role Requirements: Ensure everyone involved in the interview process understands the specific skills and
+      experience needed for the role.
+    * Prepare Questions: Design questions that assess a candidate's skills, experience, and cultural fit for the team.
+    * Deliberately Express Interest: If a candidate impresses you, communicate your enthusiasm and take steps to keep
+      them engaged in the hiring process (e.g., sending a follow-up email).
+* For Candidates:
+    * Come Prepared: Research the company and the specific role you're applying for.
+    * Prepare Answers to Common Questions: Anticipate typical interview questions and practice your responses
+      beforehand.
+    * Ask Insightful Questions: Show genuine interest in the company and the role by asking thoughtful
+      questions.
+* General Tips:
+    * Focus on fit: Look beyond technical skills and assess how well a candidate aligns with the company culture and
+      team dynamics.
+    * Focus on signal, not noise: Avoid getting caught up in irrelevant details or overemphasizing specific
+      technologies.
+    * Use a structured interview process: Develop a consistent interview format with well-defined evaluation criteria to
+      ensure fairness and objectivity.
+    * Utilize feedback loops: Gather feedback from interviewers and use it to refine your interview process and identify
+      areas for improvement.
+* Remember: The goal of the interview process is to find the best person for the job, not just fill a vacancy. By
+  following these principles, you can increase your chances of conducting successful interviews and building a strong,
+  well-functioning team.
+  //242
 
