@@ -1,5 +1,5 @@
 # An Elegant Puzzle Systems of Engineering Management Will Larson
-
+6/10 - too much unrelated stuff, should probably reread when needed
 #### Organizations
 
 * Manager should support six to eight engineers.
