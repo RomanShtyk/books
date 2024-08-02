@@ -184,5 +184,5 @@
     * Use role plays to architect the system together to see more realistic behaviour.
 * Referrals come with 2 major drawbacks: 1) your network is probably small, 2) you can end up with a company whose
   workers think, believe or sometimes even look similar.
-*
-
+* Feedback for weak performance should be delivered immediately, 
+* Performance measuring has lots of momentum. If you get Strong performance from the start, next most likely will be Strong too.
