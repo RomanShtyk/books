@@ -19,7 +19,7 @@ Cracking the code interview
 ~~Software Architecture: fundamentals~~ ~~Software Architecture: The Hard Parts~~ -> ~~Understanding distributed
 systems~~ -> DDIA
 System Design Interview
-Elegant puzzle
+~~Elegant puzzle~~
 
 50%
 Engineering Management for the Rest of Us
