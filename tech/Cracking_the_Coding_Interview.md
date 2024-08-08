@@ -54,3 +54,27 @@ Cracking the Coding Interview
 * Follow up with your recruiter if you haven't heard back within a week.
 
 #### Special situations
+
+* Experienced Candidates: They might be asked similar questions to recent grads, but interviewers might expect them to
+  have a deeper understanding of the concepts being tested. Their performance on system design and architecture
+  questions will be evaluated with respect to their experience level.
+* Testers and SDETs: They should prepare for core testing problems and practice coding questions like regular
+  developers. Additionally, they should practice testing the coding problems they solve and demonstrate strong
+  communication skills.
+* Product (and Program) Managers: Interviewers will assess their skills in handling ambiguity, customer focus (both
+  attitude and technical skills), multi-level communication, passion for technology, and teamwork/leadership.
+* Dev Lead and Managers: Strong coding skills are required and they will be assessed on teamwork/leadership,
+  prioritization, communication, and "getting things done".
+* Startups: The application and interview process can be variable. It's important to network and highlight your ability
+  to hit the ground running with the specific technologies the startup uses. Interviewers will assess personality fit,
+  skill set, and experience.
+* Acquisitions and Acquihires: During the technical due diligence process, the acquirer will interview most or all of
+  the startup's employees. These interviews are important and can determine which employees receive offers to join the
+  acquirer and can affect the acquisition price.
+* For Interviewers: The book advises against asking the exact questions in the book and to focus on medium and hard
+  problems with multiple hurdles. Interviewers should avoid "scary" questions and offer positive reinforcement to
+  candidates. They should also probe deeper on behavioral questions to understand the candidate's role in past
+  situations.
+
+#### Before the Interview
+
