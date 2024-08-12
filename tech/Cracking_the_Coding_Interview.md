@@ -1,6 +1,6 @@
 Cracking the Coding Interview
 
-#### The interview process
+#### I The interview process
 
 * Focus on Problem-Solving: These interviews assess your ability to tackle new algorithmic problems.
 * Limited Time: Expect to delve into one or two questions within a 45-minute timeframe.
@@ -21,7 +21,7 @@ Cracking the Coding Interview
 * Imperfect but Functional: This process has limitations, but it's a common approach. The goal is to optimize your
   performance within this framework.
 
-#### Behind the scenes
+#### II Behind the scenes
 
 # General Process:
 
@@ -53,7 +53,7 @@ Cracking the Coding Interview
 * Tailor your answers to the specific company and role you are interviewing for.
 * Follow up with your recruiter if you haven't heard back within a week.
 
-#### Special situations
+#### III Special situations
 
 * Experienced Candidates: They might be asked similar questions to recent grads, but interviewers might expect them to
   have a deeper understanding of the concepts being tested. Their performance on system design and architecture
@@ -76,5 +76,66 @@ Cracking the Coding Interview
   candidates. They should also probe deeper on behavioral questions to understand the candidate's role in past
   situations.
 
-#### Before the Interview
+#### IV Before the Interview
 
+# Getting the Right Experience (Before you even start applying)
+
+* Students: Take project-heavy classes, get internships (especially early on), or build personal projects to gain
+  practical experience. Focus on relevant projects that showcase your coding skills.
+* Professionals: If switching to a dream company: try to shift your work responsibilities towards more coding projects.
+  If looking to move to a different role (e.g., testing to dev): use your free time to build projects using relevant
+  technologies to showcase your skills and initiative.
+
+# Writing a Great Resume
+
+* Highlight your technical skills and coding experience. Less emphasis on non-technical hobbies.
+* Length: Keep it concise (ideally 1 page for less than 10 years experience). Recruiters spend limited time reviewing
+  resumes, so prioritize the most impressive aspects.
+* Employment History: Only include relevant positions that showcase your skills.
+* Bullet Points: Use a strong format: "Accomplished X by implementing Y which led to Z." Quantify results whenever
+  possible.
+* Projects: Highlight 2-4 most significant projects, including details like languages used, whether it was individual or
+  team-based, and if completed for a class or independently (independent projects are generally preferred). Don't
+  clutter your resume with too many small projects.
+* Programming Languages & Software: Be selective about what you list. Consider the company culture and what's most
+  relevant to the role. Don't waste space on basic software like MS Office.
+* Languages: List most comfortable languages with your proficiency level (e.g., expert, proficient). Avoid listing
+  everything you've ever used, as interviewers might consider it fair game for questioning.
+* Non-native English speakers: Get your resume proofread by a native speaker. Avoid including age, marital status, or
+  nationality on US applications.
+
+# Additional Tips:
+
+* Be aware of potential language stigmas associated with enterprise languages or being overly language-focused. Some
+  companies might view a long list of technologies negatively.
+* Certifications can be neutral or even negative depending on the company culture. Consider removing them if you have a
+  very lengthy list of technologies.
+* If you only know one or two languages, the advice is to broaden your skillset by learning new ones.
+
+#### V Behavioral Questions
+
+# What are behavioral questions?
+
+* Asked to understand your personality, experience, and ease you into the interview.
+* How to prepare for behavioral questions?
+
+# Practice your answers:
+
+* Be Specific: Avoid arrogance, use facts and let the interviewer interpret your skills.
+* Limit Details: Focus on key points and offer to elaborate if needed.
+* Focus on Yourself: Highlight your contributions, not the team's.
+* Structure your response: Use the "Nugget First" (briefly summarize your answer) or "SAR" (Situation, Action, Result)
+  methods.
+* Consider creating a grid to organize your stories using these methods.
+* Explore the Action: Break down the "action" part of your story in detail, as this is the most important part.
+
+* Think About What It Says: Identify the personality traits your actions demonstrate (initiative, leadership, teamwork,
+  etc.)
+
+# How to answer "Tell me about yourself"
+
+* This is your chance to make a good first impression.
+* Use a chronological structure: Briefly mention your current role, educational background (including internships), and
+  relevant hobbies (optional).
+
+#### VI Big O
