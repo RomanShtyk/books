@@ -139,3 +139,48 @@ Cracking the Coding Interview
   relevant hobbies (optional).
 
 #### VI Big O
+
+# The Analogy:
+
+* Imagine sending a large file to a friend across the country. Email or FTP might be ideal for small files, but for a
+  massive file, physically delivering it could be faster. This highlights the difference between constant-time
+  operations (like emailing) and those that grow with data size (like physically delivering the file).
+
+# Big O Time:
+
+* Big O describes the efficiency of algorithms based on their runtime growth as the data size increases.
+* It focuses on the dominant term and ignores constants and lower-order terms.
+
+# Common Big O Notations:
+
+* O(1): Constant time (independent of data size)
+* O(log N): Logarithmic time (runtime increases slowly with data size)
+* O(N): Linear time (runtime increases proportionally with data size)
+* O(N log N): Log-linear time (faster than N^2)
+* O(N^2): Quadratic time (runtime increases quadratically with data size)
+* O(2^N): Exponential time (runtime explodes very quickly with data size)
+
+# Best, Worst, and Expected Case:
+
+* These describe the runtime for specific scenarios (e.g., best case might be O(1) for a sorted array).
+* Big O focuses on the upper bound (worst-case) for general analysis.
+
+# Space Complexity:
+
+* Similar to time complexity, it measures the memory required by an algorithm.
+* Common examples: O(N) for an array, O(1) for a constant amount of data.
+
+# Key Points:
+
+* Drop constants: O(2N) is considered the same as O(N) for Big O analysis.
+* Drop non-dominant terms: O(N + log N) becomes O(N).
+* Understand multipart algorithms: Add runtimes for sequential steps and multiply for nested loops.
+* Amortized time: Considers the average cost over time for operations with occasional spikes.
+* Logarithmic runtimes: Common when the problem space gets halved with each step (e.g., binary search).
+* Recursive runtimes: Analyze the call tree depth and branching factor to determine the runtime (e.g., O(2^N) for the
+  provided example).
+* Remember: Big O is essential for understanding algorithm efficiency and making informed choices when designing or
+  selecting algorithms.
+
+#### VII Technical Questions
+
