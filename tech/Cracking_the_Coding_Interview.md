@@ -184,3 +184,81 @@ Cracking the Coding Interview
 
 #### VII Technical Questions
 
+# Preparation:
+
+* Don't just memorize solutions, practice solving problems yourself.
+* Write code on paper to get used to slower coding environments and avoid relying on syntax highlighting or code
+  completion.
+* Test your code on paper for various scenarios (general cases, base cases, error cases, etc.).
+* Practice mock interviews to get comfortable explaining your thought process.
+
+# Knowledge:
+
+* The interview questions focus on data structures, algorithms, and concepts, not specific algorithms for complex
+  topics.
+* Core knowledge includes Linked Lists, Trees, Tries & Graphs, Stacks & Queues, Heaps, Vectors/Arrays, Hash Tables,
+  Breadth-First Search, Depth-First Search, Binary Search, Merge Sort, Quick Sort, Bit Manipulation, Memory (Stack vs.
+  Heap), Recursion, Dynamic Programming, and Big O Time & Space complexity.
+
+# Problem-Solving Approach:
+
+* Listen carefully to the problem description and pay attention to details.
+* Draw an example to visualize the problem and identify relevant information.
+* Start with a brute force solution (a basic algorithm that may not be efficient) and explain its time and space
+  complexity.
+* Optimize the solution by looking for bottlenecks, unnecessary work, and duplicated work. Techniques include BUD (
+  Bottlenecks, Unnecessary work, Duplicated work) and DIY (Do It Yourself - think intuitively about how you'd solve it
+  manually).
+* Walk through your optimized solution to solidify your understanding before coding.
+
+# Coding:
+
+* Start coding at the top left corner of the whiteboard and avoid line creep (writing code with awkward slant).
+* Write beautiful code that is modular, uses error checks, clear variable names, and avoids single-letter variables (
+  except for common iterators like i and j).
+* Test your code with various test cases (conceptual test, weird-looking code, hot spots, small test cases, special
+  cases).
+* If you find bugs, analyze why they occurred and fix them carefully.
+
+# Keeping Track of Medians with Heaps
+
+* Describes a method for keeping track of the median element in a stream of numbers using two heaps: a min-heap for the
+  smaller half and a max-heap for the larger half.
+* This approach allows for quick "rebalancing" by moving elements between heaps when their sizes differ.
+
+# Best Conceivable Runtime (BCR)
+
+* Explains the concept of BCR, which is the theoretically fastest possible runtime for a given problem.
+* Knowing the BCR helps determine how much improvement is possible for an algorithm.
+* It's important to derive the BCR, not guess it.
+
+# Example: Finding Elements Common to Sorted Arrays
+
+* Illustrates how BCR is used to analyze the runtime of an algorithm.
+* Shows a brute-force approach with O(N^2) runtime and an improved O(N log N) solution using binary search.
+* Emphasizes that even without sorted data, the same O(N) runtime might be achievable.
+
+# Handling Incorrect Answers in Interviews
+
+* Clarifies that interviews are not about getting every answer perfectly right.
+* Evaluates candidates based on the final solution, time taken, help needed, and code clarity.
+* Highlights that strong candidates might make mistakes during the interview process.
+
+# Tips for Choosing a Programming Language
+
+* Focuses on languages you're comfortable with, considering factors like:
+* Prevalence (interviewer's familiarity)
+* Readability (ease of understanding for the interviewer)
+* Potential problems (e.g., memory management in C++)
+* Verbosity (conciseness of the code)
+* Ease of use (language-specific features)
+
+# What Good Coding Looks Like
+
+* Defines good code as having properties like:
+* Correctness (handles all expected and unexpected inputs)
+* Efficiency (balances time and space complexity)
+* Simplicity (written concisely)
+* Readability (easy to understand for other developers)
+* Maintainability (adaptable to changes)
+
