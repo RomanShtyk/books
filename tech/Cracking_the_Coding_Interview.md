@@ -295,3 +295,9 @@ Cracking the Coding Interview
 
 #### 1 Arrays and strings
 
+#### 2 Linked List
+
+#### 3 Stacks and queues
+
+#### 4 Trees and Graphs
+
