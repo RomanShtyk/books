@@ -301,3 +301,5 @@ Cracking the Coding Interview
 
 #### 4 Trees and Graphs
 
+#### 5 Bit Manipulation
+
