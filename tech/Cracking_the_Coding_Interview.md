@@ -303,3 +303,13 @@ Cracking the Coding Interview
 
 #### 5 Bit Manipulation
 
+#### 6 Math and Logic Puzzles
+
+* Two integers are relatively prime or Coprime when there are no common factors other than 1
+* If the two jug sizes are relatively prime, you can measure any value between one and the sum of the jug sizes.
+* 1000 poisoned bottles solves with binary representation of every bottle to tests
+
+#### 7 Object-Oriented Design
+
+#### 8 Recursion and Dynamic Programming
+
