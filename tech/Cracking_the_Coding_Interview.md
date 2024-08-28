@@ -313,3 +313,27 @@ Cracking the Coding Interview
 
 #### 8 Recursion and Dynamic Programming
 
+#### 9 System Design and Scalability
+
+# Handling the Questions
+
+* Communicate: A key goal of sys�em design questions is to evaluate your ability to communicate. Stay engaged with the
+  interviewer. Ask them questions. Be open about the issues of your system.
+* Go broad first: Don't dive straight into the algorithm part or get excessively focused on one part.
+* Use the whiteboard: Using a whiteboard helps your interviewer follow your proposed design. Get up to the whiteboard in
+  the very beginning and use it to draw a picture of what you're proposing.
+  Acknowledge interviewer concerns: Your interviewer will likely jump in with concerns. Don't brush them off; validate
+  them. Acknowledge the issues your interviewer points out and make changes accordingly.
+* Be careful about assumptions: An incorrect assumption can dramatically change the problem. For example, if your system
+  produces analytics / statistics for a dataset, it matters whether those analytics must be totally up to date.
+* State your assumptions explicitly: When you do make assumptions, state them. This allows your interviewer to correct
+  you if you're mistaken, and shows that you at least know what assumptions you're making.
+* Estimate when necessary: In many cases, you might not have the data you need. For example, if you're designing a web
+  crawler, you might need to estimate how much space it will take to store all the URLs. You can estimate this with
+  other data you know.
+* Drive: As the candidate, you should stay in the driver's seat. This doesn't mean you don't talk to your interviewer;
+  in fact you must talk to your interviewer. However, you should be driving through the question. Ask questions. Be open
+  about tradeoffs. Continue to go deeper. Continue to make improvements.
+  These questions are largely about the process rather than the ultimate design.
+
+//373
