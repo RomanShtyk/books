@@ -337,4 +337,20 @@ Cracking the Coding Interview
   These questions are largely about the process rather than the ultimate design.
 
 #### 10 Sorting and searching
+
 #### 11 Testing
+
+#### 12 С and C++
+
+# All data members and methods are private by default in C++. One can modify this by introducing keyword public.
+
+#### 13 Java
+
+# Rethrow from catch still calls finally block
+
+#### 14 Databases
+
+# There are explicit and implicit joins in SQL
+
+#### 15 Threads and Locks
+
