@@ -354,3 +354,12 @@ Cracking the Coding Interview
 
 #### 15 Threads and Locks
 
+#### 16 Moderate
+
+#### 17 Hard
+
+# Selection Rank Algorithm
+
+# Boyer-Moore Majority Voting Algorithm
+
+//629
