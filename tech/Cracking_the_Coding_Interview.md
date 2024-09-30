@@ -362,4 +362,11 @@ Cracking the Coding Interview
 
 # Boyer-Moore Majority Voting Algorithm
 
-//629
+#### XI Advanced Topics
+
+# The sum of a sequence of power of two is roughly equal to the next value in the sequence.
+
+# Logs of different bases are only off by a constant factor. For this reason, we largely ignore what the base of a log within a big O expression. It doesn't matter since we drop constants anyway.
+
+# A topological sort of a directed graph is a way of ordering the list of nodes such that if (a, b) is an edge in the graph then a will appear before b in the list. If a graph has cycles or is not directed, then there is no topological sort.
+
