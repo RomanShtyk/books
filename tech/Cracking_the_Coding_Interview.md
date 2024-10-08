@@ -370,3 +370,6 @@ Cracking the Coding Interview
 
 # A topological sort of a directed graph is a way of ordering the list of nodes such that if (a, b) is an edge in the graph then a will appear before b in the list. If a graph has cycles or is not directed, then there is no topological sort.
 
+# Hashmap collisions and Double Hashing
+
+* You could use a second hash function to determine the probe distance.
