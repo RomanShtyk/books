@@ -25,3 +25,4 @@
 * [Refactoring: Improving the design of existing code](tech/Refactoring_Improving_the_Design_of_existing_code.md)
 * [Java concurrency in practice](tech/Java_concurrency_in_practice.md)
 * [Linux System Programming](tech/Linux_system_programming.md)
+* [Kotlin in action](tech/Kotlin_in_action_2nd_edition.md)

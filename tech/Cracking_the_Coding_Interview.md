@@ -1,4 +1,5 @@
 Cracking the Coding Interview
+8/10 - good refresher, must-read for juniors
 
 #### I The interview process
 
