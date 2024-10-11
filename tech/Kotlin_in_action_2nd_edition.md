@@ -22,5 +22,15 @@ public class JoinKt {
 ```
 
 * Inner and nested classes: Nested by default
-![img.png](../res/kotlin_inner.png)
+  ![img.png](../res/kotlin_inner.png)
 
+//5.1.4 Accessing variables in scope
+
+* The `fold` function is conceptually very similar to `reduce`, but instead of putting the first element of your
+  collection
+  into the accumulator at the beginning, you can choose an arbitrary start value.
+
+![img.png](../res/kotlin_literals.png)
+
+* Kotlin’s Array class looks like a regular generic class but is compiled to a Java array.
+* Arrays of primitive types are represented by special classes, such as IntArray.
