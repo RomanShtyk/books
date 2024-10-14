@@ -34,3 +34,19 @@ public class JoinKt {
 
 * Kotlin’s Array class looks like a regular generic class but is compiled to a Java array.
 * Arrays of primitive types are represented by special classes, such as IntArray.
+
+* Anonymous functions provide an alternative syntax to lambda expressions with different rules for resolving the return
+  expressions. You can use them if you need to write a block of code with multiple exit points.
+
+```kotlin
+    //These are the same at bytecode level
+    people.forEach(fun(person) {
+        if (person.name == "Alice") return
+        println("${person.name} is not Alice")
+    })
+
+    people.forEach { person ->
+        if (person.name == "Alice") return@forEach
+        println("${person.name} is not Alice")
+    }
+```
