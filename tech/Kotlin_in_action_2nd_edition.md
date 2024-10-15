@@ -50,3 +50,31 @@ public class JoinKt {
         println("${person.name} is not Alice")
     }
 ```
+
+* You can mark type as non-nullable on the call site
+
+```kotlin
+class KBox<T> {
+
+    fun put(t: T & Any) {
+        t == null // Condition 't == null' is always 'false'
+    }
+
+    fun putIfNotNull(t: T) {
+        t == null
+    }
+}
+```
+
+* If you’re an Android developer, you may find another example to be more familiar: showing activities. Instead of
+  passing the class of the activity as a java.lang.Class, you can also use a reified type parameter:
+
+```kotlin
+inline fun <reified T : Activity> Context.startActivity() {
+  val intent = Intent(this, T::class.java)
+  startActivity(intent)
+}
+
+startActivity<DetailActivity>()
+```
+
