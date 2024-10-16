@@ -77,4 +77,23 @@ inline fun <reified T : Activity> Context.startActivity() {
 
 startActivity<DetailActivity>()
 ```
+![img.png](../res/generics_position.png)
+```kotlin
+class Producer<T>() // invariant
 
+class Herd<out T : Animal> {
+    val size: Int get() = /* ... */
+    operator fun get(i: Int): T { /* ... */ }
+} // covariant, uses T in out position
+
+interface Comparator<in T>  {
+    fun compare(e1: T, e2: T): Int { /* ... */ }
+}// contravariant, Uses T in in positions, Comparator<Any> is a subtype of Comparator<String>,
+where Any is a supertype of String.
+The subtyping relation between comparators for two different types goes
+in the opposite direction of the subtyping relation between those types.
+```
+![img.png](../res/variance.png)
+
+![img.png](../res/varianceDetailed.png)
+#12 
