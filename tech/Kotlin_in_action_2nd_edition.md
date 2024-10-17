@@ -77,7 +77,9 @@ inline fun <reified T : Activity> Context.startActivity() {
 
 startActivity<DetailActivity>()
 ```
+
 ![img.png](../res/generics_position.png)
+
 ```kotlin
 class Producer<T>() // invariant
 
@@ -93,7 +95,12 @@ where Any is a supertype of String.
 The subtyping relation between comparators for two different types goes
 in the opposite direction of the subtyping relation between those types.
 ```
+
 ![img.png](../res/variance.png)
 
 ![img.png](../res/varianceDetailed.png)
-#12 
+
+* You might expect the simpleName and qualifiedName properties to be non-nullable. However, recall that section
+  4.4.4 showed you how to use object expressions to create anonymous objects. While these objects are still an instance
+  of a class, that class is anonymous. As such, it has neither a simpleName nor a qualifiedName. Accessing those fields
+  from a KClass instance will return null.
