@@ -123,5 +123,3 @@ runBlocking {
 }
 //[ERROR] java.lang.NullPointerException
 ```
-
-//17.2.4 
