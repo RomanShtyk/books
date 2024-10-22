@@ -6,6 +6,7 @@
 * [Software Architecture. The hard parts](architecture/Software_architecture_the_hard_parts.md)
 * [Patterns of enterprise application architecture](architecture/patterns_of_enterprise_application_architecture.md)
 * [Understanding distributed systems](architecture/understanding_distributed_systems.md)
+* [The System Design Primer](architecture/System_design_primer.md)
 
 **Team**
 
