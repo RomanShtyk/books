@@ -70,3 +70,27 @@ Writes might take some time to propagate when the partition is resolved.
 AP is a good choice if the business needs to allow for eventual consistency or when the system needs to continue working
 despite external errors.
 
+CDN
+
+Push CDN: Content is pre-uploaded to CDN servers, distributing it across locations in advance. Ideal for static assets
+like images or large media files.
+Pros: Control over caching; reduces load on origin.
+Cons: Manual uploads; potentially higher storage costs.
+
+Pull CDN: CDN edge servers only fetch content from the origin when first requested, caching it for future requests. Best
+for dynamic or frequently updated content.
+Pros: No manual uploads; cost-effective for low-demand content.
+Cons: Higher latency on first request; more load on origin server.
+In short, use push for static, high-demand content and pull for dynamic, unpredictable requests.
+
+Load balancing
+
+Layer 4 Load Balancing: Operates at the transport layer (TCP/UDP), directing traffic based on IP address and port
+without inspecting content. It's faster and more efficient but lacks content-based routing.
+Pros: Low latency, handles large traffic volumes.
+Cons: Limited routing options, can’t inspect HTTP headers or content.
+
+Layer 7 Load Balancing: Operates at the application layer, routing traffic based on HTTP content, headers, or URLs,
+allowing for more granular control.
+Pros: Content-based routing, useful for complex apps.
+Cons: Higher latency, more resource-intensive.
