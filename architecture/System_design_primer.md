@@ -1,96 +1,182 @@
+```markdown
 # The System Design Primer
 
 Summaries of various system design topics, including pros and cons. Everything is a trade-off.
 
-Scalability:
-horizontal scaling
-load balancing & caching
-shared session state
-RAID
-shared storage tech
-database replication
-load balancing tech
-session affinity
-in-memory caching
-data replication – active:passive
-partitioning
-data center redundancy
-security
+---
 
-Clones - requires management of deploy so there are no outdated code running
+## Scalability
 
-2 types of cache:
+- **Horizontal scaling**
+- **Load balancing & caching**
+- **Shared session state**
+- **RAID**
+- **Shared storage tech**
+- **Database replication**
+- **Load balancing tech**
+- **Session affinity**
+- **In-memory caching**
+- **Data replication**: Active:Passive
+- **Partitioning**
+- **Data center redundancy**
+- **Security**
 
-1) Cached Database Queries - Whenever you do a query to your database, you store the result dataset in cache.
-2) Let your class assemble a dataset from your database and then store the complete instance of the class or the
-   assembled dataset in the cache.
+---
 
-Redis(more complex data, persistent cache) vs Memcached(raw speed)
+### Clones
+Requires management of deployment to ensure there is no outdated code running.
 
-2 types of asynchronism:
+---
 
-1) Do heavy work in advance. Best for static, predicted data
-2) Not blocking the user, just notifying that work is done later. Best for custom data. RabbitMQ is an open-source
-   message broker often used for communication between microservices in the cloud.
+## Cache
 
-Performance vs scalability
+### 2 Types of Cache:
 
-A service is **scalable** if it results in increased **performance** in a manner proportional to resources added.
+1. **Cached Database Queries**: 
+   - Store the result dataset of a database query in the cache.
 
-If you have a **performance** problem, your system is slow for a single user.
-If you have a **scalability** problem, your system is fast for a single user but slow under heavy load.
+2. **Class or Dataset Cache**: 
+   - Let a class assemble a dataset from the database, then store the complete instance of the class or the assembled dataset in the cache.
 
-Latency vs Throughput
+**Redis**: Best for complex data, persistent cache.  
+**Memcached**: Best for raw speed.
 
-Latency is the time to perform some action or to produce some result.
+---
 
-Throughput is the number of such actions or results per unit of time.
+## Asynchronism
 
-Generally, you should aim for maximal throughput with acceptable latency.
+### 2 Types of Asynchronism:
 
-Availability vs consistency
+1. **Do heavy work in advance**:  
+   - Best for static, predictable data.
+
+2. **Not blocking the user**:  
+   - Notify the user that the work is done later.  
+   - Best for custom data.  
+   - **RabbitMQ**: Open-source message broker often used for communication between microservices in the cloud.
+
+---
+
+## Performance vs Scalability
+
+- A service is **scalable** if it results in increased **performance** in proportion to resources added.
+- **Performance Problem**: The system is slow for a single user.
+- **Scalability Problem**: The system is fast for a single user but slow under heavy load.
+
+---
+
+## Latency vs Throughput
+
+- **Latency**: Time to perform an action or produce a result.
+- **Throughput**: Number of actions or results per unit of time.
+
+**Goal**: Maximize throughput while maintaining acceptable latency.
+
+---
+
+## Availability vs Consistency
 
 In a distributed computer system, you can only support two of the following guarantees:
 
-Consistency - Every read receives the most recent write or an error
-Availability - Every request receives a response, without guarantee that it contains the most recent version of the
-information
-Partition Tolerance - The system continues to operate despite arbitrary partitioning due to network failures
-Networks aren't reliable, so you'll need to support partition tolerance. You'll need to make a software tradeoff between
-consistency and availability.
+- **Consistency**: Every read receives the most recent write or an error.
+- **Availability**: Every request receives a response, without guaranteeing it contains the most recent version.
+- **Partition Tolerance**: The system operates despite network failures.
 
-CP - consistency and partition tolerance
-Waiting for a response from the partitioned node might result in a timeout error. CP is a good choice if your business
-needs require atomic reads and writes.
+### Trade-offs:
+- **CP (Consistency and Partition Tolerance)**:  
+  Wait for a response from the partitioned node (might result in a timeout error).  
+  Best for atomic reads and writes.
 
-AP - availability and partition tolerance
-Responses return the most readily available version of the data available on any node, which might not be the latest.
-Writes might take some time to propagate when the partition is resolved.
+- **AP (Availability and Partition Tolerance)**:  
+  Returns the most readily available version of the data. Writes might take time to propagate.  
+  Best for eventual consistency or when the system needs to continue despite external errors.
 
-AP is a good choice if the business needs to allow for eventual consistency or when the system needs to continue working
-despite external errors.
+---
 
-CDN
+## CDN (Content Delivery Network)
 
-Push CDN: Content is pre-uploaded to CDN servers, distributing it across locations in advance. Ideal for static assets
-like images or large media files.
-Pros: Control over caching; reduces load on origin.
-Cons: Manual uploads; potentially higher storage costs.
+### Push CDN:
+- **Content**: Pre-uploaded to CDN servers, distributed across locations in advance.  
+- **Best for**: Static assets (e.g., images, large media files).  
+- **Pros**: Control over caching; reduces load on origin.  
+- **Cons**: Manual uploads; higher storage costs.
 
-Pull CDN: CDN edge servers only fetch content from the origin when first requested, caching it for future requests. Best
-for dynamic or frequently updated content.
-Pros: No manual uploads; cost-effective for low-demand content.
-Cons: Higher latency on first request; more load on origin server.
-In short, use push for static, high-demand content and pull for dynamic, unpredictable requests.
+### Pull CDN:
+- **Content**: Fetched from the origin when first requested, cached for future use.  
+- **Best for**: Dynamic or frequently updated content.  
+- **Pros**: No manual uploads; cost-effective for low-demand content.  
+- **Cons**: Higher latency on first request; increased load on origin.
 
-Load balancing
+**Summary**: Use push for static, high-demand content and pull for dynamic, unpredictable requests.
 
-Layer 4 Load Balancing: Operates at the transport layer (TCP/UDP), directing traffic based on IP address and port
-without inspecting content. It's faster and more efficient but lacks content-based routing.
-Pros: Low latency, handles large traffic volumes.
-Cons: Limited routing options, can’t inspect HTTP headers or content.
+---
 
-Layer 7 Load Balancing: Operates at the application layer, routing traffic based on HTTP content, headers, or URLs,
-allowing for more granular control.
-Pros: Content-based routing, useful for complex apps.
-Cons: Higher latency, more resource-intensive.
+## Load Balancing
+
+### Layer 4 Load Balancing:
+- Operates at the transport layer (TCP/UDP).
+- Directs traffic based on IP address and port without inspecting content.
+
+**Pros**: Low latency; handles large traffic volumes.  
+**Cons**: Limited routing options; cannot inspect HTTP headers or content.
+
+### Layer 7 Load Balancing:
+- Operates at the application layer.
+- Routes traffic based on HTTP content, headers, or URLs.
+
+**Pros**: Content-based routing; useful for complex apps.  
+**Cons**: Higher latency; more resource-intensive.
+
+---
+
+# The Seven Layers of the OSI Model
+
+Each layer has a specific role in handling network communication.
+
+### Physical Layer (Layer 1):
+- **Purpose**: Handles the physical connection between devices.
+- **Functions**: 
+  - Transmission of raw binary data (bits) over the medium (e.g., cables, wireless).
+  - Defines hardware specifications (e.g., cables, connectors, voltage levels).
+- **Examples**: Ethernet cables, Wi-Fi frequencies, USB.
+
+### Data Link Layer (Layer 2):
+- **Purpose**: Ensures error-free transmission of data between adjacent nodes.
+- **Functions**: 
+  - Framing, error detection/correction, and flow control.
+  - Organizes data into frames for physical transmission.
+- **Examples**: MAC addresses, switches, ARP, PPP.
+
+### Network Layer (Layer 3):
+- **Purpose**: Handles data routing, forwarding, and addressing.
+- **Functions**: 
+  - Logical addressing (IP addresses).
+  - Routing packets across networks.
+- **Examples**: IP (IPv4/IPv6), routers, ICMP.
+
+### Transport Layer (Layer 4):
+- **Purpose**: Provides reliable or unreliable delivery of data between devices.
+- **Functions**: 
+  - Ensures error recovery, segmentation, and flow control.
+  - Handles end-to-end communication.
+- **Examples**: TCP (reliable), UDP (unreliable).
+
+### Session Layer (Layer 5):
+- **Purpose**: Manages sessions or connections between applications.
+- **Functions**: 
+  - Establishes, maintains, and terminates communication sessions.
+- **Examples**: NetBIOS, RPC.
+
+### Presentation Layer (Layer 6):
+- **Purpose**: Translates data between the application and network.
+- **Functions**: 
+  - Data encoding/decoding, encryption/decryption, compression.
+  - Ensures the data is in a usable format.
+- **Examples**: SSL/TLS, JPEG, MPEG.
+
+### Application Layer (Layer 7):
+- **Purpose**: Interfaces directly with the user and applications.
+- **Functions**: 
+  - Provides services for file transfers, email, remote access, and web browsing.
+- **Examples**: HTTP, FTP, SMTP, DNS.
+```
