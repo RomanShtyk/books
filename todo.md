@@ -18,7 +18,7 @@ Linux System Programming
 ~~Cracking the code interview~~
 ~~Software Architecture: fundamentals~~ ~~Software Architecture: The Hard Parts~~ -> ~~Understanding distributed
 systems~~ -> DDIA
-System Design Interview
+System Design Interview An Insider’s Guide by Alex Xu
 ~~Elegant puzzle~~
 
 50%
