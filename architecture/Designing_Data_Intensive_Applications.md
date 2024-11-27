@@ -74,3 +74,8 @@ records.
 A **Bloom filter** is a memory-efficient data structure for approximating the contents of a set. It can tell you if a
 key does not appear in the database, and thus saves many unnecessary disk reads for nonexistent keys.
 Answers strict NO or probably yes.
+
+Businesses usually have two types databases, online transaction processing (OLTP) for every-day transactions, and online
+analytic processing for analytics purposes (Also known as Data Warehouse).
+
+## Chapter 4: Encoding and Evolution
