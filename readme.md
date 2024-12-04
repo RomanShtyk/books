@@ -7,6 +7,7 @@
 * [Patterns of enterprise application architecture](architecture/patterns_of_enterprise_application_architecture.md)
 * [Understanding distributed systems](architecture/understanding_distributed_systems.md)
 * [The System Design Primer](architecture/System_design_primer.md)
+* [Designing data intensive application](architecture/Designing_Data_Intensive_Applications.md)
 
 **Team**
 
@@ -27,3 +28,4 @@
 * [Java concurrency in practice](tech/Java_concurrency_in_practice.md)
 * [Linux System Programming](tech/Linux_system_programming.md)
 * [Kotlin in action](tech/Kotlin_in_action_2nd_edition.md)
+* [Cracking the coding interview](tech/Cracking_the_Coding_Interview.md)

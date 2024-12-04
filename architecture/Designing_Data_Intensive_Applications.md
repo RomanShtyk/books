@@ -79,3 +79,24 @@ Businesses usually have two types databases, online transaction processing (OLTP
 analytic processing for analytics purposes (Also known as Data Warehouse).
 
 ## Chapter 4: Encoding and Evolution
+
+Binary schema–driven formats like Thrift, Protocol Buffers, and Avro allow compact, efficient encoding with clearly
+defined forward and backward compatibility semantics. The schemas can be useful for documentation and code generation in
+statically typed languages. However, they have the downside that data needs to be decoded before it is
+human-readable.
+
+We can conclude that with a bit of care, backward/forward compatibility and rolling upgrades are quite achievable. May
+your application’s evolution be rapid and your deployments be frequent.
+
+# Part II: Distributed Data
+
+## Chapter 5: Replication
+
+In practice, if you enable synchronous replication on a database, it usually means that one of the followers is
+synchronous, and the others are asynchronous. If the synchronous follower becomes unavailable or slow, one of the
+asynchronous followers is made synchronous. This guarantees that you have an up-to-date copy of the data on at least two
+nodes: the leader and one synchronous follower. This configuration is sometimes also called semi-synchronous.
+
+Handling a failure of the leader is trickier: one of the followers needs to be promoted to be the new leader, clients
+need to be reconfigured to send their writes to the new leader, and the other followers need to start consuming data
+changes from the new leader. This process is called **failover**.
