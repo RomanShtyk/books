@@ -100,3 +100,15 @@ nodes: the leader and one synchronous follower. This configuration is sometimes 
 Handling a failure of the leader is trickier: one of the followers needs to be promoted to be the new leader, clients
 need to be reconfigured to send their writes to the new leader, and the other followers need to start consuming data
 changes from the new leader. This process is called **failover**.
+
+In read-scaling architecture long replication lag causes:
+
+1) Inability to read your own writes: in this situation, we need read-after-write consistency, also known as
+   read-your-writes consistency.
+2) Monotonic Reads: A user first reads from a fresh replica, then from a stale replica. Time appears to go backward. To
+   prevent this anomaly, we need monotonic reads. One way of achieving monotonic reads is to make sure that each user
+   always makes their reads from the same replica
+3) Consistent prefix reads: If some partitions are replicated slower than others, an observer may see the answer before
+   they see the question. This guarantee says that if a sequence of writes happens in a certain order, then anyone
+   reading those writes will see them appear in the same order.
+
