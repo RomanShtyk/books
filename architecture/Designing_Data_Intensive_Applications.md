@@ -112,3 +112,46 @@ In read-scaling architecture long replication lag causes:
    they see the question. This guarantee says that if a sequence of writes happens in a certain order, then anyone
    reading those writes will see them appear in the same order.
 
+LWW (Last Write Wins) achieves the goal of eventual convergence, but at the cost of durability: if there are several
+concurrent writes to the same key, even if they were all reported as successful to the client (because they were written
+to w replicas), only one of the writes will survive and the others will be silently discarded.
+
+There are some situations, such as caching, in which lost writes are perhaps acceptable. If losing data is not
+acceptable, LWW is a poor choice for conflict resolution.
+
+**Replication** can serve several purposes:
+
+1) High availability
+   Keeping the system running, even when one machine (or several machines, or an entire datacenter) goes down
+2) Disconnected operation
+   Allowing an application to continue working when there is a network interrup‐ tion
+3) Latency
+   Placing data geographically close to users, so that users can interact with it faster
+4) Scalability
+   Being able to handle a higher volume of reads than a single machine could han‐ dle, by performing reads on replicas
+
+Three main approaches to replication:
+
+1) Single-leader replication
+   Clients send all writes to a single node (the leader), which sends a stream of data change events to the other
+   replicas (followers). Reads can be performed on any replica, but reads from followers might be stale.
+2) Multi-leader replication
+   Clients send each write to one of several leader nodes, any of which can accept writes. The leaders send streams of
+   data change events to each other and to any follower nodes.
+3) Leaderless replication
+   Clients send each write to several nodes, and read from several nodes in parallel in order to detect and correct
+   nodes with stale data.
+
+Some strange effects that can be caused by replication lag, and we discussed a few consistency models
+which are helpful for deciding how an application should behave under replication lag:
+
+1) Read-after-write consistency
+   Users should always see data that they submitted themselves.
+2) Monotonic reads
+   After users have seen the data at one point in time, they shouldn’t later see the data from some earlier point in
+   time.
+3) Consistent prefix reads
+   Users should see the data in a state that makes causal sense: for example, seeing a question and its reply in the
+   correct order.
+
+# Chapter 6: Partitioning aka Sharding
