@@ -155,3 +155,4 @@ which are helpful for deciding how an application should behave under replicatio
    correct order.
 
 # Chapter 6: Partitioning aka Sharding
+![img.png](../res/request_routing.png)
