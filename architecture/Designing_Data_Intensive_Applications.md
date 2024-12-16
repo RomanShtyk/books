@@ -124,11 +124,11 @@ acceptable, LWW is a poor choice for conflict resolution.
 1) High availability
    Keeping the system running, even when one machine (or several machines, or an entire datacenter) goes down
 2) Disconnected operation
-   Allowing an application to continue working when there is a network interrup‐ tion
+   Allowing an application to continue working when there is a network interruption
 3) Latency
    Placing data geographically close to users, so that users can interact with it faster
 4) Scalability
-   Being able to handle a higher volume of reads than a single machine could han‐ dle, by performing reads on replicas
+   Being able to handle a higher volume of reads than a single machine could handle, by performing reads on replicas
 
 Three main approaches to replication:
 
@@ -155,4 +155,37 @@ which are helpful for deciding how an application should behave under replicatio
    correct order.
 
 # Chapter 6: Partitioning aka Sharding
+
 ![img.png](../res/request_routing.png)
+
+* **Key range partitioning**, where keys are sorted, and a partition owns all the keys from some minimum up to some
+  maximum. Sorting has the advantage that efficient range queries are possible, but there is a risk of hot spots if the
+  application often accesses keys that are close together in the sorted order. In this approach, partitions are
+  typically rebalanced dynamically by splitting the range into two subranges when a partition gets too big.
+* **Hash partitioning**, where a hash function is applied to each key, and a partition owns a range of hashes. This
+  method destroys the ordering of keys, making range queries inefficient, but may distribute load more evenly. When
+  partitioning by hash, it is common to create a fixed number of partitions in advance, to assign several partitions to
+  each node, and to move entire partitions from one node to another when nodes are added or removed. Dynamic
+  partitioning can also be used.
+
+We also discussed the interaction between partitioning and secondary indexes. A secondary index also needs to be
+partitioned, and there are two methods:
+
+* **Document-partitioned indexes** (local indexes), where the secondary indexes are stored in the same partition as
+  the primary key and value. This means that only a single partition needs to be updated on write, but a read of the
+  secondary index requires a scatter/gather across all partitions.
+* **Term-partitioned indexes** (global indexes), where the secondary indexes are partitioned separately, using the
+  indexed values. An entry in the secondary index may include records from all partitions of the primary key. When a
+  document is written, several partitions of the secondary index need to be updated; however, a read can be served from
+  a single partition.
+
+# Chapter 7: Transactions
+
+The ability to abort a transaction on error and have all writes from that transaction discarded is the defining feature
+of ACID **atomicity**. Perhaps **abortability** would have been a better term than atomicity, but we will stick with
+atomicity since that’s the usual word.
+
+Atomicity, isolation, and durability are properties of the database, whereas consistency (in the **ACID** sense) is a
+property of the application. The application may rely on the database’s atomicity and isolation properties in order to
+achieve **consistency**, but it’s not up to the database alone. Thus, the letter **C** doesn’t really belong in ACID.
+
