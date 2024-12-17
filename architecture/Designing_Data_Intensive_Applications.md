@@ -189,3 +189,8 @@ Atomicity, isolation, and durability are properties of the database, whereas con
 property of the application. The application may rely on the database’s atomicity and isolation properties in order to
 achieve **consistency**, but it’s not up to the database alone. Thus, the letter **C** doesn’t really belong in ACID.
 
+The most basic level of transaction isolation is read committed. It makes two guarantees:
+
+1. When reading from the database, you will only see data that has been committed (no dirty reads).
+2. When writing to the database, you will only overwrite data that has been committed (no dirty writes).
+
