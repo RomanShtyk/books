@@ -194,3 +194,28 @@ The most basic level of transaction isolation is read committed. It makes two gu
 1. When reading from the database, you will only see data that has been committed (no dirty reads).
 2. When writing to the database, you will only overwrite data that has been committed (no dirty writes).
 
+When a write operation in one transaction changes the result of a search query (already executed) in another
+transaction, the effect is called a Phantom.
+
+Take a Meeting Room Booking application as an example. A room booking operation runs a Read-Modify-Write cycle to add
+bookings - it checks for existing bookings for a specific timeslot and adds a reservation if it finds none. Suppose two
+room-reservation transactions were to execute simultaneously. In that case, their initial data fetch may return no
+booking records, causing the transaction that runs second to take an incorrect decision to insert a conflicting
+reservation.
+
+Materializing Conflicts is an approach that turns a Phantom into a lock conflict on a concrete set of rows in the
+database. It avoids transactions taking incorrect decisions based on non-existent data by materializing objects or rows
+that the transactions need to fight over.
+
+**Serializable** isolation is usually regarded as the strongest isolation level. It guarantees that even though
+transactions
+may execute in parallel, the end result is the same as if they had executed one at a time, serially, without any
+concurrency. Thus, the database guarantees that if the transactions behave correctly when run individually, they
+continue to be correct when run concurrently—in other words, the database prevents all possible race conditions.
+
+Most databases that provide **serializability** today use one of three techniques:
+
+* Literally executing transactions in a serial order
+* Two-phase locking, which for sev‐ eral decades was the only viable option
+* Optimistic concurrency control techniques such as serializable snapshot isolation
+
