@@ -216,6 +216,17 @@ continue to be correct when run concurrently—in other words, the database prev
 Most databases that provide **serializability** today use one of three techniques:
 
 * Literally executing transactions in a serial order
-* Two-phase locking, which for sev‐ eral decades was the only viable option
+    * Two-phase locking, which for several decades was the only viable option
+      What is Two-Phase Locking (2PL)?
+      Two-Phase Locking (2PL) is a concurrency control method used in database systems to ensure serializability —
+      meaning,
+      the result of executing concurrent transactions is the same as if they were executed sequentially. It divides the
+      process of acquiring and releasing locks into two distinct phases:
+
+          Growing Phase (Acquiring locks)
+          Shrinking Phase (Releasing locks)
+      Once a transaction releases its first lock, it cannot acquire any more locks. This ensures that no cycles can be
+      formed in the "wait-for" graph, preventing deadlock.
+
 * Optimistic concurrency control techniques such as serializable snapshot isolation
 
