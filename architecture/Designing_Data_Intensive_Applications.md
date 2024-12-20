@@ -216,17 +216,48 @@ continue to be correct when run concurrently—in other words, the database prev
 Most databases that provide **serializability** today use one of three techniques:
 
 * Literally executing transactions in a serial order
-    * Two-phase locking, which for several decades was the only viable option
-      What is Two-Phase Locking (2PL)?
-      Two-Phase Locking (2PL) is a concurrency control method used in database systems to ensure serializability —
-      meaning,
-      the result of executing concurrent transactions is the same as if they were executed sequentially. It divides the
-      process of acquiring and releasing locks into two distinct phases:
+* Two-phase locking, which for several decades was the only viable option.
+  (2PL) is a concurrency control method used in database systems to ensure serializability — meaning,
+  the result of executing concurrent transactions is the same as if they were executed sequentially. It divides the
+  process of acquiring and releasing locks into two distinct phases:
 
-          Growing Phase (Acquiring locks)
-          Shrinking Phase (Releasing locks)
-      Once a transaction releases its first lock, it cannot acquire any more locks. This ensures that no cycles can be
-      formed in the "wait-for" graph, preventing deadlock.
+      Growing Phase (Acquiring locks)
+      Shrinking Phase (Releasing locks)
+  Once a transaction releases its first lock, it cannot acquire any more locks. This ensures that no cycles can be
+  formed in the "wait-for" graph, preventing deadlock.
 
-* Optimistic concurrency control techniques such as serializable snapshot isolation
+* Optimistic concurrency control techniques such as serializable snapshot isolation.
+  A fairly new algorithm that avoids most of the downsides of the previous approaches. It uses an optimistic approach,
+  allowing transactions to proceed without blocking. When a transaction wants to commit, it is checked, and it is
+  aborted if the execution was not serializable.
+
+#### Dirty reads
+
+One client reads another client’s writes before they have been committed. The read committed isolation level and
+stronger levels prevent dirty reads.
+
+#### Dirty writes
+
+One client overwrites data that another client has written, but not yet committed. Almost all transaction
+implementations prevent dirty writes.
+
+#### Read skew (nonrepeatable reads)
+
+A client sees different parts of the database at different points in time. This issue is most commonly prevented with
+snapshot isolation, which allows a transaction to read from a consistent snapshot at one point in time. It is usually
+implemented with multi-version concurrency control (MVCC).
+
+#### Lost updates
+
+Two clients concurrently perform a read-modify-write cycle. One overwrites the other’s write without incorporating its
+changes, so data is lost. Some implementations of snapshot isolation prevent this anomaly automatically, while
+others require a manual lock (SELECT FOR UPDATE).
+
+#### Write skew
+
+A transaction reads something, makes a decision based on the value it saw, and writes the decision to the database.
+However, by the time the write is made, the premise of the decision is no longer true. Only serializable isolation
+prevents this anomaly.
+
+# Chapter 8: The trouble with distributed systems
 
