@@ -261,3 +261,17 @@ prevents this anomaly.
 
 # Chapter 8: The trouble with distributed systems
 
+#### Unreliable clocks
+
+Using physical clocks to order events in distributed systems is unreliable due to clock skew and synchronization limits.
+For example, in multi-leader replication, timestamps may misorder writes, leading to data loss or causality violations.
+
+Last Write Wins (LWW), which keeps the "latest" write, can cause:
+
+* Data Loss: Lagging clocks overwrite newer values.
+* Causality Violations: Sequential and concurrent writes are indistinguishable.
+* Conflicts: Duplicate timestamps require additional resolution mechanisms.
+
+Solution: Use logical clocks, which track event order without relying on physical time, ensuring correct causality in
+distributed systems.
+
