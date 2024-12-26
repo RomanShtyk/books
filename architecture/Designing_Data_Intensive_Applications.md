@@ -275,3 +275,38 @@ Last Write Wins (LWW), which keeps the "latest" write, can cause:
 Solution: Use logical clocks, which track event order without relying on physical time, ensuring correct causality in
 distributed systems.
 
+In distributed systems, relying on synchronized clocks for leader leases or event timing is risky due to potential
+execution pauses. Causes of these pauses include garbage collection, virtualization, context switching, I/O delays, and
+even user actions like suspending a laptop. These pauses can disrupt lease validity checks and allow other nodes to
+incorrectly assume leadership.
+
+Key Issues:
+
+* Clock Dependency: Synchronized clocks can be unreliable due to skew or unexpected pauses in execution.
+* Execution Pauses: Threads can stop unexpectedly for GC, virtual machine suspension, swapping, or disk I/O, lasting
+  seconds or minutes.
+* Distributed Challenges: Unlike single-threaded code, distributed systems lack shared memory and rely on messages over
+  unreliable networks.
+
+#### Real-Time Systems:
+
+In contrast, real-time systems (e.g., for airbags or robotics) guarantee timely responses under all conditions.
+Achieving this requires:
+
+* Specialized Software: Real-time operating systems and strict control over execution timing.
+* High Costs: Significant effort, restrictions on tools, and lower throughput prioritize predictability over
+  performance.
+  For typical server-side systems, real-time guarantees are infeasible, leaving them susceptible to pauses and clock
+  instability.
+
+**Fencing tokens** are used to ensure safe resource access when using locks or leases. Each time a lock is granted, the
+lock server issues a fencing token—a monotonically increasing number. Clients include this token in write requests to
+the resource, which verifies that requests are processed in order of increasing token values.
+
+**Byzantine faults** occur when nodes “lie” or act maliciously, complicating distributed systems. A Byzantine
+fault-tolerant system operates correctly even with faulty or malicious nodes, as in these cases:
+
+* Aerospace: Radiation can corrupt memory, requiring fault-tolerant designs to prevent catastrophic failures.
+* Multi-party Systems: Untrusting participants may attempt fraud, as in blockchain networks, where consensus is achieved
+  without central authority.
+
