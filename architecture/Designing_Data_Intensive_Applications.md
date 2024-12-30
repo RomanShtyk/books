@@ -323,3 +323,11 @@ important to distinguish between them:
 * Linearizability is a recency guarantee on reads and writes of a register (an individual object). It doesn’t group
   operations together into transactions, so it does not prevent problems such as write skew, unless you take additional
   measures such as materializing conflicts.
+
+The **CAP** theorem as formally defined is of very narrow scope: it only considers one consistency model (namely
+linearizability) and one kind of fault (network partitions,vi or nodes that are alive but disconnected from each other).
+It doesn’t say anything about network delays, dead nodes, or other trade-offs. Thus, although CAP has been historically
+influential, it has little practical value for designing systems. There are many more interesting impossibility results
+in distributed systems, and CAP has now been superseded by more precise results, so it is of mostly historical interest
+today.
+
