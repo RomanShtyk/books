@@ -331,3 +331,7 @@ influential, it has little practical value for designing systems. There are many
 in distributed systems, and CAP has now been superseded by more precise results, so it is of mostly historical interest
 today.
 
+**Total order broadcast** is asynchronous: messages are guaranteed to be delivered reliably in a fixed order, but there is
+no guarantee about when a message will be delivered (so one recipient may lag behind the others). By contrast,
+**linearizability** is a recency guarantee: a read is guaranteed to see the latest value written.
+
