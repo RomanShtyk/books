@@ -331,7 +331,14 @@ influential, it has little practical value for designing systems. There are many
 in distributed systems, and CAP has now been superseded by more precise results, so it is of mostly historical interest
 today.
 
-**Total order broadcast** is asynchronous: messages are guaranteed to be delivered reliably in a fixed order, but there is
-no guarantee about when a message will be delivered (so one recipient may lag behind the others). By contrast,
+**Total order broadcast** is asynchronous: messages are guaranteed to be delivered reliably in a fixed order, but there
+is no guarantee about when a message will be delivered (so one recipient may lag behind the others). By contrast,
 **linearizability** is a recency guarantee: a read is guaranteed to see the latest value written.
+
+**linearizability**, a popular consistency model: its goal is to make replicated data appear as though there were only a
+single copy, and to make all operations act on it atomically. Although linearizability is appealing because it is easy
+to understand—it makes a database behave like a variable in a single-threaded program — it has the downside of being
+slow, especially in environments with large network delays.
+
+# Part III: Derived data
 
