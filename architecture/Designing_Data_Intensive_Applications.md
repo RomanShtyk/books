@@ -342,3 +342,26 @@ slow, especially in environments with large network delays.
 
 # Part III: Derived data
 
+# Chapter 10: Batch Processing
+
+Services (Online Systems): Handle requests quickly, focusing on response time and availability since they are triggered
+by users who expect fast responses.
+
+Batch Processing Systems (Offline Systems): Process large datasets in jobs that run periodically, emphasizing throughput
+rather than immediate response, as no user is waiting.
+
+Stream Processing Systems (Near-Real-Time Systems): Operate on data shortly after events occur, balancing between the
+immediate response of online systems and the throughput of batch processing.
+
+Distributed Execution of **MapReduce**
+
+The framework handles data movement and parallel execution. Mappers process data where it is stored to reduce network
+load. The framework sorts and partitions output from mappers before sending it to reducers, a process called the
+shuffle. Reducers then merge sorted data and produce output, stored in the distributed filesystem.
+
+The output of batch workflows, such as those using MapReduce, typically does not result in traditional reports but in
+structures like search indexes or databases for machine learning models. Batch processing shares some characteristics
+with analytic processing, such as scanning large datasets, but it differs in its outputs and usage. For example,
+Google's early use of MapReduce was to build search indexes, which are still relevant today for similar tasks like
+Lucene/Solr indexing.
+
