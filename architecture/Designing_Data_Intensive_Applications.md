@@ -365,3 +365,18 @@ with analytic processing, such as scanning large datasets, but it differs in its
 Google's early use of MapReduce was to build search indexes, which are still relevant today for similar tasks like
 Lucene/Solr indexing.
 
+Materializing intermediate state (writing it to files) ensures fault tolerance but has downsides:
+
+* Jobs must wait for all preceding tasks to finish, slowing workflows.
+* Mappers often redundantly read recent reducer output, which could be optimized.
+* Replicating intermediate data across nodes is excessive for temporary files.
+
+Dataflow engines like Spark, Tez, and Flink address these issues by handling entire workflows as single jobs. They allow
+more flexible, efficient connections between processing stages, reducing unnecessary tasks and optimizing resource
+locality. Intermediate data is usually kept in memory or local disk, lowering I/O costs.
+
+For fault tolerance, these engines recompute lost intermediate state using lineage tracking rather than storing all
+intermediate data, balancing recomputation costs with the benefits of reduced materialization.
+
+# Chapter 11: Stream Processing
+
