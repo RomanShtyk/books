@@ -24,21 +24,27 @@ Rules of minor pieces:
 6) Knights love closed positions with locked pawns
 7) Knights usually better in the center of the board
 8) Knight has to have an outpost to be effective
-   8.5) Knight is the best on 6th rank controlling the most crutial squares
+   8.5) Knight is the best on 6th rank controlling the most crucial squares
 9) Knight is superior to bishop in endgame if all pawns are on the one side of the board
 10) Best way to counter a knight is to get rid of outposts, hence making outpost is a priority if you have a knight
 
 Tips
 
-★ The imbalance of Bishop versus Knight is of vital importance. If you have the Bishop you must strive to take away all
-the advanced posts from the enemy Knight. If you have the Knight you must fight to create a good home for the horse and
-to create situations where the Bishop is not particularly useful.
+* The imbalance of Bishop versus Knight is of vital importance. If you have the Bishop you must strive to take away all
+  the advanced posts from the enemy Knight. If you have the Knight you must fight to create a good home for the horse
+  and to create situations where the Bishop is not particularly useful.
+* Bishop versus Knight does not necessarily favor one piece or the other; you must plant the seeds which allow your
+  piece to prosper. The same holds true for all the other imbalances. If you don't recognize and use it, you will find
+  that this so-called advantage won't do you any good.
+* You must take your opponent's possibilities into account!
+* Don't ever play a quick, thoughtless move. That will usually turn out to be the move that ruins your game.
 
-★ Bishop versus Knight does not necessarily favor one piece or the other; you must plant the seeds which allow your
-piece to prosper. The same holds true for all the other imbalances. If you don't recognize and use it, you will find
-that this so-called advantage won't do you any good.
+Tips
 
-★ You must take your opponent's possibilities into account!
+* If the integrity of your position is based on a one-mover like ...Qxg2 mate, then you are dead meat since such an
+  obvious threat is usually easy to parry. Instead, you should nurture long-range plusses like material, superior minor
+  pieces, etc.
+* When you find yourself crossing your fingers and hoping he won’t see it, you know that you are in desperate trouble!
+* Once a minor piece imbalance is established, you must play with great energy to make that imbalance favor you.
 
-★ Don't ever play a quick, thoughtless move. That will usually turn out to be the move that ruins your game.
 
