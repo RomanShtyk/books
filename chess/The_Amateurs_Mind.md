@@ -47,4 +47,21 @@ Tips
 * When you find yourself crossing your fingers and hoping he won’t see it, you know that you are in desperate trouble!
 * Once a minor piece imbalance is established, you must play with great energy to make that imbalance favor you.
 
+Tips
 
+* Always expect the best move
+* If you have 2 bishops, try to open up the position
+* Rules are useful, but every rule was made to be broken...
+* Create a plan right away
+* bishops are really better in pawn race endgames
+
+#### The center, territory and space
+Rule 1: full pawn center gives control over key squares
+Rule 2: full pawn center is responsibility, when you achieve it - make it indestructible
+Rule 3: do not advance the center too early, every pawn move leaves a weakness
+Rule 4: strive to attack full center
+Rule 5: if central pawns are traded than open file exists for rooks 
+Rule 6: if center is blocked - play switches to the wings
+Rule 7: if center is blocked - play on the wing your pawn are pointing
+
+# 65
