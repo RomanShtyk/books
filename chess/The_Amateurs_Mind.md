@@ -56,12 +56,21 @@ Tips
 * bishops are really better in pawn race endgames
 
 #### The center, territory and space
+
 Rule 1: full pawn center gives control over key squares
 Rule 2: full pawn center is responsibility, when you achieve it - make it indestructible
 Rule 3: do not advance the center too early, every pawn move leaves a weakness
 Rule 4: strive to attack full center
-Rule 5: if central pawns are traded than open file exists for rooks 
+Rule 5: if central pawns are traded than open file exists for rooks
 Rule 6: if center is blocked - play switches to the wings
 Rule 7: if center is blocked - play on the wing your pawn are pointing
+Rule 7.5: push the pawn that stand next to your most advance pawn
+Rule 8: A wide open center allows you to attack with pieces. A closed center generally means that you must attack with
+pawns (this enables you to grab space and open files for your Rooks)
 
-# 65
+#### Rules of space:
+
+1) if you have more space - better to avoid exchanges
+2) spatial plus is a permanent advantage, no need to hurry to utilize it
+3)
+
