@@ -72,5 +72,18 @@ pawns (this enables you to grab space and open files for your Rooks)
 
 1) if you have more space - better to avoid exchanges
 2) spatial plus is a permanent advantage, no need to hurry to utilize it
-3)
 
+Tips:
+
+* Try and appraise your position honestly.
+* Never give up hope! A positive fighter’s attitude will bring you points even from the most hopeless-looking situation.
+* Look to the center for play. Chess is not just a bunch of battles on the wings.
+* Passive, planless play will lead to a loss every time.
+* Know what the opponent is planning at all times but don’t allow yourself to become mesmerized by his ideas.
+  Ultimately, your plans should prove to be stronger than his.
+* Don’t make pointless one-move attacks. If you are crossing your fingers and hoping he doesn’t see it, you are making
+  the wrong move (you are also building bad mental habits). Always expect your opponent to see your threats! You want to
+  play a move that improves your position no matter what he does. I tend to repeat this a lot, but I find it’s a mistake
+  that the amateur makes over and over again.
+
+# 79
