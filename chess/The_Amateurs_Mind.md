@@ -86,4 +86,29 @@ Tips:
   play a move that improves your position no matter what he does. I tend to repeat this a lot, but I find it’s a mistake
   that the amateur makes over and over again.
 
-# 79
+Tips:
+
+* Even a seemingly bad opening will have some positive points. If you don't take what your opponent is doing
+  seriously, then these positive points will end up beating you.
+* A plan comes before development.
+* When you accept laziness into your mental processes, it becomes a habit that's hard to break. Work hard from the
+  very first moves!
+* If you think you see a win, but are worried about falling into a trap, you must be courageous and make him prove his
+  point. Never let fear talk you out of a course of action.
+* If you're going to worry about something, make sure
+  it is worth worrying about!
+* Games are often won by simply taking space and
+  restricting the opponent's options. You don't have to attack like a wild man to score a point.
+* Once you start a plan, make sure you finish it. Don't allow yourself to get sidetracked.
+* If you own the center and are killing all the opponent's counterplay, there is no hurry to start an attack on the
+  wing. Continue to take your time, gain and take away the enemy's options.
+
+Tips:
+
+* You can win games by just increasing your edge in territory bit by bit
+* if you have space advantage, try to restrict the enemy pieces
+* the side with more space should not trade too many pieces and vice-versa
+* Don't be in rush to force things, A slow squeeze is enough to torture the opponent and force his eventual
+  capitulation
+
+# 93
