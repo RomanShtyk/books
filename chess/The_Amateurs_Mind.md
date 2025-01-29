@@ -1,6 +1,6 @@
 The Amateur's Mind by Jeremy Silman
 
-List of Imbalances:
+####  List of Imbalances:
 
 * Minor Pieces — the interplay between Bishops and Knights (trying to make one superior to the other).
 * Pawn Structure — a broad subject that encompasses doubled pawns, isolated pawns, backward pawns, passed pawns, etc.
@@ -12,7 +12,7 @@ List of Imbalances:
   imbalance because the opponent will eventually catch up.
 * Initiative — dictating the tempo of a game. This is also a temporary imbalance.
 
-Rules of minor pieces:
+#### Rules of minor pieces:
 
 1) Both 3 points
 2) Bishops are best on open space where pawns are not blocking their diagonals
@@ -111,4 +111,17 @@ Tips:
 * Don't be in rush to force things, A slow squeeze is enough to torture the opponent and force his eventual
   capitulation
 
-# 93
+Tips:
+
+* Space advantage means little if there is no way to penetrate the enemy position
+* Open files are precious things, don't close the very road you so desperately need.
+
+Tips:
+
+* Feel free to grab as much space as you can as long as you are not creating weaknesses in your position
+* Don't allow a race if you don't have to
+* It is a rarely good idea to keep your king in a center
+
+#### Pawn structure
+
+
