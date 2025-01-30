@@ -1,6 +1,6 @@
 The Amateur's Mind by Jeremy Silman
 
-####  List of Imbalances:
+#### List of Imbalances:
 
 * Minor Pieces — the interplay between Bishops and Knights (trying to make one superior to the other).
 * Pawn Structure — a broad subject that encompasses doubled pawns, isolated pawns, backward pawns, passed pawns, etc.
@@ -124,4 +124,41 @@ Tips:
 
 #### Pawn structure
 
+Doubled Pawns:
 
+* NEGATIVE — The doubling of pawns reduces their flexibility and, at times, leaves one or both of them vulnerable to
+  attack (though it’s usually the lead pawn that is the weaker).
+* POSITIVE — The doubling of pawns leads to extra open files for your Rooks and increased square control.
+
+Isolated Pawns:
+
+* 1st NEGATIVE — An isolated pawn cannot be defended by another pawn and is very vulnerable to attack if it stands on an
+  open file.
+* 1st POSITIVE — The creation of an isolated pawn may bestow upon its owner the use of a half-open file.
+* 2nd NEGATIVE — The formula to beat an isolated pawn calls for control of the weak square in front of the pawn so it
+  can’t move, the trade of all minor pieces (which ends all attacking chances for the owner of the isolated pawn), the
+  retention of a Queen (this stops the enemy King from taking part in the defense of the pawn) and one or two Rooks (
+  which will be used to attack the pawn), the doubling of these pieces against the pawn and the use of a friendly pawn
+  to attack the pinned isolated target.
+* 2nd POSITIVE — an isolated pawn at d4(white)-d5(black)  gives his owner plenty of space and open files for his rooks.
+  The owner should play for dynamic play with his pieces.
+
+Backward pawns:
+
+* NEGATIVE —— A backward pawn is only weak if it is sitting on an open file and if it is unable to advance. The side
+  playing against the backward pawn should strive to control the square directly in front of it (turning it into an
+  immobile target), since this square cannot be defended by a pawn. One way to do this is to exchange all the pieces
+  that defend this square.
+* POSITIVE —— A backward pawn acts as a guard to a more advanced pawn to the side of it. This ad- vanced pawn can block
+  enemy pieces and control important squares. The backward pawn cannot be considered a bad thing if the square in front
+  of it is well-defended.
+
+Hanging pawns:
+
+* NEGATIVE This kind of structure can be weak if the other side is able to circumvent any dynamic advance of the pawn
+  duo and, since the pawns would then be immobile, train the power of all his pieces against them.
+* POSITIVE The traditional hanging pawns on c5 and d5 (or c4 and d4 if White has them) control many important central
+  squares, give their owner an advantage in territory and also offer play on the half-open b-file and e-file.
+
+Passed pawns:
+# 116
