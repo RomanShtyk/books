@@ -161,4 +161,23 @@ Hanging pawns:
   squares, give their owner an advantage in territory and also offer play on the half-open b-file and e-file.
 
 Passed pawns:
-# 116
+
+* Negative - A protected passed pawn is not always an advantage, though most players think it is. If the square in front
+  of the pawn can be controlled by the other side, then the pawn is stopped in its tracks and becomes a non-factor for a
+  long time. Even worse, if this square falls to a Knight, then the horse will radiate power on the neighboring squares
+  and pawns.
+* Positive - A passed pawn is very strong if its owner has play elsewhere. Then it can be used as endgame insurance. A
+  passed pawn is also strong if the square in front of it is cleared for the pawn's advance. As can be seen, when a
+  passed pawn exists, the square in front of it becomes the most important square on the board. Whoever owns this square
+  dominates the game, so great energy and imagination must be demonstrated by both sides if they want to wrest control
+  of this critical point.
+
+Tips:
+
+* A weak pawn is really weak if you can seriously attack it or make use of a weak squares that may come with them
+* Always play to improve your position. Don't panic and retreat from good squares.
+* Owning hanging pawns means that you must play dynamically. Passive play will lead to your hanging pawns turning into
+  weaknesses.
+* If you are playing against hanging pawns, you must attack them with everything you've got.
+
+# 124
