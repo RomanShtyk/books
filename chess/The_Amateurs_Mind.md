@@ -180,4 +180,26 @@ Tips:
   weaknesses.
 * If you are playing against hanging pawns, you must attack them with everything you've got.
 
-# 124
+Tips:
+
+* Any kind of weak pawn must first be contained (blocked) before it is attacked.
+* No pawn structure is always good or bad. Look for the potential plusses in any given structure and make sure the
+  opponent doesn't achieve them.
+* Though I repeat this in every chapter, I will take time to do so again: Don't just react to the opponent's plans. Find
+  an active idea and follow it with as much energy as you can muster. On the other hand, don't get carried away with
+  your own ideas and forget that you have an opponent. Take his plans into account and make adjustments when necessary.
+
+Tips:
+
+* A so-called weak pawn is only weak if it can be attacked! Each individual pawn has its own plusses and minuses and
+  must be judged accordingly.
+* Patience is a real virtue in chess. If your opponent has little or no counterplay, then why should you feel compelled
+  to force the issue? It is much better to take your time and add a host of little advantages to the plusses you already
+  possess.
+
+Tips:
+
+* A weak square in front of backward pawn is often a greater problem than the pawn itself
+* You can play to win a square by trading off its defenders
+
+# 136
