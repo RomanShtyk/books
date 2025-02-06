@@ -202,4 +202,46 @@ Tips:
 * A weak square in front of backward pawn is often a greater problem than the pawn itself
 * You can play to win a square by trading off its defenders
 
-# 136
+Tips:
+
+* The pawn-pointing rule is useful to know in closed or semi-closed positions. If the center is locked, you must attack
+  on the wings with pawns. This increases your control of space and opens files for your Rooks. The pawn-pointing rule
+  enables you to tell which wing you are supposed to play on by "point- ing" the way. See the note to Black's 9th move
+  for a more detailed explanation.
+* Don't attack something for no reason! Attacking an enemy piece has no value in itself. You must always expect your
+  opponent to play the best move, so he will (and you have to believe this!) see the transparent attack and move away
+  to
+  safety. If you have gained something valuable, even if he sees your threat, then the attack is useful. If there is
+  nothing to be gained after his best reply, then restrain yourself and leave his pieces alone! Remember: you are trying
+  to follow a plan that benefits your whole army and takes advantage of the weaknesses in his camp. One-move attacks are
+  only useful if they do something to benefit your plan.
+* Avoid vague thoughts. Concentrate on one or two important features of the position and go as far with them as you can.
+  This will enable you to stay on track. If you find yourself saying things like, “I'll somehow attack his King," you
+  are
+  being too vague. You must only attack the King (or anything else, for that matter) for a specific reason and you must
+  be
+  very clear with yourself on how you intend to go about doing it.
+* Don't allow surprise or depression to influence your moves. If something unexpected or bad happens, you must sit on
+  your hands until you regain your equilibrium. When this is done, reassess the situation as if the game were starting
+  over again and calmly figure out what the position needs.
+* Don't just react to the opponent's threats. At times, defensive moves are called for. However, if you find that you
+  have lost track of your own plans and are just reacting to your opponent's blows, you must realize that you are on the
+  road to defeat. Chess is a game where the opponent tries to impose his will at on yours. He wants you to do what he
+  wants you to do. Fight like a madman and refuse to go with his agenda.
+
+#### Material
+
+* RULE 1 - Material beats the initiative if you can neutralize the opponent's plusses and equalize the game (this might
+  take quite a few moves to achieve, so you have to ask if you have the time). Then your extra material will, slowly but
+  surely, bring him down.
+* RULE 2 — Material gives you an extra unit of force. If you make this unit an active participant in the game, you will
+  have your opponent outnumbered.
+* RULE 3 - Material edges like the Exchange (Bishop or Knight for a Rook-three points for five) are only useful if you
+  can give the Rook an open file to fly on. An advanced, centralized Knight can easily beat an inactive, useless Rook.
+  This means that you must be careful not to allow simple point count to influence more than the particular position
+* RULE 4 - When you win material you may find your pieces are off balance and without purpose. That is because they have
+  fulfilled their mission and now need a new goal. If they are off balance, don't keep lashing out. Instead, bring your
+  pieces back together, make everything tight and safe, and then prepare a new plan based on your material edge.
+  Remember: extra material gives you a long- term advantage. You don't have to be in a rush to use it.
+
+# 154
