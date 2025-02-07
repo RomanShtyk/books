@@ -149,7 +149,7 @@ Backward pawns:
   playing against the backward pawn should strive to control the square directly in front of it (turning it into an
   immobile target), since this square cannot be defended by a pawn. One way to do this is to exchange all the pieces
   that defend this square.
-* POSITIVE —— A backward pawn acts as a guard to a more advanced pawn to the side of it. This ad- vanced pawn can block
+* POSITIVE —— A backward pawn acts as a guard to a more advanced pawn to the side of it. This advanced pawn can block
   enemy pieces and control important squares. The backward pawn cannot be considered a bad thing if the square in front
   of it is well-defended.
 
@@ -206,7 +206,7 @@ Tips:
 
 * The pawn-pointing rule is useful to know in closed or semi-closed positions. If the center is locked, you must attack
   on the wings with pawns. This increases your control of space and opens files for your Rooks. The pawn-pointing rule
-  enables you to tell which wing you are supposed to play on by "point- ing" the way. See the note to Black's 9th move
+  enables you to tell which wing you are supposed to play on by "pointing" the way. See the note to Black's 9th move
   for a more detailed explanation.
 * Don't attack something for no reason! Attacking an enemy piece has no value in itself. You must always expect your
   opponent to play the best move, so he will (and you have to believe this!) see the transparent attack and move away
@@ -244,4 +244,22 @@ Tips:
   pieces back together, make everything tight and safe, and then prepare a new plan based on your material edge.
   Remember: extra material gives you a long- term advantage. You don't have to be in a rush to use it.
 
-# 154
+Tips:
+
+* Once you learn how to break down the imbalances in a position, you have to practice coming up with a plan based on
+  these factors.
+* Use this same understanding of the imbalances to figure out what the opponent should be doing and then make some
+  effort to stop his plans (unless you are sure your plans will come to fruition first).
+* Don't ignore your opponent's threats or ideas. Just because you have a superior or even winning position doesn't mean
+  there is nothing for your opponent to do!
+* You must also avoid getting into a place where all you do is worry about your opponent's intentions. Then you will
+  spend the game reacting to his moves and will almost surely lose.
+* Avoid the quick, lazy moves that all of us are prone to on occasion. A lazy, ill-considered move often turns out to be
+  the losing blunder.
+* A material advantage doesn't just win by itself. You have to make use of the extra wood and demonstrate its
+  usefulness. A Bishop or a Knight can easily beat a Rook if the Rook doesn't find a useful file. Point-count chess is a
+  useful guide but it doesn't mean anything if you don't prove why your numerical superiority gives you an advantage.
+* Basic endgame knowledge is very important. Rules like Rooks belong behind passed pawns are knowledge that everyone of
+  every class must have!
+
+# 160
