@@ -262,4 +262,33 @@ Tips:
 * Basic endgame knowledge is very important. Rules like Rooks belong behind passed pawns are knowledge that everyone of
   every class must have!
 
-# 160
+Tips:
+
+* When playing against an isolated d-pawn, trade off all the minor pieces and the pawn's weaknesses will come to light (
+  no attacking chances for the player with the isolated pawn, while the remaining Queen and Rooks will be able to put
+  strong pressure against the pawn).
+* Even if you win material, you must not forget to read the imbalances and create a plan.
+
+#### Development and Initiative
+
+* RULE 1 - A lead in development usually means that you must start some sort of aggressive act. Quiet play puts no
+  pressure on the opponent and will allow him to get the rest of his forces out.
+
+* RULE 2 — A lead in development means the most in open positions because the open central files should enable your army
+  to penetrate into the hostile position with relative ease. If you have more pieces out and the position is wide open (
+  or even semi-open), then don't hesitate to ATTACK!
+
+* RULE 3 — If the enemy King is still in the center and you have a lead in development, consider these factors an
+  invitation to rip the opponent's head off! Start an immediate attack. At the very least, you will keep his King stuck
+  in the middle and make him suffer for a long time to come.
+
+* RULE 4 —— A closed position often nullifies a lead in development because the blocked files stop you from effecting
+  any real penetration. If you have a big lead in development and think you can blast the
+  pawns out of the way, then by all means give it a try. However, more often than not, the side with the deficit in
+  development will find that he has ample time to cure this problem if the central situation is locked up.
+
+* RULE 5 —— The goal doesn't have to be mate! If you start an attack and win material (or get the two Bishops in an open
+  position, or leave him with weak pawns, etc.) by the time he gets his forces out, then you are in possession of a fine
+  static advantage. Don't go crazy and attempt to force an immediate decision where none exists.
+
+# 173
