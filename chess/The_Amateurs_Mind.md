@@ -291,4 +291,18 @@ Tips:
   position, or leave him with weak pawns, etc.) by the time he gets his forces out, then you are in possession of a fine
   static advantage. Don't go crazy and attempt to force an immediate decision where none exists.
 
-# 173
+Tips
+
+* Figure out if the position is a dynamic one or a static one. If it's dynamic, then you must play with tremendous
+  energy.
+* Once you decide on a goal (for example: you want to break through in the center) you must take as long as necessary to
+  accomplish it (on the clock and on the board). A static goal might take twenty moves. A dynamic goal calls for some
+  sort of instant result this means that speed is extremely important. If it takes you forty minutes to figure out how
+  to do what you want done, then take forty minutes!
+* Never let the opponent dominate you mentally! If you notice that you are meekly reacting to everything he does, you
+  must snap yourself out of your trance and fight to establish some sort of psychic control.
+* Castle quickly! When your King is safe, you can do
+  what you want and play without fear of a mating surprise. If you see a King in the center, do everything you can to
+  blast things open and execute it. No subtleties here, just pure brutality!
+
+# 187
