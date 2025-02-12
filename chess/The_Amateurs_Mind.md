@@ -305,4 +305,32 @@ Tips
   what you want and play without fear of a mating surprise. If you see a King in the center, do everything you can to
   blast things open and execute it. No subtleties here, just pure brutality!
 
+Tips
+
+* Don't become entranced with your own plans. You must also take note of the opponent's possibilities and gauge just how
+  dangerous they really are.
+* Part of your plan can be the prevention of the opponent's goals. For example, you can be playing to win a weak pawn
+  but can take time out to prevent his Knight from reaching a strong central outpost.
+* In an open position, the first person to dominate an open central file will usually gain the initiative.
+* The initiative will usually go to the first person who turns his plan into a reality.
+
+Tips
+
+* Always be aware of your opponent's plans and ideas.
+  Don't panic in the face of a kingside attack. Size up his real threats, make defensive moves when needed and continue
+  with your own plans.
+* Follow your plans with gusto. Be devoted to your plan and it will serve you well.
+* Don't play with fear in your heart. If
+  you play with courage, the worst thing that can happen to you is a loss. Since we will all lose many games in our
+  lifetime, we might as well go down with honor and make every game as instructive as possible. Playing passively and
+  getting routed is no fun at all and teaches you nothing.
+* Worry, confusion and hasty moves leads to gross blunders. If you find your mind fogging up, sit back, relax and take a
+  fresh look at the position.
+* Chess is a game of willpower. Don't let the
+  opponent's will dominate yours. Stick to your plans and don't allow him to distract you from them.
+* Take nothing for granted. Don't feel or hope that some line is good or bad. Make sure it is!
+* The best defense is a good offense. When you have to defend, try to make a move that also furthers your own plans.
+
+#### Many imbalances on the board
+
 # 187
