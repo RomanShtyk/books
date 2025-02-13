@@ -333,4 +333,10 @@ Tips
 
 #### Many imbalances on the board
 
-# 187
+Tips
+
+* If you own a long-term advantage, don't be in a hurry to make use of it.
+* If the opponent has a passive position, never allow him to get counterplay.
+* Even if you already have several advantages, always be on the lookout for ways to create new targets.
+
+# 217
