@@ -339,4 +339,25 @@ Tips
 * If the opponent has a passive position, never allow him to get counterplay.
 * Even if you already have several advantages, always be on the lookout for ways to create new targets.
 
-# 217
+Tips
+
+* The basic rules we learned when we started out are good guidelines but must be broken often. Don't fall
+  in love with these concepts and become blind to the reality of any given situation.
+* Every imbalance is capable of doing something positive. Don't look at a thing as negative just because it's supposed
+  to be weak or bad. You have to ask: "Is it bad in this particular position?"
+* Undefended pieces can easily lead to trouble.
+* When pawns are racing to promote on both sides of the board, a Bishop will usually beat out a Knight due to its
+  ability to jump from one side of the board to another in one move.
+
+Tips
+
+* Always try and make your pawn structure conform to whatever minor piece you happen to own.
+* Creating a hole (a weak square) is only a problem if your opponent can make use of it.
+* When you own two Bishops, you usually want to retain both of them.
+* When the center is dead (closed), you must find play on one of the wings. Even if your opponent breaks through on his
+  side of the board first, your plan must still move ahead.
+* It's not too hard to deduce that if you're playing on
+  one wing, your opponent must have some play on the other. Never discount this! Get your attack going as fast as
+  possible, but don't allow yourself to lose sight of the enemy's correct plan.
+
+# 229
