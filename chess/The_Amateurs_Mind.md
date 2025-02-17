@@ -360,4 +360,18 @@ Tips
   one wing, your opponent must have some play on the other. Never discount this! Get your attack going as fast as
   possible, but don't allow yourself to lose sight of the enemy's correct plan.
 
-# 229
+Tips
+
+* If you gain space early, you should continue to add to the gains that you have already made. All your pieces should
+  work together in this (or any other) effort. The same can be said for an early minor piece advantage (make all your
+  pieces and pawns help to improve your piece and restrict his), a structural edge (show that his pawns are weaker than
+  yours), or virtually any other imbalance.
+* Don't just develop pieces. You must make gains with every move.
+* Bishops on long diagonals want those diagonals to stay open. Only allow them to close up if you feel that you are
+  getting something good in other areas.
+
+Tips
+
+* The advantage you create in the opening often still have influence deep into the middlegame or endgame.
+
+# 241
