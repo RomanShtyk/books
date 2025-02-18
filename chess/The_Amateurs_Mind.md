@@ -374,4 +374,23 @@ Tips
 
 * The advantage you create in the opening often still have influence deep into the middlegame or endgame.
 
-# 241
+Tips
+
+* Don't play mindless one-move attacks which, after the opponent moves his attacked unit to safety (and you must believe
+  that he will see your threat), leave your attacking piece on a useless square.
+* If you advance your pawns in the center, you will be able to open central files for your Rooks. Be attentive to the
+  needs of your Rooks and they will serve you well.
+* If the opponent has two Bishops, trade one of them
+  off. It's much easier to deal with one Bishop than two, since a pair of them is able to control both white and black
+  squares.
+
+#### Using rooks
+
+* RULE 1 - use your pawns to blast open files, this holds true for closed and open positions
+* RULE 2 - Don't open a file if you think that the opponent will take it away from you.
+* RULE 3 - If the creation of an open file has noth- ing to do with your other positive imbalances, then don't waste
+  your time creating it.
+* RULE 4 - at times you can allow the opponent to dominate the open file, as long as you make sure that no penetration
+  point exists along it
+
+# 251
