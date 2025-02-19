@@ -393,4 +393,18 @@ Tips
 * RULE 4 - at times you can allow the opponent to dominate the open file, as long as you make sure that no penetration
   point exists along it
 
-# 251
+Tips
+
+* Trading bad Bishops is fine, but don't think about that to the exclusion of everything else.
+* Open files are only valuable if you can effect some sort of penetration on them.
+* If you can stop the opponent's play, you don't have to be in a hurry with your own.
+
+Tips
+
+* A game is always easier to draw if there are pawns on only one side of the board.
+* A bad, defeatist attitude will get you only defeat.
+* Two connected passed pawns almost always win in a Rook endgame.
+
+#### The curse of the mindless king hunter
+
+# 262
