@@ -388,7 +388,7 @@ Tips
 
 * RULE 1 - use your pawns to blast open files, this holds true for closed and open positions
 * RULE 2 - Don't open a file if you think that the opponent will take it away from you.
-* RULE 3 - If the creation of an open file has noth- ing to do with your other positive imbalances, then don't waste
+* RULE 3 - If the creation of an open file has nothing to do with your other positive imbalances, then don't waste
   your time creating it.
 * RULE 4 - at times you can allow the opponent to dominate the open file, as long as you make sure that no penetration
   point exists along it
@@ -407,4 +407,19 @@ Tips
 
 #### The curse of the mindless king hunter
 
-# 262
+Tips
+
+* Moving a piece away from the center (called a decentralizing move) should always be viewed with suspicion.
+* Only go after the enemy King if the position justifies it. A King-hunt is not something you decide to do because you "
+  feel like it."
+* Undefended pieces often lead to nasty tactical surprises. Make sure your pieces are well-guarded.
+
+Tips
+
+* Only play where you have some sort of favorable imbalance. Simply wanting to attack on the kingside is not
+  justification for doing so. However, if weaknesses appear there then by all means go after him with gusto!
+* Always try and force your ideas onto your opponent-get him to react to what you are doing. Of course, you must also
+  make sure that what you are doing conforms to the needs to the position.
+* Never allow counterplay when you have a lock on the game.
+
+# 275
