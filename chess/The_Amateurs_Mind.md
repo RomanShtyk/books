@@ -422,4 +422,26 @@ Tips
   make sure that what you are doing conforms to the needs to the position.
 * Never allow counterplay when you have a lock on the game.
 
-# 275
+Tips
+
+* You must be able to play in all three areas of the board (queenside, center, and kingside), depending on where your
+  favorable imbalances are.
+* A person that does nothing but attacks the enemy King will end up a loser most of the time. Balance, and a willingness
+  to do whatever is called for, is the key to success in chess.
+
+Tips
+
+* Find a chess teacher who won't fine you for your
+  errors.
+* Don't fear retreating moves if they accomplish some sort of important goal. It is not unmanly to move a piece
+  backwards!
+* Take note of the transition between positive
+  thoughts involving active plans and negative thoughts revolving around reactions and defense.
+* Insist on making good things happen for your position. If it takes you a lot of time to find these ideas, then
+  consider this time well-spent.
+* Before you take time out to stop a threat, make sure that his move is something you should really be
+  afraid of. If it isn't, then go ahead with your own ideas!
+* If someone tries to attack you on the wing, break the center as quickly as possible.
+  open
+
+# 288
