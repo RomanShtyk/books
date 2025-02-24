@@ -444,4 +444,23 @@ Tips
 * If someone tries to attack you on the wing, break the center as quickly as possible.
   open
 
-# 288
+Tips
+
+* Some imbalances, like the two Bishops, may not be too useful right away. However, they could easily become a force
+  later in the game.
+* In closed or semi-closed positions, you usually play in the sector where you own the most space.
+
+Tips
+
+* Pick a side of the board and stake a claim! Go after it with gusto and don't allow the opponent or your secret desires
+  to distract you.
+* The kingside is not the end-all and be-all of chess. Seeking play in the center or on the queenside is just as
+  effective (often more so) as a kingside attack.
+
+Tips
+
+* If the board calls for a kingside attack, then you must attack.
+* In an open position, you must get your attack up and running as quickly as possible. If you do things too slowly, the
+  opponent's counterplay will lead to his taking the initiative.
+
+# 299
