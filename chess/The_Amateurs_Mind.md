@@ -463,4 +463,26 @@ Tips
 * In an open position, you must get your attack up and running as quickly as possible. If you do things too slowly, the
   opponent's counterplay will lead to his taking the initiative.
 
-# 299
+Tips
+
+* If you find yourself reacting to the opponent's ideas, you're walking the road to doom and destruction.
+* Figure out which side of the board you're supposed to play on and then claim that area of the board as quickly as
+  possible. Don't let anything distract you from this holy goal!
+* When you are about to make a move, always ask, "What wonderful things is this move doing for my position?" If you
+  can't answer this question, don't play the move!
+* Don't just wish you had play somewhere. It's your job to make it happen!
+* Don't hand over key squares to your opponent. The
+  idea of holding squares is alien to many amateurs. Work hard to make this concept a major part of your strategic
+  repertoire!
+* Always be aware of the battle to make your minor piece superior to your opponent's.
+
+Tips
+
+* A bad attitude will always lead to bad results.
+* Don't concentrate on what is wrong with your game. Concentrate on what is right with it and insist on making use of
+  those positive imbalances.
+* It's great to be confident, but overconfidence can easily lead to a fatal loss of vigilance.
+* The game is not over until the opponent has re- signed. Take pride in finishing the enemy off with gusto and never
+  allow counterplay that might turn the battle around.
+
+# 333
