@@ -482,7 +482,5 @@ Tips
 * Don't concentrate on what is wrong with your game. Concentrate on what is right with it and insist on making use of
   those positive imbalances.
 * It's great to be confident, but overconfidence can easily lead to a fatal loss of vigilance.
-* The game is not over until the opponent has re- signed. Take pride in finishing the enemy off with gusto and never
+* The game is not over until the opponent has resigned. Take pride in finishing the enemy off with gusto and never
   allow counterplay that might turn the battle around.
-
-# 333

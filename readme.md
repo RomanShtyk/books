@@ -29,6 +29,7 @@
 * [Linux System Programming](tech/Linux_system_programming.md)
 * [Kotlin in action](tech/Kotlin_in_action_2nd_edition.md)
 * [Cracking the coding interview](tech/Cracking_the_Coding_Interview.md)
+* [Accelerate](tech/Accelerate.md)
 
 **Chess**
 
