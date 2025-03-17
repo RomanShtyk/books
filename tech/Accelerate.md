@@ -29,4 +29,32 @@ software delivery.
   The chapter challenges old assumptions and shows that high-performing teams can move fast and maintain stability. The
   book aims to provide data-driven insights into what makes great software teams successful.
 
-[//]: # (41)
+##### Chapter 2: Measuring Performance
+
+🚀 High-performing teams deploy multiple times per day, have short lead times (hours or minutes), recover quickly, and
+have low failure rates.
+
+🐢 Low-performing teams have long release cycles (weeks or months), slow recovery times, and frequent failures.
+
+1. The Four Key Metrics
+    * Deployment Frequency – How often an organization successfully releases software.
+    * Lead Time for Changes – The time it takes for a code change to go from commit to production.
+    * Mean Time to Restore (MTTR) – How quickly a team can recover from failures.
+    * Change Failure Rate – The percentage of deployments that cause incidents requiring fixes.
+
+2. Moving Beyond Traditional Metrics
+   Traditional software success metrics (e.g., lines of code, number of commits, or hours worked) do not accurately
+   reflect delivery performance.
+   Instead, focusing on the four key DevOps metrics leads to better business outcomes.
+3. Stability vs. Speed: A False Trade-Off
+   Many believe that faster releases lead to unstable systems, but the research shows that high-performing teams achieve
+   both speed and stability.
+   Good DevOps practices (e.g., automated testing, continuous integration, and trunk-based development) help teams
+   release quickly without compromising reliability.
+   Main Takeaway
+   The four key DevOps metrics are the best indicators of software delivery success. High-performing teams focus on
+   frequent deployments, fast recovery, and low failure rates rather than outdated productivity measures.
+
+##### Chapter 3: MEASURING AND CHANGING CULTURE
+
+[//]: # (63)
