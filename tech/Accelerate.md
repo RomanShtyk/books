@@ -51,10 +51,45 @@ have low failure rates.
    both speed and stability.
    Good DevOps practices (e.g., automated testing, continuous integration, and trunk-based development) help teams
    release quickly without compromising reliability.
-   Main Takeaway
+
+4. Main Takeaway
    The four key DevOps metrics are the best indicators of software delivery success. High-performing teams focus on
    frequent deployments, fast recovery, and low failure rates rather than outdated productivity measures.
 
 ##### Chapter 3: MEASURING AND CHANGING CULTURE
 
-[//]: # (63)
+1. Organization culture, three levels of culture:
+    * Basic assumptions: Invisible, things that we just “know”.
+    * Values: more “visible”.
+    * Artifacts:
+        * Mission statements.
+        * Technology.
+        * Formal procedures.
+        * Heroes.
+        * Rituals.
+        * Focus on second level.
+2. Ron Westrum, three types:
+   +------------------------------+---------------+----------------+------------------+
+   | | Pathological | Bureaucratic | Generative |
+   +------------------------------+---------------+----------------+------------------+
+   | Power Orientation | Power-oriented | Rule-oriented | Performance-oriented |
+   | Cooperation Level | Low | Modest | High |
+   | Handling of Messengers | "Shot"        | Neglected | Trained |
+   | Responsibility Approach | Shirked | Narrow | Shared |
+   | Bridging Between Teams | Discouraged | Tolerated | Encouraged |
+   | Response to Failure | Scapegoating | Justice | Inquiry |
+   | Approach to Novelty | Crushed | Leads to problems | Implemented |
+   +------------------------------+---------------+----------------+------------------+
+
+3. Good information flow is critical:
+    * Answers what and when needs to be answered, in a way that can be effectively used.
+4. Org culture predicts performance outcomes.
+5. Bureaucracy is not bad. Ensures fairness.
+6. Good culture:
+    * Trust and cooperation.
+    * Higher quality decision making.
+    * Easy to reverse bad decisions.
+    * Higher job satisfaction.
+    * Change culture by first changing what people do, not try to first change how people think (John Shook).
+
+[//]: # (76)
