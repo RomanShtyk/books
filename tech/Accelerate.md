@@ -94,63 +94,79 @@ have low failure rates.
 
 # Chapter 4 - Technical Practices
 
-## Technical Practices are Vital  
-**Not optional, not secondary.**  
+## Technical Practices are Vital
 
-## Key Principles of Continuous Delivery (CD):  
-- **Build quality in.**  
-- **Small batches.**  
-- **People solve problems, computers do repetitive tasks.**  
-- **Continuous improvement.**  
-- **Everyone is responsible.**  
+**Not optional, not secondary.**
 
-## Foundations of Continuous Delivery:  
-- **Comprehensive configuration management:** Everything in **Version Control System (VCS)**.  
-- **Continuous Integration (CI).**  
-- **Continuous Testing.**  
-- **Jerry Weinberg:** *"Quality is value to some person."*  
+## Key Principles of Continuous Delivery (CD):
 
-## CD Brings Higher Quality:  
-- **Less rework or unplanned work.**  
-- **Fewer bugs.**  
+- **Build quality in.**
+- **Small batches.**
+- **People solve problems, computers do repetitive tasks.**
+- **Continuous improvement.**
+- **Everyone is responsible.**
 
-## Practices:  
+## Foundations of Continuous Delivery:
 
-### **Version Control**  
-- Includes **system and application configuration**.  
+- **Comprehensive configuration management:** Everything in **Version Control System (VCS)**.
+- **Continuous Integration (CI).**
+- **Continuous Testing.**
+- **Jerry Weinberg:** *"Quality is value to some person."*
 
-### **Test Automation**  
-- **Reliable tests.**  
-- **Written by developers.**  
-- **Test-Driven Development (TDD)** is important but **not mandatory**.  
-- **Test Data Management.**  
+## CD Brings Higher Quality:
 
-### **Trunk-Based Development**  
-- No branches older than **one day**.  
+- **Less rework or unplanned work.**
+- **Fewer bugs.**
 
-### **Shift Left on Security**  
-- Incorporate security checks **early in the development process**.  
+## Practices:
 
-# Chapter 5 - Architecture  
+### **Version Control**
 
-## Most Important Characteristic: Loosely Coupled  
-A **loosely coupled** architecture means:  
-- **Most testing can be done without an integrated environment.**  
-- **Releases can happen independently of other apps they depend on.**  
+- Includes **system and application configuration**.
 
-### **Challenges in Low-Performing Teams:**  
-- More likely to be integrating with **custom software** developed by another company (or outsourced).  
-- Often working on **mainframe systems**, limiting flexibility.  
+### **Test Automation**
 
-## **Biggest Contributor to Continuous Delivery (CD):**  
-- Teams should be able to do work **without needing to talk with anyone outside the team** → a.k.a. **proper cross-functional teams**.  
-- **Read:** *Steve Yegge’s “Platform Rant”*.  
+- **Reliable tests.**
+- **Written by developers.**
+- **Test-Driven Development (TDD)** is important but **not mandatory**.
+- **Test Data Management.**
 
-## **Scaling Engineering Organizations**  
-- **Loosely coupled architectures enable organizational scaling.**  
-- **Teams that choose their own tools perform better**, but should standardize around **architecture and infrastructure configuration**.  
+### **Trunk-Based Development**
 
-## **Role of Architects**  
-- Architects should **focus on engineers and outcomes**, not specific tools or technologies.  
+- No branches older than **one day**.
 
-[//]: # (94)
+### **Shift Left on Security**
+
+- Incorporate security checks **early in the development process**.
+
+# Chapter 5 - Architecture
+
+## Most Important Characteristic: Loosely Coupled
+
+A **loosely coupled** architecture means:
+
+- **Most testing can be done without an integrated environment.**
+- **Releases can happen independently of other apps they depend on.**
+
+### **Challenges in Low-Performing Teams:**
+
+- More likely to be integrating with **custom software** developed by another company (or outsourced).
+- Often working on **mainframe systems**, limiting flexibility.
+
+## **Biggest Contributor to Continuous Delivery (CD):**
+
+- Teams should be able to do work **without needing to talk with anyone outside the team** → a.k.a. **proper
+  cross-functional teams**.
+- **Read:** *Steve Yegge’s “Platform Rant”*.
+
+## **Scaling Engineering Organizations**
+
+- **Loosely coupled architectures enable organizational scaling.**
+- **Teams that choose their own tools perform better**, but should standardize around **architecture and infrastructure
+  configuration**.
+
+## **Role of Architects**
+
+- Architects should **focus on engineers and outcomes**, not specific tools or technologies.
+
+[//]: # (104)
