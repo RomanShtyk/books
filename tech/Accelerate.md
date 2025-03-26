@@ -169,4 +169,26 @@ A **loosely coupled** architecture means:
 
 - Architects should **focus on engineers and outcomes**, not specific tools or technologies.
 
-[//]: # (104)
+# Chapter 6 - Integrating InfoSec into the Delivery Lifecycle
+
+## **Typical InfoSec Ratio**
+
+- **1** InfoSec engineer per **10** infrastructure engineers per **100** developers.
+
+## **Key Security Principles**
+
+- **OWASP Top 10** – Awareness of the most critical security risks.
+- **Building security into software** improves both **delivery performance** and **security quality**.
+
+## **Shift Left on Security**
+
+- **Security experts are involved earlier** and throughout the entire **DevOps process**.
+- **Security teams provide**:
+    - **Secure tools, libraries, and processes**.
+    - **Guidance and resources** to help developers build security into their software.
+
+## **The Rugged Manifesto**
+
+- A mindset that promotes **resilient, proactive security** in software development.
+
+[//]: # (110)
