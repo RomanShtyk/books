@@ -191,4 +191,85 @@ A **loosely coupled** architecture means:
 
 - A mindset that promotes **resilient, proactive security** in software development.
 
-[//]: # (110)
+# Chapter 7 - Management Practices
+
+## **Origin**
+
+- Derived from the **Lean movement**.
+
+## **Key Practices**
+
+### **Limit Work in Progress (WIP)**
+
+- Helps manage flow but is **not enough on its own**.
+
+### **Visual Management**
+
+- Track **key quality and productivity metrics**.
+
+### **Feedback from Production**
+
+- Use real-world **production feedback** to drive **business decisions**.
+
+### **Intrateam Code Reviews**
+
+- **Best way to approve changes** → Includes **pair programming**.
+
+# Chapter 8 - Product Development
+
+## **The Lean Startup – Eric Ries**
+
+- A **lightweight approach** to explore **new business models** and **product ideas**.
+
+## **Lean Product Development**
+
+### **Small Batches**
+
+- Work in batches **smaller than a week**.
+- Focus on **Minimum Viable Product (MVP)**.
+
+### **Make Flow of Work Visible**
+
+- Track progress **from business to customers**.
+- Show the **status of products and features**.
+
+### **Customer Feedback**
+
+- Use **satisfaction metrics** to measure success.
+- **Actively seek feedback** and implement it.
+
+### **Team Experimentation**
+
+- Teams can **experiment without external approval**.
+- Teams **adjust requirements** as they learn.
+
+# Chapter 9 - Making Work Sustainable
+
+## **Deployment Pain and Organizational Performance**
+
+- Where **code deployments are painful**, **organizational performance suffers**.
+- To **reduce deployment pain**, apply the **same technical practices** that improve **delivery speed and stability**.
+
+## **Reducing Burnout**
+
+- **Foster a learning environment** → Focus on **learning over blaming**.
+- **Create a strong sense of purpose**.
+- **Invest in employee development**: Provide **time, space, and resources** for growth.
+- **Remove obstacles** that hinder productivity.
+- **Give teams authority** to make decisions that affect them.
+
+## **Burnout Risks**
+
+- **Overwork**
+- **Lack of control**
+- **Insufficient rewards**
+- **Breakdown of community**
+- **Absence of fairness**
+- **Value conflicts**
+
+## **Role of Leadership**
+
+- Leaders should **change the environment**, not try to **"fix" the person**.
+- Recognize the difference between **official vs. real organizational values**.
+
+[//]: # (128)
