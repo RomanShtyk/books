@@ -272,4 +272,22 @@ A **loosely coupled** architecture means:
 - Leaders should **change the environment**, not try to **"fix" the person**.
 - Recognize the difference between **official vs. real organizational values**.
 
-[//]: # (128)
+# Chapter 10 - Employee Satisfaction, Identity, and Engagement
+
+## **Employee Net Promoter Score (eNPS) and Business Outcomes**
+
+- A **higher eNPS** leads to **better business performance**.
+
+## **What is eNPS?**
+
+- **Question:** *“How likely is it that you would recommend our organization/team to a friend or colleague?”*
+    - **9-10** → **Promoters** (Highly satisfied employees)
+    - **7-8** → **Passives** (Neutral employees)
+    - **0-6** → **Detractors** (Unhappy employees)
+
+## **People as the Organization’s Greatest Asset**
+
+- Employees are **critical to success**.
+- **Diversity in gender and minorities** leads to **better outcomes**.
+
+[//]: # (145)
