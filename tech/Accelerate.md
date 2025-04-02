@@ -290,4 +290,40 @@ A **loosely coupled** architecture means:
 - Employees are **critical to success**.
 - **Diversity in gender and minorities** leads to **better outcomes**.
 
-[//]: # (145)
+# Chapter 11 - Leaders and Managers
+
+## **What is Leadership?**
+
+- **Inspiring and motivating** those around you.
+
+## **Essential for:**
+
+- Establishing **high-trust cultural norms**.
+- Supporting **developer productivity**.
+- Encouraging **team experimentation and innovation**.
+- **Breaking down silos** to achieve **strategic alignment**.
+
+## **Transformational Leaders**
+
+- **Vision** → Clear direction for where the organization should be in **5 years**.
+- **Inspirational communication**.
+- **Intellectual stimulation** → Encouraging creative problem-solving.
+- **Supportive leadership** → Caring about employees' personal needs.
+- **Personal recognition** → Acknowledging contributions.
+
+## **Transformational Leadership Approach**
+
+- **Appeals to followers' values and sense of purpose**.
+- Encourages employees to **identify with the organization**.
+
+## **Building a Culture of Learning**
+
+- **Create a training budget** and **advocate for its use**.
+- **Google 20% time** → Allow time for innovation.
+- **Safe to fail** → Encourage calculated risks.
+- **Weekly lightning talks** → Share knowledge in short sessions.
+- **Brown bag sessions** → Informal learning discussions over lunch.
+- **Demo days** → Showcase projects and progress.
+- **Mini-conferences** → Internal events to foster learning.
+
+[//]: # (158)
