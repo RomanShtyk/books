@@ -326,4 +326,4 @@ A **loosely coupled** architecture means:
 - **Demo days** → Showcase projects and progress.
 - **Mini-conferences** → Internal events to foster learning.
 
-[//]: # (158)
+[//]: # (164)
