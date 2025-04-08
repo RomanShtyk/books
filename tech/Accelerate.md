@@ -326,4 +326,79 @@ A **loosely coupled** architecture means:
 - **Demo days** → Showcase projects and progress.
 - **Mini-conferences** → Internal events to foster learning.
 
-[//]: # (164)
+# Part III: Transformation
+
+## Chapter 16 - High-Performance Leadership and Management
+
+### **Spotify Model**
+
+- Inspired agile scaling with **Squads**, **Tribes**, and **Chapters**.
+- Use **external coaches** to **challenge assumptions** and support teams.
+
+### **Communication Flow**
+
+- **Squad stand-up → Tribe stand-up → Senior Leadership stand-up**
+- Share:
+    - **Technical problems** with the **Chapter**
+    - **Business problems** with the **Tribe**
+
+### **Leadership Approach**
+
+- Use empathetic questions like:  
+  *“Help me better understand the problems you’re encountering,”*  
+  instead of blame-driven questions like:  
+  *“Why isn’t this getting done?”*
+- **Teams own their work** – they can **decide not to release** if it’s not ready.
+
+---
+
+## Bonus Material - How to Transform
+
+### **Common Causes of Transformation Failure**
+
+- Treating the transformation **as a project** with an **end date**.
+- **Top-down implementation** without feedback from those affected.
+- **Not defining measurable** business or organizational outcomes.
+
+---
+
+## **Executing Continuous Improvement**
+
+From the *Lean Enterprise* book.
+
+### **Four Key Steps**
+
+#### **Three Planning Steps:**
+
+1. **Understand the direction or challenge**
+2. **Set an inspirational goal** that feels impossible
+3. **Grasp the current condition**
+4. **Establish the next target condition**
+
+#### **One Execution Step:**
+
+- **Iterate toward the target condition** using:
+    - **Scientific method**: Plan → Do → Check → Act
+
+---
+
+### **Improvement Kata – 5 Daily Questions:**
+
+1. What is the **target condition**?
+2. What is the **actual condition now**?
+3. What **obstacles** are preventing you from reaching the target condition?
+    - Which **one** are you addressing **now**?
+4. What is your **next step**? What do you **expect**?
+5. **When** can we go and see what we have **learned** from that step?
+
+---
+
+## **Principles of Effective Organizational Change Management**
+
+- **You are never done** with improvement work.
+- **Leaders and teams agree on measurable outcomes**.
+    - Teams discover **how** to achieve them.
+- Achieve **large-scale change** through **iterative and incremental steps**.
+- What works in **one organization** may **not work in another**.
+
+[//]: # (227)
