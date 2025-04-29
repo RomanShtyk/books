@@ -401,4 +401,4 @@ From the *Lean Enterprise* book.
 - Achieve **large-scale change** through **iterative and incremental steps**.
 - What works in **one organization** may **not work in another**.
 
-[//]: # (227)
+[//]: # (258)
