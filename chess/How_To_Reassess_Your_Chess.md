@@ -1,6 +1,5 @@
 How to reassess your chess by Jeremy Silman
 
-
 Chapter 1: Basic Endgame Principles
 
 It is always a good idea ot trap the enemy King as far away as possible from the scene of action.
@@ -22,4 +21,18 @@ If your King is forced to leave the queening square of the pawn and run to one s
 short side of the board.
 
 Chapter 2: IMBALANCES AND THE 'SILMAN THINKING TECHNIQUE'
-[//]: # (27)
+
+Here is a breakdown of the different imbalances:
+
+1) Superior Minor Piece (the interplay between Bishops and Knights).
+2) Pawn Structure (a broad subject that encompasses doubled pawns, isolated pawns, etc).
+3) Space (the annexation of territory on a chess board).
+4) Material (owning pieces of greater value than the opponent's).
+5) Control of a key file or square (files and diagonals act sa pathways for your pieces, while squares act as homes).
+6) Lead in development (more force ni a specific area of the board).
+7) Initiative (dictating the tempo of a game).
+
+Chapter 3: CALCULATION AND COMBINATIONS
+
+
+[//]: # (35)
