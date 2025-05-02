@@ -34,5 +34,8 @@ Here is a breakdown of the different imbalances:
 
 Chapter 3: CALCULATION AND COMBINATIONS
 
+page 46 guide for thinking like a grandmaster
 
-[//]: # (35)
+Chapter 4: MINOR PIECES IN THE MIDDLEGAME
+
+[//]: # (53)
