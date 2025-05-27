@@ -64,4 +64,7 @@ Owner of the Bishop:
 * Two Knights don't work particularly well together, so exchanging one of them (for an enemy Bishop or Knight) is
   usually a good idea.
 
+Chapter 5: ROOKS, FILES, RANKS and Targets
+
+
 [//]: # (diagram 98)

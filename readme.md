@@ -16,6 +16,7 @@
 * [The Manager's path](team/The_Manager’s_Path.md)
 * [Staff Engineer](team/Staff_Engineer:_Leadership_beyond_the_management_track.md)
 * [An Elegant Puzzle](team/elegant_puzzle.md)
+* [Software engineering at Google](team/software_engineering_at_google.md)
 
 **Tech**
 
