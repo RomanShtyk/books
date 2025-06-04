@@ -26,4 +26,38 @@ all observable behaviors of your system will be depended on by somebody.
 * Time doesn’t only trigger change in technical dependencies but in data used to drive decisions too - dont be afraid to
   change your mind.
 
-[//]: # (23) Software Engineering Versus Programming
+## Key Principles & TL;DR Insights
+
+* Dimensional Difference
+  Software engineering adds time, collaboration, and scalability dimensions to the raw task of programming.
+* Tool/Practice Fit is Context-Dependent
+  Best practices for a 10-year product don’t apply to a 10-hour script—and vice versa.
+* Sustainability
+  Code is sustainable if you can respond to change—even if you choose not to change.
+* Hyrum’s Law
+  Any observable behavior of a system will be relied on, no matter what the API contract says.
+* Scalability of Human Effort
+  Tasks done often should scale with policies and automation, not more people.
+* Boiled-Frog Risk
+  Small inefficiencies accumulate—monitor and manage them before they become crises.
+* Economies of Scale Reward Expertise
+  Smart solutions scale better when applied repeatedly across a system.
+* Bad Reasoning
+  “Because I said so” is not a valid justification for decisions in engineering.
+* Data-Informed ≠ Data-Only
+  Most real-world decisions are a mix of data, assumptions, experience, and debate.
+* Adaptability Is Key
+  Being data-driven means also being change-driven—mistakes and reversals are part of the process.
+
+### Part II, Culture
+
+* Be aware of the trade-offs of working in isolation.
+* Acknowledge the amount of time that you and your team spend communicating and in interpersonal conflict. A small
+  investment in understanding personalities and working styles of yourself and others can go a long way toward improving
+  productivity.
+* If you want to work effectively with a team or a large organization, be aware of your preferred working style and that
+  of others.
+
+### Part III, Knowledge Sharing
+
+[//]: # (43)
