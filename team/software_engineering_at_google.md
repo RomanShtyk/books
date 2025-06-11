@@ -60,4 +60,24 @@ all observable behaviors of your system will be depended on by somebody.
 
 ### Part III, Knowledge Sharing
 
-[//]: # (43)
+* Knowledge is critical capital in a software engineering org; sharing it builds resilience and scalability.
+* Psychological safety is the foundation for effective knowledge sharing—people need to feel safe to ask, teach, and
+  learn.
+* Start small: Encourage asking questions, documenting answers, and sharing broadly.
+* Make help accessible: Combine documented references with support from human experts.
+* Recognize and reward teachers: Promote mentoring and cross-team collaboration.
+* No one-size-fits-all: Use a mix of strategies (docs, mentorship, review processes, tools) tailored to your org's needs
+  and maturity.
+
+🧠 Readability: Google’s Mentorship via Code Review
+
+* A human-driven, mandatory process where certified reviewers teach best practices through rigorous code review.
+* Ensures codebase-wide consistency, maintainability, and propagation of expertise.
+* Scales linearly with org growth but provides long-term benefits in quality and velocity.
+* Reviewers are mentors, not gatekeepers; teaching is the priority.
+* Supported by tools and static analysis to reduce repetitive feedback and focus on higher-order concerns.
+* Proven by internal studies to improve engineer satisfaction, review speed, and code quality.
+
+### Part IV, Engineering for Equity
+
+[//]: # (69)
