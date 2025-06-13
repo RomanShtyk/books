@@ -80,4 +80,13 @@ all observable behaviors of your system will be depended on by somebody.
 
 ### Part IV, Engineering for Equity
 
-[//]: # (69)
+* Bias is the default.
+* Diversity is necessary to design properly for a comprehensive user base.
+* Inclusivity is critical not just to improving the hiring pipeline for underrepresen‐ ted groups, but to providing a
+  truly supportive work environment for all people.
+* Product velocity must be evaluated against providing a product that is truly useful to all users. It’s better to
+  slow down than to release a product that might cause harm to some users.
+
+### Part V, How to Lead a Team
+
+[//]: # (84)
