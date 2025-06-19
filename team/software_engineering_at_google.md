@@ -89,4 +89,10 @@ all observable behaviors of your system will be depended on by somebody.
 
 ### Part V, How to Lead a Team
 
-[//]: # (84)
+* Don’t “manage” in the traditional sense; focus on leadership, influence, and serv‐ ing your team.
+* Delegate where possible; don’t DIY (Do It Yourself).
+* Pay particular attention to the focus, direction, and velocity of your team.
+
+### Part VI, Leading at Scale
+
+[//]: # (107)
