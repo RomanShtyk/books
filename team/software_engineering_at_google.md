@@ -95,4 +95,11 @@ all observable behaviors of your system will be depended on by somebody.
 
 ### Part VI, Leading at Scale
 
-[//]: # (107)
+* Always Be Deciding: Ambiguous problems have no magic answer; they’re all about finding the right trade-offs of the
+  moment, and iterating.
+* Always Be Leaving: Your job, as a leader, is to build an organization that automat‐ ically solves a class of ambiguous
+  problems—over time—without you needing to be present.
+* Always Be Scaling: Success generates more responsibility over time, and you must proactively manage the scaling of
+  this work in order to protect your scarce resources of personal time, attention, and energy.
+
+[//]: # (122)
