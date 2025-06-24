@@ -82,14 +82,14 @@ all observable behaviors of your system will be depended on by somebody.
 
 * Bias is the default.
 * Diversity is necessary to design properly for a comprehensive user base.
-* Inclusivity is critical not just to improving the hiring pipeline for underrepresen‐ ted groups, but to providing a
+* Inclusivity is critical not just to improving the hiring pipeline for underrepresented groups, but to providing a
   truly supportive work environment for all people.
 * Product velocity must be evaluated against providing a product that is truly useful to all users. It’s better to
   slow down than to release a product that might cause harm to some users.
 
 ### Part V, How to Lead a Team
 
-* Don’t “manage” in the traditional sense; focus on leadership, influence, and serv‐ ing your team.
+* Don’t “manage” in the traditional sense; focus on leadership, influence, and serving your team.
 * Delegate where possible; don’t DIY (Do It Yourself).
 * Pay particular attention to the focus, direction, and velocity of your team.
 
@@ -97,9 +97,24 @@ all observable behaviors of your system will be depended on by somebody.
 
 * Always Be Deciding: Ambiguous problems have no magic answer; they’re all about finding the right trade-offs of the
   moment, and iterating.
-* Always Be Leaving: Your job, as a leader, is to build an organization that automat‐ ically solves a class of ambiguous
+* Always Be Leaving: Your job, as a leader, is to build an organization that automatically solves a class of ambiguous
   problems—over time—without you needing to be present.
 * Always Be Scaling: Success generates more responsibility over time, and you must proactively manage the scaling of
   this work in order to protect your scarce resources of personal time, attention, and energy.
+
+### Part VII, Taking Action and Tracking Results
+
+* Before measuring productivity, ask whether the result is actionable, regardless of whether the result is positive or
+  negative. If you can’t do anything with the result, it is likely not worth measuring.
+* Select meaningful metrics using the GSM framework. A good metric is a reasonable proxy to the signal you’re trying
+  to measure, and it is traceable back to your original goals.
+* Select metrics that cover all parts of productivity (QUANTS). By doing this, you ensure that you aren’t improving one
+  aspect of productivity (like developer velocity) at the cost of another (like code quality).
+* Qualitative metrics are metrics, too! Consider having a survey mechanism for tracking longitudinal metrics about
+  engineers’ beliefs. Qualitative metrics should also align with the quantitative metrics; if they do not, it is likely
+  the quantitative metrics that are incorrect.
+* Aim to create recommendations that are built into the developer workflow and incentive structures. Even though it is
+  sometimes necessary to recommend additional training or documentation, change is more likely to occur if it is built
+  into the developer’s daily habits.
 
 [//]: # (122)
