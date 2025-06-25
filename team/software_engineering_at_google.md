@@ -117,4 +117,12 @@ all observable behaviors of your system will be depended on by somebody.
   sometimes necessary to recommend additional training or documentation, change is more likely to occur if it is built
   into the developer’s daily habits.
 
-[//]: # (122)
+### PART VIII, Style Guides and rules
+
+* Rules and guidance should aim to support resilience to time and scaling.
+* Know the data so that rules can be adjusted.
+* Not everything should be a rule.
+* Consistency is key.
+* Automate enforcement when possible.
+  
+* [//]: # (163)
