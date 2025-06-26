@@ -124,5 +124,15 @@ all observable behaviors of your system will be depended on by somebody.
 * Not everything should be a rule.
 * Consistency is key.
 * Automate enforcement when possible.
-  
-* [//]: # (163)
+
+### Part IX, Code review
+
+* Code review has many benefits, including ensuring code correctness, compre‐ hension, and consistency across a
+  codebase.
+* Always check your assumptions through someone else; optimize for the reader.
+* Provide the opportunity for critical feedback while remaining professional.
+* Code review is important for knowledge sharing throughout an organization.
+* Automation is critical for scaling the process.
+* The code review itself provides a historical record.
+
+[//]: # (183)
