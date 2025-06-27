@@ -135,4 +135,11 @@ all observable behaviors of your system will be depended on by somebody.
 * Automation is critical for scaling the process.
 * The code review itself provides a historical record.
 
+### Part X, Documentation
+
+* Documentation is hugely important over time and scale.
+* Documentation changes should leverage the existing developer workflow.
+* Keep documents focused on one purpose.
+* Write for your audience, not yourself.
+
 [//]: # (183)
