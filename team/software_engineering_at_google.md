@@ -142,4 +142,12 @@ all observable behaviors of your system will be depended on by somebody.
 * Keep documents focused on one purpose.
 * Write for your audience, not yourself.
 
-[//]: # (183)
+### Part XI, Testing Overview
+
+* Automated testing is foundational to enabling software to change.
+* For tests to scale, they must be automated.
+* A balanced test suite is necessary for maintaining healthy test coverage.
+* “If you liked it, you should have put a test on it.”
+* Changing the testing culture in organizations takes time.
+
+[//]: # (231)
