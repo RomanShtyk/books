@@ -150,4 +150,17 @@ all observable behaviors of your system will be depended on by somebody.
 * “If you liked it, you should have put a test on it.”
 * Changing the testing culture in organizations takes time.
 
+### Part XII, Unit Testing
+
+* Strive for unchanging tests.
+* Test via public APIs.
+* Test state, not interactions.
+* Make your tests complete and concise.
+* Test behaviors, not methods.
+* Structure tests to emphasize behaviors.
+* Name tests after the behavior being tested.
+* Don’t put logic in tests.
+* Write clear failure messages.
+* Follow DAMP over DRY when sharing code for tests.
+
 [//]: # (231)
