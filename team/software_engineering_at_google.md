@@ -163,4 +163,12 @@ all observable behaviors of your system will be depended on by somebody.
 * Write clear failure messages.
 * Follow DAMP over DRY when sharing code for tests.
 
+### PART XIII, Test doubles
+
+* A real implementation should be preferred over a test double.
+* A fake is often the ideal solution if a real implementation can’t be used in a test.
+* Overuse of stubbing leads to tests that are unclear and brittle.
+* Interaction testing should be avoided when possible: it leads to tests that are brit‐ tle because it exposes
+  implementation details of the system under test.
+
 [//]: # (231)
