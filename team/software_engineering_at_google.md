@@ -171,4 +171,23 @@ all observable behaviors of your system will be depended on by somebody.
 * Interaction testing should be avoided when possible: it leads to tests that are brit‐ tle because it exposes
   implementation details of the system under test.
 
-[//]: # (231)
+### Part XIV, Larger tests
+
+* Larger tests cover things unit tests cannot.
+* Large tests are composed of a System Under Test, Data, Action, and Verification.
+* A good design includes a test strategy that identifies risks and larger tests that mitigate them.
+* Extra effort must be made with larger tests to keep them from creating friction in the developer workflow.
+
+### Part XV, Deprecation
+
+* Software systems have continuing maintenance costs that should be weighed against the costs of removing them.
+* Removing things is often more difficult than building them to begin with because existing users are often using the
+  system beyond its original design.
+* Evolving a system in place is usually cheaper than replacing it with a new one, when turndown costs are included.
+* It is difficult to honestly evaluate the costs involved in deciding whether to depre‐ cate: aside from the direct
+  maintenance costs involved in keeping the old system around, there are ecosystem costs involved in having multiple
+  similar systems to choose between and that might need to interoperate. The old system might implicitly be a drag on
+  feature development for the new. These ecosystem costs are diffuse and difficult to measure. Deprecation and removal
+  costs are often similarly diffuse.
+
+  [//]: # (323)
