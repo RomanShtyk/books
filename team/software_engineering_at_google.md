@@ -127,7 +127,7 @@ all observable behaviors of your system will be depended on by somebody.
 
 ### Part IX, Code review
 
-* Code review has many benefits, including ensuring code correctness, compre‐ hension, and consistency across a
+* Code review has many benefits, including ensuring code correctness, comprehension, and consistency across a
   codebase.
 * Always check your assumptions through someone else; optimize for the reader.
 * Provide the opportunity for critical feedback while remaining professional.
@@ -168,7 +168,7 @@ all observable behaviors of your system will be depended on by somebody.
 * A real implementation should be preferred over a test double.
 * A fake is often the ideal solution if a real implementation can’t be used in a test.
 * Overuse of stubbing leads to tests that are unclear and brittle.
-* Interaction testing should be avoided when possible: it leads to tests that are brit‐ tle because it exposes
+* Interaction testing should be avoided when possible: it leads to tests that are brittle because it exposes
   implementation details of the system under test.
 
 ### Part XIV, Larger tests
@@ -184,10 +184,41 @@ all observable behaviors of your system will be depended on by somebody.
 * Removing things is often more difficult than building them to begin with because existing users are often using the
   system beyond its original design.
 * Evolving a system in place is usually cheaper than replacing it with a new one, when turndown costs are included.
-* It is difficult to honestly evaluate the costs involved in deciding whether to depre‐ cate: aside from the direct
+* It is difficult to honestly evaluate the costs involved in deciding whether to deprecate: aside from the direct
   maintenance costs involved in keeping the old system around, there are ecosystem costs involved in having multiple
   similar systems to choose between and that might need to interoperate. The old system might implicitly be a drag on
   feature development for the new. These ecosystem costs are diffuse and difficult to measure. Deprecation and removal
   costs are often similarly diffuse.
 
-  [//]: # (323)
+### Part XVI, VCS
+
+* Use version control for any software development project larger than “toy project with only one developer that will
+  never be updated.”
+* There’s an inherent scaling problem when there are choices in “which version of this should I depend upon?”
+* One-Version Rules are surprisingly important for organizational efficiency. Removing choices in where to commit or
+  what to depend upon can result in significant simplification.
+* In some languages, you might be able to spend some effort to dodge this with technical approaches like shading,
+  separate compilation, linker hiding, and so on. The work to get those approaches working is entirely lost labor—your
+  software engineers aren’t producing anything, they’re just working around technical debts.
+* Previous research (DORA/State of DevOps/Accelerate) has shown that trunk-based development is a predictive factor in
+  high-performing development organizations. Long-lived dev branches are not a good default plan.
+* Use whatever version control system makes sense for you. If your organization wants to prioritize separate
+  repositories for separate projects, it’s still probably wise for interrepository dependencies to be unpinned/“at
+  head”/“trunk based.” There are an increasing number of VCS and build system facilities that allow you to have both
+  small, fine-grained repositories as well as a consistent “virtual” head/trunk notion for the whole organization.
+
+### Part XVII, Code Search
+
+* Helping your developers understand code can be a big boost to engineering productivity. At Google, the key tool for
+  this is Code Search.
+* Code Search has additional value as a basis for other tools and as a central, standard place that all documentation
+  and developer tools link to.
+* The huge size of the Google codebase made a custom tool—as opposed to, for example, grep or an IDE’s
+  indexing—necessary.
+* As an interactive tool, Code Search must be fast, allowing a “question and answer” workflow. It is expected to have
+  low latency in every respect: search, browsing, and indexing.
+* It will be widely used only if it is trusted, and will be trusted only if it indexes all code, gives all results, and
+  gives the desired results first. However, earlier, less powerful, versions were both useful and used, as long as their
+  limits were understood.
+
+  [//]: # (371)
