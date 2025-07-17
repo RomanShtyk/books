@@ -221,4 +221,15 @@ all observable behaviors of your system will be depended on by somebody.
   gives the desired results first. However, earlier, less powerful, versions were both useful and used, as long as their
   limits were understood.
 
-  [//]: # (371)
+### Part XVIII, Build Systems
+
+* A fully featured build system is necessary to keep developers productive as an organization scales.
+* Power and flexibility come at a cost. Restricting the build system appropriately makes it easier on developers.
+* Build systems organized around artifacts tend to scale better and be more reliable than build systems organized around
+  tasks.
+* When defining artifacts and dependencies, it’s better to aim for fine-grained modules. Fine-grained modules are better
+  able to take advantage of parallelism and incremental builds.
+* External dependencies should be versioned explicitly under source control. Relying on “latest” versions is a recipe
+  for disaster and unreproducible builds.
+
+[//]: # (399)
