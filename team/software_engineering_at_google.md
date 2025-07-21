@@ -232,4 +232,23 @@ all observable behaviors of your system will be depended on by somebody.
 * External dependencies should be versioned explicitly under source control. Relying on “latest” versions is a recipe
   for disaster and unreproducible builds.
 
-[//]: # (399)
+### Part XIX, Critique tool
+
+* Trust and communication are core to the code review process. A tool can enhance the experience, but it can’t replace
+  them.
+* Tight integration with other tools is key to great code review experience.
+* Small workflow optimizations, like the addition of an explicit “attention set,” can increase clarity and reduce
+  friction substantially.
+
+### Part XX, Static Analysis
+
+* Focus on developer happiness. We have invested considerable effort in building feedback channels between analysis
+  users and analysis writers in our tools, and aggressively tune analyses to reduce the number of false positives.
+* Make static analysis part of the core developer workflow. The main integration point for static analysis at Google is
+  through code review, where analysis tools provide fixes and involve reviewers. However, we also integrate analyses at
+  additional points (via compiler checks, gating code commits, in IDEs, and when browsing code).
+* Empower users to contribute. We can scale the work we do building and maintaining analysis tools and platforms by
+  leveraging the expertise of domain experts. Developers are continuously adding new analyses and checks that make their
+  lives easier and our codebase better.
+
+  [//]: # (429)
