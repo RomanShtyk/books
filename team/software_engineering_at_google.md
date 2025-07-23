@@ -251,4 +251,23 @@ all observable behaviors of your system will be depended on by somebody.
   leveraging the expertise of domain experts. Developers are continuously adding new analyses and checks that make their
   lives easier and our codebase better.
 
-  [//]: # (429)
+### Part XXI, Dependency Management
+
+* Prefer source control problems to dependency management problems: if you can get more code from your organization to
+  have better transparency and coordination, those are important simplifications.
+* Adding a dependency isn’t free for a software engineering project, and the complexity in establishing an “ongoing”
+  trust relationship is challenging. Importing dependencies into your organization needs to be done carefully, with an
+  understanding of the ongoing support costs.
+* A dependency is a contract: there is a give and take, and both providers and consumers have some rights and
+  responsibilities in that contract. Providers should be clear about what they are trying to promise over time.
+* SemVer is a lossy-compression shorthand estimate for “How risky does a human think this change is?” SemVer with a
+  SAT-solver in a package manager takes those estimates and escalates them to function as absolutes. This can result in
+  either overconstraint (dependency hell) or underconstraint (versions that should work together that don’t).
+* By comparison, testing and CI provide actual evidence of whether a new set of versions work together.
+
+### Part XXII, Large Scale Changes
+
+* An LSC process makes it possible to rethink the immutability of certain technical decisions.
+* Traditional models of refactoring break at large scales.
+* Making LSCs means making a habit of making LSCs.
+  [//]: # (478)
