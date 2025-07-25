@@ -270,4 +270,12 @@ all observable behaviors of your system will be depended on by somebody.
 * An LSC process makes it possible to rethink the immutability of certain technical decisions.
 * Traditional models of refactoring break at large scales.
 * Making LSCs means making a habit of making LSCs.
-  [//]: # (478)
+
+* ### Part XXIII, Continuous Integration
+
+* A CI system decides what tests to use, and when.
+* CI systems become progressively more necessary as your codebase ages and grows in scale.
+* CI should optimize quicker, more reliable tests on presubmit and slower, less deterministic tests on post-submit.
+* Accessible, actionable feedback allows a CI system to become more efficient.
+
+  [//]: # (503)
