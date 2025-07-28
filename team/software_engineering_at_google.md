@@ -271,11 +271,25 @@ all observable behaviors of your system will be depended on by somebody.
 * Traditional models of refactoring break at large scales.
 * Making LSCs means making a habit of making LSCs.
 
-* ### Part XXIII, Continuous Integration
+### Part XXIII, Continuous Integration
 
 * A CI system decides what tests to use, and when.
 * CI systems become progressively more necessary as your codebase ages and grows in scale.
 * CI should optimize quicker, more reliable tests on presubmit and slower, less deterministic tests on post-submit.
 * Accessible, actionable feedback allows a CI system to become more efficient.
+
+### Part XXIV, Continuous Delivery
+
+* Velocity is a team sport: The optimal workflow for a large team that develops code collaboratively requires modularity
+  of architecture and near-continuous integration.
+* Evaluate changes in isolation: Flag guard any features to be able to isolate problems early.
+* Make reality your benchmark: Use a staged rollout to address device diversity and the breadth of the userbase. Release
+  qualification in a synthetic environment that isn’t similar to the production environment can lead to late surprises.
+* Ship only what gets used: Monitor the cost and value of any feature in the wild to know whether it’s still relevant
+  and delivering sufficient user value.
+* Shift left: Enable faster, more data-driven decision making earlier on all changes through CI and continuous
+  deployment.
+* Faster is safer: Ship early and often and in small batches to reduce the risk of each release and to minimize time to
+  market.
 
   [//]: # (503)
