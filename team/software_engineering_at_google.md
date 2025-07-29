@@ -292,4 +292,9 @@ all observable behaviors of your system will be depended on by somebody.
 * Faster is safer: Ship early and often and in small batches to reduce the risk of each release and to minimize time to
   market.
 
-  [//]: # (503)
+### Part XXV, Сompute as a service
+
+* Scale requires a common infrastructure for running workloads in production.
+* A compute solution can provide a standardized, stable abstraction and environment for software.
+* Software needs to be adapted to a distributed, managed compute environment.
+* The compute solution for an organization should be chosen thoughtfully to provide appropriate levels of abstraction.
