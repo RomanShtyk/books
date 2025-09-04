@@ -1,5 +1,8 @@
-Software Engineering at Google
+# Software Engineering at Google
+
 Lessons Learned from Programming Over Time
+8/10 - good for understanding the principles of software engineering at scale, but not very practical for day-to-day
+work.
 
 Hyrum’s Law:
 With a sufficient number of users of an API, it does not matter what you promise in the contract:
