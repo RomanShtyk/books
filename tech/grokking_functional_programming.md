@@ -21,4 +21,32 @@ X/10
 - Easy to test
 - Tests double as documentation if concise and clear
 
-[#] 48 page
+# Chapter 2, Immutable Values
+
+## Mutability is Dangerous
+
+- Imperative solution failed due to operations on Java’s `List` mutating arguments.
+- Function signatures alone don’t reveal risks; implementations must be checked.
+
+## Fighting Mutability with Copies
+
+- Copy the input list and work only on the copy → avoids surprising side effects.
+
+## Shared Mutable State
+
+- Defined as a variable shared across entities that can be mutated by them.
+- Source of unpredictable bugs.
+
+## Immutable Values as a Solution
+
+- Functions that take/return only immutable values prevent unexpected mutations.
+
+## Examples in Practice
+
+- **Java String**: methods return new values (immutable approach).
+- **Scala**: built-in immutable collections (`slice`, `append`, `appendAll`).
+
+## Key Idea
+
+- Functional programming = pure functions + immutable values.  
+  [#] 48 page
