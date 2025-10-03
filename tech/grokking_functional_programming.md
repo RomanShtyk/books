@@ -21,7 +21,7 @@ X/10
 - Easy to test
 - Tests double as documentation if concise and clear
 
-# Chapter 2, Immutable Values
+# Chapter 3, Immutable Values
 
 ## Mutability is Dangerous
 
@@ -48,5 +48,34 @@ X/10
 
 ## Key Idea
 
-- Functional programming = pure functions + immutable values.  
-  [#] 48 page
+- Functional programming = pure functions + immutable values.
+
+# Chapter 4, Functions as values
+
+## Higher-order functions (HOFs)
+
+- Take other functions as parameters and/or return functions.
+- Examples: `sortBy`, `map`, `filter`, `foldLeft`.
+
+## Passing functions
+
+- Java uses `Comparator` objects; Scala/FP pass functions directly (`=>` syntax).
+- Lists remain **immutable** in Scala, improving robustness.
+
+## Returning functions (Currying)
+
+- Functions can return functions, allowing configuration.
+- **Currying**: multiple parameter lists improve readability and type safety.
+
+## foldLeft
+
+- Reduces a list to a single value (e.g., sum).
+- Both higher-order and curried (two parameter lists).
+
+## Product types & immutability
+
+- Combine multiple values safely.
+- In Scala: `case class`.
+- Work naturally with higher-order functions due to immutability.
+
+  [#] 160 page
