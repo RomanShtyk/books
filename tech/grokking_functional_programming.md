@@ -78,4 +78,43 @@ X/10
 - In Scala: `case class`.
 - Work naturally with higher-order functions due to immutability.
 
-  [#] 160 page
+# Chapter 5, Sequential programs
+
+## 1. Deal with Lists of Lists using `flatten`
+
+- Problem: handling `List[List[String]]` (e.g., books with multiple authors).
+- Solution: use `flatten` to merge inner lists into one `List[String]`.
+
+## 2. Write Sequential Programs using `flatMap`
+
+- `flatMap` = `map` + `flatten`.
+- Enables functional, pipeline-based sequential programs.
+- Replaces traditional `for` loops.
+
+## 3. Improve Readability with **for Comprehensions**
+
+- `for` comprehensions are syntactic sugar for nested `flatMap`/`map` calls.
+- Make sequential functional code cleaner and easier to read.
+
+## 4. Use Conditions Inside **for Comprehensions**
+
+- Three filtering methods:
+    1. Using `filter` function.
+    2. Using **guard expressions** (`if` inside `for`).
+    3. Using a filtering function with `flatMap`.
+- `filter` and guards work on collections; `flatMap`-based filtering is generic.
+
+## 5. Explore More Types with `flatMap`
+
+- Other types supporting `flatMap`: `Set`, `Option`.
+- You can combine multiple types in one `for` comprehension.
+- Example use case: build parsers or sequential pipelines using `Option`.
+
+👉 **Core idea:**  
+`flatten`, `flatMap`, and `for` comprehensions allow writing readable, functional, sequential programs that work
+consistently across multiple types like `List`, `Set`, and `Option`.
+
+# Chapter 6, Error handling
+
+
+[#] 186 page
