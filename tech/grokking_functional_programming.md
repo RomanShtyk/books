@@ -116,5 +116,47 @@ consistently across multiple types like `List`, `Set`, and `Option`.
 
 # Chapter 6, Error handling
 
+## 1. Handle Errors Without Nulls or Exceptions
 
-[#] 186 page
+- In functional programming, **errors are values**, not control flow mechanisms.
+- Instead of `null` or exceptions, use immutable containers like `Option` or `Either`.
+
+## 2. Handle All Corner Cases
+
+- **Checked exceptions** are not composable.
+- `Option` and `Either` simplify error handling with **`orElse`**, which combines two immutable results and picks one.
+- This approach scales cleanly across complex code.
+
+## 3. Indicate Errors in Function Signatures
+
+- Pure functions explicitly expose potential failure in their **type signatures**:
+    - `Option` → result may be missing.
+    - `Either` → result may contain an error value.
+- The type system forces handling of all possible error cases.
+
+## 4. Compose Bigger Functionalities from Smaller Ones
+
+- Split requirements into small, pure functions, each returning an error-aware value.
+- Combine them using **composition** and **`foldLeft`** for “all-or-nothing” error handling.
+- The compiler enforces correct handling of all branches.
+
+## 5. Return User-Friendly and Descriptive Errors
+
+- `Either` allows attaching **descriptive messages** (`Left[String]`) instead of generic failures.
+- Makes debugging and user feedback clearer.
+
+### Step-by-Step Recap
+
+1. **Higher-order functions** – used for clean error handling (from Chapter 4).
+2. **Option** – signal possible absence of value (from Chapter 5).
+3. **Functional vs Checked Exceptions** – FP is more composable, readable, and concise.
+4. **Handle Many Errors** – use higher-order functions that scale single-error logic.
+5. **Either** – return structured, descriptive error information.
+
+👉 **Core idea:**  
+Functional error handling replaces `null` and exceptions with **typed, composable, immutable values** (`Option`,
+`Either`) that make failure explicit, predictable, and easy to combine.
+
+# Chapter 7, Requirements as types
+
+[#] 234 page
