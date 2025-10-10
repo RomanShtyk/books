@@ -159,4 +159,49 @@ Functional error handling replaces `null` and exceptions with **typed, composabl
 
 # Chapter 7, Requirements as types
 
-[#] 234 page
+# Chapter Summary – Newtypes and Algebraic Data Types (ADTs)
+
+## 1. Newtypes and ADTs Overview
+
+- **ADTs (Algebraic Data Types)**:
+    - **Sum types** → `enum` in Scala.
+    - **Product types** → `case class` in Scala.
+- Used to represent **immutable, domain-specific data** safely.
+- **Pattern matching** enables clear handling of ADTs in pure functions.
+- Compared ADTs with **OOP inheritance**, showing ADTs are more explicit and safer.
+- Learned new **higher-order functions** (on `Option`, `List`, etc.) as design tools.
+
+## 2. Model Immutable Data to Minimize Errors
+
+- Avoid primitive obsession: replace raw types with **newtypes** or **domain-specific ADTs**.
+- Reduces mistakes and makes models reflect business logic accurately.
+
+## 3. Model Requirements as Immutable Data
+
+- ADTs can serve as **input parameters** to functions, improving safety and readability.
+- Function signatures become **self-documenting**, reflecting possible states and outcomes.
+
+## 4. Find Problems in Requirements Using the Compiler
+
+- The compiler becomes a **design ally**, catching logical and structural errors early.
+- Replacing primitives with **newtypes/ADTs** improves type safety and prevents invalid states.
+
+## 5. Ensure Logic Runs Only on Valid Data
+
+- Detailed data modeling makes invalid states **impossible to represent**.
+- Eliminates many runtime checks and reduces the need for `Either`-based error handling.
+- This approach is called **compile-time error prevention** — superior to runtime handling when applicable.
+
+## 6. Relationship Between ADTs and Either
+
+- Both ADTs and `Either` can represent alternatives or branching logic.
+- ADTs offer **compile-time guarantees**, while `Either` handles **runtime** validation.
+
+👉 **Core idea:**  
+Functional design uses **newtypes and ADTs** to create precise, immutable, type-safe models. This enables the compiler
+to enforce correctness, replacing many runtime errors with **compile-time safety** — a cornerstone of robust functional
+programming.
+
+# Chapter 8, IO as values
+
+[#] 270 page
