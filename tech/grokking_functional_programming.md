@@ -204,4 +204,56 @@ programming.
 
 # Chapter 8, IO as values
 
-[#] 270 page
+# Chapter Summary – IO and Purely Functional Side Effects
+
+## 1. Represent Side Effects as Values
+
+- **Side-effectful programs** can be represented as **values** using the `IO` type.
+- Two main constructors:
+    - `IO.delay` → takes a lazily evaluated block of code (deferred execution).
+    - `IO.pure` → wraps an already computed value (eager execution, always succeeds).
+- These allow **purely functional descriptions of impure operations**.
+
+## 2. Handle Unsafe External Data Sources
+
+- External APIs are **unsafe**—they can fail unpredictably.
+- We handle such calls safely by **describing recovery strategies** using:
+    - `IO.orElse` for fallbacks and retries.
+- Concepts from `Option` and `Either` helped us reason about **IO failures** in a familiar way.
+
+## 3. Safely Persist Data Outside the Program
+
+- Writing data (e.g., storing meetings) is also a side effect.
+- Wrapped those operations in `IO.delay`, deferring execution.
+- The side effects are only executed when explicitly invoked via:
+    - `unsafeRunSync()` — at the program’s boundary, not in the core logic.
+
+## 4. Make Side Effects Explicit in Function Signatures
+
+- Function signatures **reveal behavior**:
+    - `List[MeetingTime]` → pure, no side effects.
+    - `IO[Option[MeetingTime]]` → may perform IO operations when executed.
+- This transparency improves readability, testability, and maintainability.
+
+## 5. Separate Pure and Impure Code
+
+- Introduced the **Functional Core, Imperative Shell** concept:
+    - Core → pure, deterministic logic.
+    - Shell → handles side effects (IO actions like HTTP calls or console output).
+- Clients decide *where and when* to execute IO effects.
+
+## 6. Additional Insights
+
+- Covered only **synchronous programs** here; same ideas extend to **multi-threaded** ones.
+- **Retries and fallbacks** may be part of the **business logic** (especially for output actions).
+- Emphasized **essential vs. accidental concerns**:
+    - Keep essential logic in the pure functional core.
+    - Push accidental complexity (like IO) to the edges.
+
+👉 **Core idea:**  
+Representing side effects as **first-class values (`IO`)** lets us write programs that are **pure, composable, and
+testable**, while still capable of performing real-world actions safely and predictably.
+
+# Chapter 9, Streams as values
+
+[#] 317 page
