@@ -256,4 +256,53 @@ testable**, while still capable of performing real-world actions safely and pred
 
 # Chapter 9, Streams as values
 
-[#] 317 page
+Stream-based programming is widely used in several contexts:
+
+- **UI programming:**  
+  Streams model user interactions (e.g., clicks, gestures) as event sequences, similar to processing a currency stream.
+
+- **Distributed computing:**  
+  Producers and consumers often operate at different speeds on separate nodes.  
+  Reactive streams (introduced in **Java 9’s `Flow` API**) provide mechanisms for **backpressure** and coordination.
+
+- **Big data processing:**  
+  Streams are ideal for handling data sets too large for memory.  
+  Used in systems like **Hadoop** and **Spark**, as well as for geographic data, infinite feeds, and massive files.
+
+No matter the domain, **core stream operations** (like `map`, `filter`, `zip`, etc.) remain applicable across libraries
+and languages. Only names differ—your intuition about how streams work will transfer easily.
+
+### a. Declarative Program Flow Design
+
+- Built complex flows **declaratively** using stream combinators:
+    - `map`, `filter`, `append`, `eval`, `take`, `orElse`, `sliding`, `zip`, `zipLeft`, `repeat`, `unNone`.
+- Leveraged **immutable maps** and **tuples** for predictable, side-effect-free transformations.
+
+### b. Recursion and Laziness
+
+- Used **recursion** to restart processes—particularly for IO retries and recovery.
+- Employed **laziness** to **defer computations** until necessary, optimizing both performance and control flow.
+
+### c. Handling IO-Based Streams
+
+- Distinguished between **pure streams** (e.g., of integers) and **IO streams** (side-effectful computations).
+- Applied similar functional patterns to both, unifying their handling through abstraction.
+
+### d. Infinite Streams
+
+- Utilized **lazy evaluation** to create **infinite streams** safely and efficiently.
+- Controlled them using stream operators (`take`, `zip`, etc.) to avoid unbounded execution.
+
+### e. Time-Dependent Streams
+
+- Modeled **time-based events** using a stream of `Unit` values emitted every second.
+- Combined it (via `zip`) with another stream (e.g., API calls) to **produce outputs at fixed intervals**.
+- This introduced the foundation of **multi-threaded and concurrent programming**.
+
+👉 **Core takeaway:**  
+Streams offer a **unified, declarative, and composable** way to model asynchronous, time-dependent, and potentially
+infinite computations—paving the way toward functional **concurrency and reactive programming**.
+
+# Chapter 10, Concurrent programs
+
+[#] 366 page
