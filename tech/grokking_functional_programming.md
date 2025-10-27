@@ -305,4 +305,90 @@ infinite computations—paving the way toward functional **concurrency and react
 
 # Chapter 10, Concurrent programs
 
-[#] 366 page
+# Chapter Summary – Functional Concurrency
+
+## 1. Core Idea
+
+This chapter introduced **functional concurrency** — showing how concepts from sequential FP (pure functions,
+immutability, and declarative composition) remain applicable even when dealing with **parallel** and **asynchronous**
+computations.  
+The goal wasn’t to dive into low-level threading mechanics, but to build an **intuition** for safe, high-level
+concurrent programming using pure functional tools.
+
+---
+
+## 2. Key Concepts and Techniques
+
+### a. Declarative Concurrent Program Flows
+
+- Introduced **`parSequence`**, which transforms:
+
+```
+
+List[IO[A]] → IO[List[A]]
+
+```
+
+It’s similar to `sequence`, but executes IO programs **concurrently** instead of sequentially.
+
+- Compared this declarative style to imperative concurrency tools:
+- Monitors
+- Locks
+- Actors
+- Thread-safe data structures
+- Advantage: **No shared mutable state**, **no race conditions**, **no manual thread management**.
+
+---
+
+### b. Lightweight Virtual Threads (Fibers)
+
+- Concurrency in FP is built on **fibers**—lightweight, user-space threads.
+- Unlike system-level `Thread` objects:
+- **Fibers are not tied to OS threads**.
+- **Thousands can run concurrently** with minimal overhead.
+- Many FP runtimes (Cats Effect, ZIO, etc.) and even modern languages (e.g., Kotlin’s coroutines, Java’s Project Loom)
+  support this model.
+
+---
+
+### c. Safe Mutable State Across Threads
+
+- Introduced **`Ref[IO, A]`**, a **concurrent-safe mutable reference**.
+- Provides atomic updates using **compare-and-swap (CAS)** semantics.
+- Conceptually similar to Java’s `AtomicReference`, but **purely functional**.
+- Updates are made by providing a **pure function**:
+
+```scala
+ref.update(current => newValue)
+````
+
+* Guarantees **thread safety** without locking or side effects.
+
+---
+
+### d. Asynchronous Event Processing
+
+* Built a simple **asynchronous communication model** using:
+
+    * `IO.start` — runs a computation in a separate fiber.
+    * `FiberIO.cancel` — allows safe cancellation of running fibers.
+* This pattern enables background tasks, reactive pipelines, and non-blocking event handling.
+
+---
+
+## 3. Final Insights
+
+* **Concurrency is hard** — even in FP. Always prefer **sequential** code unless parallelism brings clear benefits.
+* Use **`parSequence`** and similar combinators to safely exploit concurrency **without dropping into low-level
+  primitives**.
+* These abstractions provide **massive leverage**: high performance and safety with minimal complexity.
+
+---
+
+👉 **Bottom line:**
+Functional concurrency leverages **fibers**, **immutable state models**, and **declarative composition** to make
+parallel programming **safe, scalable, and comprehensible**—without the pitfalls of traditional thread-based approaches.
+
+# Chapter 11, Designing functional programs
+
+[#] 400 page
