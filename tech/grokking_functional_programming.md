@@ -391,4 +391,51 @@ parallel programming **safe, scalable, and comprehensible**—without the pitfal
 
 # Chapter 11, Designing functional programs
 
-[#] 400 page
+### a. Functional Core Design
+
+- Used the **functional core + imperative shell** pattern:
+    - **Core:** pure functions and immutable data.
+    - **Shell:** external modules (like `main`) that configure the core with real input/output operations.
+- This separation made the application predictable, testable, and easy to modify.
+
+### b. Type-Driven Modeling
+
+- Started from **requirements** and modeled them explicitly as **types**.
+- Followed the iterative principle:  
+  **“Make it work → make it right → make it fast.”**
+- The resulting type system guided design decisions and improved reliability.
+
+### c. Safe Integration with External APIs via IO
+
+- The **data access layer** was modeled as a set of **three pure functions** (`DataAccess`).
+- Only after the core logic (`travelGuide` function) worked, it was connected to a real data source — **Wikidata**.
+- Used **Apache Jena** (imperative Java library) to query Wikidata’s **SPARQL endpoint**.
+- Despite Jena’s mutability and side effects, integration remained pure thanks to **IO** abstractions.
+- The same approach can be applied to **SQL** or other external data systems.
+
+### d. Safe Resource Management
+
+- Apache Jena manages internal resources (connection pools, query contexts) that can **leak** if not released properly.
+- Solved this by modeling resources with the **`Resource`** type, which:
+    - Describes **acquisition** and **release** logic.
+    - Ensures safety even in case of exceptions.
+- This pattern generalizes to **any resource** (files, network sockets, etc.).
+
+### e. Performance and Caching
+
+- Improved performance by adding **concurrency** and a **query results cache**.
+- The change required only a **small dependency swap**, proving the robustness and modularity of the design.
+- The book’s repository also contains additional improvements like **IO timeouts**.
+
+## 3. Final Insights
+
+- Functional programming enables **real-world systems** that are:
+    - Safe (no resource leaks)
+    - Modular (pure core, impure shell)
+    - Efficient (easy to optimize)
+- Using **types**, **IO**, and **Resource**, developers can build applications that remain clean and maintainable even
+  when interacting with messy, stateful external systems.
+
+
+# Chapter 12, testing functional programs
+  [#] 428 page
