@@ -436,6 +436,143 @@ parallel programming **safe, scalable, and comprehensible**—without the pitfal
 - Using **types**, **IO**, and **Resource**, developers can build applications that remain clean and maintainable even
   when interacting with messy, stateful external systems.
 
-
 # Chapter 12, testing functional programs
-  [#] 428 page
+
+## 1. What This Chapter Demonstrated
+
+You used the full FP toolkit to **test pure functions, test IO, find bugs, and clarify requirements**.  
+Testing in FP is mostly about:  
+**give inputs → assert outputs** — no mocks, no shared state, no nonsense.
+
+### ✅ Test Pure Functions with Examples
+
+- For pure functions, testing = provide inputs → check expected output.
+- This is simple because pure functions are deterministic.
+
+### ✅ Test Pure Functions with Properties (Property-Based Testing)
+
+- Property tests helped uncover a **integer overflow bug** in `guideScore`.
+- You learned:
+    - Properties are stronger than example tests.
+    - Properties come from **requirements**, not guesses.
+    - Generators (`Gen`) can be custom-built.
+    - `Gen` also supports **flatMap**, making generators composable.
+
+### ✅ Test IO Without Mocking Libraries
+
+Two strategies:
+
+1. **Stub IO**
+    - When the function consumes external data but doesn’t integrate deeply.
+    - You hardcoded `DataAccess` functions returning fixed values to test `travelGuide`.
+
+2. **Use Real Services for Integration**
+    - When testing the integration itself.
+    - You spun up a real SPARQL server instance and used `Resource` to:
+        - start the server
+        - ensure proper cleanup
+    - Even integration tests can use property-based testing.
+
+### ✅ Test-Driven Development (TDD)
+
+- You implemented a new requirement using TDD:
+    - Write failing tests (**red**)
+    - Implement the simplest passing version (**green**)
+    - Improve the code (**refactor**)
+    - Repeat
+- The final `travelGuide` implementation emerged through iterative refinement.
+
+## 3. Final Takeaways
+
+- FP makes testing dramatically easier:
+    - Pure functions don’t need mocks.
+    - IO can be isolated, stubbed, or tested with real servers.
+    - Property-based tests catch entire *classes* of bugs.
+- Combining these techniques supports:
+    - safer refactoring
+    - clearer requirements
+    - cleaner designs
+
+Testing becomes an extension of FP design instead of an afterthought.
+
+THESE ARE BIG!
+Chapter 1: Learning functional programming
+• In FP, we tend to focus more on signatures than bodies of functions we use.
+• Functions that don’t lie are very important features of FP.
+• In FP, we focus on what needs to happen more often than how it should happen.
+Chapter 2: Pure functions
+• Pure functions are the foundation of functional programming.
+• We pass copies of data in FP instead of changing the data in place.
+• In FP, we separate concerns into different functions.
+• We use three rules to create pure functions, which are less buggy.
+Chapter 3: Immutable values
+• Avoiding mutability lies at the heart of functional programming.
+• We don’t use mutable states in FP—we use immutable ones instead.
+• In FP, we just pass immutable values around!
+• Immutability makes us focus on relations between values.
+Chapter 4: Functions as values
+• Some mainstream languages expose APIs that embrace immutability (e.g., Java Streams).
+• Functions stored as values are what FP is really about.
+• Functions that take functions as parameters are ubiquitous in FP code.
+• Functions that don’t lie are crucial for maintainable codebases.
+• Functions are treated exactly the same as other values in FP.
+• Returning functions is a foundation of designing flexible APIs.
+Chapter 5: Sequential programs
+• flatMap is the most important function in FP.
+• You will find a lot of for comprehensions in functional programs.
+• FP is programming with expressions, not statements.
+• In FP, we build big programs from small functions.
+• FP heavily relies on abstracting common features—you learn once and use them everywhere.
+Chapter 6: Error handling
+• Indicating an error in FP means returning an immutable value that represents an error.
+• In FP, you can focus on implementing one small function without worrying about others.
+• FP is programming with expressions; functional programmers don’t use statements.
+• In FP, there usually is a function for every problem in your code.
+• Functions and values compose very well together—we use them to build big programs from
+smaller pieces.
+• Handling errors in FP is taking an error value and returning a different value.
+• In FP, we prefer compilation errors over runtime crashes.
+Chapter 7: Requirements as types
+• In FP, we model data so that only valid business combinations are possible.
+• In FP, each type has many higher-order functions.
+• There is a higher-order function available for all the common use cases!
+• Sum type product type combo gives us modeling superpowers.
+• In FP, behaviors are separated from the data model.
+• In FP, some behaviors can be modeled as data.
+Chapter 8: IO as values
+• In FP, we push the impurity out of most of our functions.
+• In FP, we just pass immutable values around!
+• In FP, we treat impure functions as unsafe code.
+• When we use a function that returns an IO, we are forced to return an IO as well.
+• FP is about transforming immutable values using pure functions, even when handling IO.
+• We push the impurity out of the functional core, so it’s easier to test and maintain.
+• In FP, we strive to put as many essential concerns as possible inside pure functions.
+• Functional programmers treat everything as values.
+• In FP, we “solve” a signature by providing the function body.
+Appendix B I Functional gems 479
+Chapter 9: Streams as values
+• In FP, we solve a lot of problems using recursion.
+• Lazy evaluation, recursion, and potential infinite executions have a lot in common.
+• Types tell a lot about the internals in both IO and streaming programs.
+• Streams help to separate concerns in your application.
+• Many languages and libraries try to use the power of FP by including stream-like lazy APIs.
+Chapter 10: Concurrent programs
+• Writing concurrent programs is much easier when we can only deal with immutable values and
+pure functions.
+• In FP, programmers tend to use atomic references a lot when creating concurrent programs.
+• We model concurrently accessible shared mutable states as immutable values.
+• In FP, a multi-threaded program can be modeled as an immutable list of sequential programs.
+• In functional programs we work with fibers instead of OS-level threads.
+Chapter 11: Designing functional programs
+• Many OO design principles can be used with pure functions and immutable values (FP).
+• IO enables you to use well-established imperative client libraries in your functional programs!
+• “Outsourcing” a concern by requiring a new parameter is a very common design practice in FP.
+• We model releasable resources as values.
+Chapter 12: Testing functional programs
+• FP tests are just calling functions and asserting on their outputs.
+• Property-based tests help us look at our functions more critically.
+• In FP, even generating random test values can be described by a single immutable value.
+• We use exactly the same techniques in tests as in production code.
+• Resource and IO types help write proper readable and maintainable integration tests.
+• Mocking and stubbing are just passing values to functions.
+[#] 461 page
