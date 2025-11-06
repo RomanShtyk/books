@@ -575,4 +575,3 @@ Chapter 12: Testing functional programs
 • We use exactly the same techniques in tests as in production code.
 • Resource and IO types help write proper readable and maintainable integration tests.
 • Mocking and stubbing are just passing values to functions.
-[#] 461 page
