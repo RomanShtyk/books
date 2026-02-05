@@ -8,6 +8,7 @@
 * [Understanding distributed systems](architecture/understanding_distributed_systems.md)
 * [The System Design Primer](architecture/System_design_primer.md)
 * [Designing data intensive application](architecture/Designing_Data_Intensive_Applications.md)
+* [A Philosophy of Software Design](architecture/A%20Philosophy%20of%20Software%20Design.md)
 
 **Team**
 
