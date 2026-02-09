@@ -1,4 +1,4 @@
-“A Philosophy of Software Design John Ousterhout”
+“A Philosophy of Software Design by John Ousterhout”
 
 Chapter 1: Introduction (It's All About Complexity)
 
@@ -28,3 +28,11 @@ Symptoms of complexity include:
   reduces cognitive load.
 - Unknown unknowns: The third symptom of complexity is that it is not obvious which pieces of code must be modified to
   complete a task, or what information a developer must have to carry out the task successfully.
+
+Complexity comes from an accumulation of dependencies and obscurities. As complexity increases, it leads to change
+amplification, a high cognitive load, and unknown unknowns
+
+Chapter 3
+Working Code Isn’t Enough
+
+# 19
