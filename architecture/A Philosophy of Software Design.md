@@ -35,4 +35,12 @@ amplification, a high cognitive load, and unknown unknowns
 Chapter 3
 Working Code Isn’t Enough
 
-# 19
+Tactical programming is getting task done without regard for the overall design of the system. It is often the default
+approach, but it leads to complexity and maintenance problems.
+
+Invest 20% into improving the design of system, this approach will outpace the tactical approach in the middle run
+
+Chapter 4
+Modules Should Be Deep
+
+# 24
