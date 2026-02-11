@@ -43,4 +43,9 @@ Invest 20% into improving the design of system, this approach will outpace the t
 Chapter 4
 Modules Should Be Deep
 
-# 24
+The best modules are those whose interfaces are much simpler than their implementations, these are called deep.
+The extreme of the “classes should be small” approach is a syndrome I call **classitis**
+
+Chapter 5
+Information Hiding (and Leakage)
+# 32
