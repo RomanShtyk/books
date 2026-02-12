@@ -48,4 +48,16 @@ The extreme of the “classes should be small” approach is a syndrome I call *
 
 Chapter 5
 Information Hiding (and Leakage)
-# 32
+
+**Red Flag:** Information Leakage
+Information leakage occurs when the same knowledge is used in multiple places, such as
+two different classes that both understand the format of a particular type of file.
+
+**Red Flag:** Temporal Decomposition
+In temporal decomposition, execution order is reflected in the code structure:
+operations that happen at different times are in different methods or classes. If the same knowledge is used at
+different points in execution, it gets encoded in multiple places, resulting in information leakage.
+
+Information hiding can often be improved by making a class slightly larger.
+
+# 37
