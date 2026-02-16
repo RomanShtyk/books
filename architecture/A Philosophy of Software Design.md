@@ -60,4 +60,9 @@ different points in execution, it gets encoded in multiple places, resulting in 
 
 Information hiding can often be improved by making a class slightly larger.
 
-# 37
+If the API for a commonly used feature forces users to learn about other features that are rarely used, this increases
+the cognitive load on users who don’t need the rarely used features.
+
+Chapter 6
+General-Purpose Modules are Deeper
+
