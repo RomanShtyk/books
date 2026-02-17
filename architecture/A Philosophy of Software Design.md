@@ -66,3 +66,21 @@ the cognitive load on users who don’t need the rarely used features.
 Chapter 6
 General-Purpose Modules are Deeper
 
+Over-specialization is a primary cause of complexity in software
+
+General-purpose code is simpler, cleaner, and easier to understand than specialized code
+
+Design Principles
+Module Level
+
+General-purpose APIs create deeper modules with better information hiding
+Designing for generality produces simpler, more maintainable interfaces
+
+Code Level
+
+Eliminating special cases simplifies code
+Common-case code that handles edge cases reduces complexity
+
+Removing special cases can improve performance
+Chapter 7
+Different Layer, Different Abstraction
