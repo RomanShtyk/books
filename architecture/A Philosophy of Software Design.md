@@ -82,5 +82,11 @@ Eliminating special cases simplifies code
 Common-case code that handles edge cases reduces complexity
 
 Removing special cases can improve performance
+
 Chapter 7
 Different Layer, Different Abstraction
+
+If a system contains adjacent layers with similar abstractions, this is a red flag that suggests a problem with the
+class decomposition.
+
+7.4 Interface versus implementation
