@@ -88,5 +88,9 @@ Different Layer, Different Abstraction
 
 If a system contains adjacent layers with similar abstractions, this is a red flag that suggests a problem with the
 class decomposition.
+Unfortunately, I haven’t found a better solution than contexts for passing information across layers.
 
-7.4 Interface versus implementation
+Chapter 8
+Pull Complexity Downwards
+
+8.1 Example: editor text class
