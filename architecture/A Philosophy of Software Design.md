@@ -93,4 +93,23 @@ Unfortunately, I haven’t found a better solution than contexts for passing inf
 Chapter 8
 Pull Complexity Downwards
 
-8.1 Example: editor text class
+Pulling complexity down makes the most sense if
+(a) the complexity being pulled down is closely related to the class’s existing functionality,
+(b) pulling the complexity down will result in simplifications elsewhere in the application, and
+(c) pulling the complexity down simplifies the class’s interface.
+
+When developing a module, look for opportunities to take a little bit of extra suffering upon yourself in order to
+reduce the suffering of your users.
+
+Chapter 9
+Better Together Or Better Apart?
+
+If the same piece of code (or code that is almost the same) appears over and over again, that’s a red flag that you
+haven’t found the right abstractions.
+
+Red Flag: Special-General Mixture This red flag occurs when a general-purpose mechanism also contains code specialized
+for a particular use of that mechanism. This makes the mechanism more complicated and creates information leakage
+between the mechanism and the particular use case: future modifications to the use case are likely to require changes to
+the underlying mechanism as well.
+
+9.6 Example: separate class for logging
