@@ -112,4 +112,13 @@ for a particular use of that mechanism. This makes the mechanism more complicate
 between the mechanism and the particular use case: future modifications to the use case are likely to require changes to
 the underlying mechanism as well.
 
-9.6 Example: separate class for logging
+Red Flag: Conjoined Methods
+It should be possible to understand each method independently. If you can’t understand the implementation of one method
+without also understanding the implementation of another, that’s a red flag. This red flag can occur in other contexts
+as well: if two pieces of code are physically separated, but each can only be understood by looking at the other, that
+is a red flag.
+
+Chapter 10
+Define Errors Out Of Existence
+
+10.2 Too many exceptions
