@@ -121,4 +121,5 @@ is a red flag.
 Chapter 10
 Define Errors Out Of Existence
 
-10.2 Too many exceptions
+Chapter 11
+Design it Twice
