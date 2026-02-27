@@ -123,3 +123,12 @@ Define Errors Out Of Existence
 
 Chapter 11
 Design it Twice
+
+Designing a system twice is a powerful way to improve the design of the system. The first design is a prototype that
+allows you to explore the problem space and understand the requirements. The second design is a more polished
+version, you may use 3rd design if you want to further improve the design.
+
+Chapter 12
+Comments
+
+12.2 I don’t have time to write comments
