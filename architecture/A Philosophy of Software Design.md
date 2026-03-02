@@ -130,5 +130,12 @@ version, you may use 3rd design if you want to further improve the design.
 
 Chapter 12
 Comments
+I agree with clean code more, though there are cases that require a comment indeed
 
-12.2 I don’t have time to write comments
+Chapter 13
+Comments Should Describe Things that Aren’t Obvious from the Code
+
+Red Flag: Comment Repeats Code
+If the information in a comment is already obvious from the code next to the comment, then the comment isn’t helpful.
+One example of this is when the comment uses the same words that make up the name of the thing it is describing.
+
