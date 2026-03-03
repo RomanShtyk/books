@@ -139,3 +139,6 @@ Red Flag: Comment Repeats Code
 If the information in a comment is already obvious from the code next to the comment, then the comment isn’t helpful.
 One example of this is when the comment uses the same words that make up the name of the thing it is describing.
 
+Red Flag: Implementation Documentation Contaminates Interface
+This red flag occurs when interface documentation, such as that for a method, describes implementation details that
+aren’t needed in order to use the thing being documented.
