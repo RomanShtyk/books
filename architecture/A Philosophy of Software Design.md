@@ -142,3 +142,17 @@ One example of this is when the comment uses the same words that make up the nam
 Red Flag: Implementation Documentation Contaminates Interface
 This red flag occurs when interface documentation, such as that for a method, describes implementation details that
 aren’t needed in order to use the thing being documented.
+
+Chapter 14
+Choosing Names
+Red Flag: Vague Name
+If a variable or method name is broad enough to refer to many different things, then it doesn’t convey much information
+to the developer and the underlying entity is more likely to be misused.
+
+Red Flag: Hard to Pick Name
+If it’s hard to find a simple name for a variable or method that creates a clear image of the underlying object, that’s
+a hint that the underlying object may not have a clean design.
+
+Chapter 15
+Write The Comments First
+(Use Comments As Part Of The Design Process)
