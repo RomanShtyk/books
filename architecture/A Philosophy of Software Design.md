@@ -130,7 +130,7 @@ version, you may use 3rd design if you want to further improve the design.
 
 Chapter 12
 Comments
-I agree with clean code more, though there are cases that require a comment indeed
+**I agree with clean code more, though there are cases that require a comment indeed**
 
 Chapter 13
 Comments Should Describe Things that Aren’t Obvious from the Code
@@ -156,3 +156,14 @@ a hint that the underlying object may not have a clean design.
 Chapter 15
 Write The Comments First
 (Use Comments As Part Of The Design Process)
+Red flag. The comment that describes a method or variable should be simple and yet complete. If you find it difficult to
+write such a comment, that’s an indicator that there may be a problem with the design of the thing you are describing.
+
+**I don't really like this comment driven development**
+
+Chapter 16
+Modifying Existing Code
+
+If you’re not making the design better, you are probably making it worse.
+
+16.2 Maintaining comments: keep the comments near the code
