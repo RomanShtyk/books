@@ -166,4 +166,8 @@ Modifying Existing Code
 
 If you’re not making the design better, you are probably making it worse.
 
-16.2 Maintaining comments: keep the comments near the code
+Chapter 17
+Consistency
+
+Chapter 18
+Code Should be Obvious
