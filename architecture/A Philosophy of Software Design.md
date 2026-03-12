@@ -171,3 +171,10 @@ Consistency
 
 Chapter 18
 Code Should be Obvious
+
+Red Flag: Nonobvious Code
+If the meaning and behavior of code cannot be understood with a quick reading, it is a red flag. Often this means that
+there is important information that is not immediately clear to someone reading the code.
+
+Chapter 19
+Software Trends
