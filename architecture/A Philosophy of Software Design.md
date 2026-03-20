@@ -1,5 +1,8 @@
 “A Philosophy of Software Design by John Ousterhout”
 
+6/10 - there are good point in here, but this book can even be harmful for junior-middle devs, take with the grain of
+salt
+
 Chapter 1: Introduction (It's All About Complexity)
 
 Complexity is the core limitation: Programming is only constrained by our ability to understand systems we create, not
@@ -178,3 +181,55 @@ there is important information that is not immediately clear to someone reading 
 
 Chapter 19
 Software Trends
+
+very outdated trends, but TTD take is valid
+
+Chapter 20
+Designing for Performance
+
+Chapter 21
+Decide What Matters
+
+Summary of Design Principles
+Here are the most important software design principles discussed in this book:
+Complexity is incremental: you have to sweat the small stuff (see p. 11).
+Working code isn’t enough (see p. 14).
+Make continual small investments to improve system design (see p. 15).
+Modules should be deep (see p. 23)Interfaces should be designed to make the most common usage as simple as possible (see
+p. 27).
+It’s more important for a module to have a simple interface than a simple implementation (see pp. 61, 74).
+General-purpose modules are deeper (see p. 39).
+Separate general-purpose and special-purpose code (see pp. 45, 68).
+Different layers should have different abstractions (see p. 51).
+Pull complexity downward (see p. 61).
+Define errors out of existence (see p. 81).
+Design it twice (see p. 91).
+Comments should describe things that are not obvious from the code (see p. 101).
+Software should be designed for ease of reading, not ease of writing (see p. 151).
+The increments of software development should be abstractions, not features (see p. 156).
+Separate what matters from what doesn’t matter and emphasize the things that matter (see p. 171).
+
+Summary of Red Flags
+Here are a few of of the most important red flags discussed in this book. The presence of any of these symptoms in a
+system suggests that there is a problem with the system’s design:
+Shallow Module: the interface for a class or method isn’t much simpler than its implementation (see pp. 25, 110).
+Information Leakage: a design decision is reflected in multiple modules (see p. 31).
+Temporal Decomposition: the code structure is based on the order in which operations are executed, not on information
+hiding (see p. 32).
+Overexposure: An API forces callers to be aware of rarely used features in order to use commonly used features (see p.
+36).
+Pass-Through Method: a method does almost nothing except pass its arguments to another method with a similar signature (
+see p. 52).
+Repetition: a nontrivial piece of code is repeated over and over (see p. 68).
+Special-General Mixture: special-purpose code is not cleanly separated from general purpose code (see p. 71).
+Conjoined Methods: two methods have so many dependencies that its hard to understand the implementation of one without
+understanding the implementation of the other (see p. 75).
+Comment Repeats Code: all of the information in a comment is immediately obvious from the code next to the comment (see
+p. 104).
+Implementation Documentation Contaminates Interface: an interface comment describes implementation details not needed by
+users of the thing being documented (see p. 114).
+Vague Name: the name of a variable or method is so imprecise that it doesn’t convey much useful information (see p.
+123).
+Hard to Pick Name: it is difficult to come up with a precise and intuitive name for an entity (see p. 125).
+Hard to Describe: in order to be complete, the documentation for a variable or method must be long. (see p. 133).
+Nonobvious Code: the behavior or meaning of a piece of code cannot be understood easily. (see p. 150).
