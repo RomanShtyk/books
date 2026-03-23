@@ -9,6 +9,7 @@
 * [The System Design Primer](architecture/System_design_primer.md)
 * [Designing data intensive application](architecture/Designing_Data_Intensive_Applications.md)
 * [A Philosophy of Software Design](architecture/A%20Philosophy%20of%20Software%20Design.md)
+* [Tidy First?](architecture/Tidy_first.md)
 
 **Team**
 
@@ -18,6 +19,8 @@
 * [Staff Engineer](team/Staff_Engineer:_Leadership_beyond_the_management_track.md)
 * [An Elegant Puzzle](team/elegant_puzzle.md)
 * [Software engineering at Google](team/software_engineering_at_google.md)
+* [Stream Lead 101](team/stream_lead_roadmap.md)
+* [The Mythical Man-Month](team/The_mythical_man-month.md)
 
 **Tech**
 
@@ -32,7 +35,9 @@
 * [Kotlin in action](tech/Kotlin_in_action_2nd_edition.md)
 * [Cracking the coding interview](tech/Cracking_the_Coding_Interview.md)
 * [Accelerate](tech/Accelerate.md)
+* [Grokking Functional Programming](tech/grokking_functional_programming.md)
 
 **Chess**
 
 * [The Amateur's Mind](chess/The_Amateurs_Mind.md)
+* [How to Reassess Your Chess](chess/How_To_Reassess_Your_Chess.md)

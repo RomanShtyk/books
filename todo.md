@@ -7,7 +7,8 @@ Linux System Programming
 
 100%:
 System Design Interview An Insider’s Guide by Alex Xu
-
+Tidy First? by Kent Beck
+Working Effectively with Legacy Code by Michael Feathers
 50%
 Engineering Management for the Rest of Us
 Lean DevOps
