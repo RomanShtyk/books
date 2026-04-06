@@ -38,3 +38,8 @@ Tidy First? by Kent Beck
   • You know what to tidy and how.
 
 ## Part III. Theory
+
+* Beneficially Relating Elements - definition on system design
+* Structure and Behavior -
+* Time value and Optionality
+* A Dollar Today > A Dollar Tomorrow
