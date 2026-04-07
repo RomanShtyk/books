@@ -43,3 +43,7 @@ Tidy First? by Kent Beck
 * Structure and Behavior -
 * Time value and Optionality
 * A Dollar Today > A Dollar Tomorrow
+* Options
+* Options Versus Cash Flows - main trade off, do now or do later
+* Reversible Structure Changes - avoid irreversible changes by using feature-flags to make them reversible. Irreversible
+  should be double-triple-checked because they are very hard to fix later
