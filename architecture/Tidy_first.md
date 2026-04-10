@@ -47,3 +47,4 @@ Tidy First? by Kent Beck
 * Options Versus Cash Flows - main trade off, do now or do later
 * Reversible Structure Changes - avoid irreversible changes by using feature-flags to make them reversible. Irreversible
   should be double-triple-checked because they are very hard to fix later
+* Constantine’s Equivalence - cost(software) ±= coupling
