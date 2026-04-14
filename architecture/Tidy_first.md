@@ -48,3 +48,12 @@ Tidy First? by Kent Beck
 * Reversible Structure Changes - avoid irreversible changes by using feature-flags to make them reversible. Irreversible
   should be double-triple-checked because they are very hard to fix later
 * Constantine’s Equivalence - cost(software) ±= coupling
+* Coupling vs decoupling - you shouldn’t bother to squeeze out every last bit of coupling. The coupling created in doing
+  so isn’t worth it.
+
+Tidy First?
+
+* Cost — Will tidying make costs smaller, later, or less likely?
+* Revenue — Will tidying make revenue larger, sooner, or more likely?
+* Coupling — Will tidying make it so I need to change fewer elements?
+* Cohesion — Will tidying make it so the elements I need to change are in a smaller, more concentrated scope?
