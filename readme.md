@@ -21,6 +21,7 @@
 * [Software engineering at Google](team/software_engineering_at_google.md)
 * [Stream Lead 101](team/stream_lead_roadmap.md)
 * [The Mythical Man-Month](team/The_mythical_man-month.md)
+* [Staff Engineer Path](team/staff_engineer_path.md)
 
 **Tech**
 

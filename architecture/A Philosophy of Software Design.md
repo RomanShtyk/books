@@ -210,7 +210,7 @@ The increments of software development should be abstractions, not features (see
 Separate what matters from what doesn’t matter and emphasize the things that matter (see p. 171).
 
 Summary of Red Flags
-Here are a few of of the most important red flags discussed in this book. The presence of any of these symptoms in a
+Here are a few of the most important red flags discussed in this book. The presence of any of these symptoms in a
 system suggests that there is a problem with the system’s design:
 Shallow Module: the interface for a class or method isn’t much simpler than its implementation (see pp. 25, 110).
 Information Leakage: a design decision is reflected in multiple modules (see p. 31).
