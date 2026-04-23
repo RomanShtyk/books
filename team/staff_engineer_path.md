@@ -12,4 +12,6 @@ Three pillars of the staff position are:
 
 ### The Big Picture
 
-// 23
+Teams without cross-team leadership make excellent local maximum decisions and software projects get stuck
+
+//15
