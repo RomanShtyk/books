@@ -33,4 +33,22 @@ Within your scope you should:
 * Overshadowing junior engineers, taking their growth opportunities
 * Overengineering simple problems because you're underutilized
 
-//26
+To Recap
+
+* Staff engineering roles are ambiguous by definition. It’s up to you to discover and decide what your role is and what
+  it means for you.
+* You’re probably not a manager, but you’re in a leadership role.
+* You’re also in a role that requires technical judgment and solid technical
+  experience.
+* Be clear about your scope: your area of responsibility and influence.
+* Your time is finite. Be deliberate about choosing a primary focus that’s
+  important and that isn’t wasting your skills.
+* Align with your management chain. Discuss what you think your job is,
+  see what your manager thinks it is, understand what’s valued and what’s
+  actually useful, and set expectations explicitly. Not all companies need all
+  shapes of staff engineers.
+* Your job will be a weird shape sometimes, and that’s OK.
+
+### Three Maps
+
+//31
