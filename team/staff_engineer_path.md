@@ -51,4 +51,23 @@ To Recap
 
 ### Three Maps
 
-//34
+* Three maps framework: As a staff engineer, maintain three mental models — locator, topographical, and treasure map —
+  to stay oriented across people, org dynamics, and goals.
+
+* Locator map (You Are Here): Understand your scope relative to the broader org. Guard against four perspective traps:
+  prioritizing locally, losing empathy for other teams, going numb to chronic problems, and forgetting why the work
+  exists.
+
+* Topographical map (Navigate the terrain): Know the org's fault lines — political boundaries, difficult people, shadow
+  hierarchies, and how decisions actually get made vs. how they're supposed to.
+
+* Treasure map (Where you're going): Identify the real destination, not just milestones. If no clear goal exists, a
+  staff engineer's job is to create that map.
+
+* Clear the fog actively: These maps are always partially obscured. Build context deliberately — pay attention to
+  signals (all-hands, org shifts, infra emails), escape echo chambers, build cross-functional relationships, and know
+  the implicit company goals ("continue to exist," "keep customers").
+
+* Outsider perspective is a skill: Regularly challenge yourself to view your own team as a newcomer would. If you can't
+  justify why the work needs a staff engineer, you're probably doing the wrong thing.
+  //42
