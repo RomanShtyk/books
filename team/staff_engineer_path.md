@@ -70,4 +70,43 @@ To Recap
 
 * Outsider perspective is a skill: Regularly challenge yourself to view your own team as a newcomer would. If you can't
   justify why the work needs a staff engineer, you're probably doing the wrong thing.
-  //42
+
+#### Topographical Map (Navigate the Terrain)
+
+* Learn your org's "personality" across 7 dimensions: oral vs. written culture, top-down vs. bottom-up decisions, fast
+  vs. deliberate change, back channels vs. formal channels, busy vs. available teams, and liquid vs. crystallized
+  hierarchies
+
+* Use Westrum's 3 org types as a guide: Pathological (power-hoarding), Bureaucratic (rule-bound), or Generative (
+  mission-driven, high-trust) — DORA research confirms generative orgs ship better software
+
+* Recognize terrain hazards: chasms (gaps between teams), fortresses (gatekeepers), disputed territory (unclear
+  ownership), uncrossable deserts (political dead-ends), and goat tracks (the unofficial paths that actually work)
+
+* Understand both the formal decision-making rooms and the shadow org chart — the informal influencers (connectors,
+  old-timers) often matter more than titles
+
+* Keep the map fresh: subscribe to announcement channels, skim other teams' docs/agendas, have regular skip-levels, and
+  just talk to people — including non-engineers
+
+#### Treasure Map (Where You're Going)
+
+* Short-term-only thinking causes teams to drift, accumulate cruft, spawn competing initiatives, and fail to grow —
+  someone needs to hold the long view
+
+* Think in tech trees (like Civilization): each project is usually a prerequisite step toward a real goal; know what
+  that final goal actually is before committing effort
+
+* Once you understand the destination, share it — make progress visible and tell the story of both where you came from
+  and where you're headed
+
+* If no destination exists or there are competing ones, stop trying to read the map — it's time to draw a new one (
+  that's Chapter 3)
+
+#### Your Personal Journey
+
+* Maintain a narrative of your own work: what were you trying to achieve, what did you accomplish, and is your current
+  work moving you toward something meaningful?
+
+### Creating the Big Picture
+//76 WHAT’S A TECHNICAL STRATEGY?
