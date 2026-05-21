@@ -109,4 +109,19 @@ To Recap
   work moving you toward something meaningful?
 
 ### Creating the Big Picture
-//76 WHAT’S A TECHNICAL STRATEGY?
+
+* A technical vision describes a future state. A technical strategy describes a
+  plan of action.
+* A document like this is usually a group effort. Although the core group
+  creating it will usually be small, you’ll also want information, opinions,
+  and general goodwill from a wider group.
+* Have a plan up front for how to make the document become real. That
+  usually means having an executive as a sponsor.
+* Be deliberate about agreeing on a document type and a scope for the work.
+* Writing the document will involve many iterations of talking to other people, refining your ideas, making decisions,
+  writing, and realigning. It will take time.
+* Your vision or strategy is only as good as the story you can tell about it.
+
+## Part II: Execution
+
+//119 HOW BUSY DO YOU LIKE TO BE?
