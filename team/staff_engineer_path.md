@@ -124,4 +124,26 @@ To Recap
 
 ## Part II: Execution
 
-//119 HOW BUSY DO YOU LIKE TO BE?
+### FINITE TIME
+
+* By the time you reach the staff+ level, you will be largely (but probably not
+  entirely) responsible for choosing your own work. This includes deciding
+  on the extent and duration of your involvement with any given project. You
+  can’t do everything, so you’ll need to choose your battles.
+* You are responsible for choosing work that aligns with your life and career
+  needs as well as advancing your company’s goals.
+* You are responsible for managing your energy.
+* Some projects will make you happier than others, or improve your quality
+  of life more.
+* Your social capital and peer credibility are “bank accounts” that you can
+  pay into and spend from. You can lend credibility and social capital to
+  other people, but be conscious of whom you’re lending to.
+* Skills come from taking on projects and from deliberately learning. Make
+  sure you’re building the skills you want to have.
+* Free up your resources by giving other people opportunities to grow,
+  including starting projects and handing them off.
+* Focus means sometimes saying no. Learn how.
+
+### Leading Big Projects
+
+//153 IF YOU’RE FEELING OVERWHELMED…
