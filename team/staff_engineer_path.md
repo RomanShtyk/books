@@ -146,4 +146,26 @@ To Recap
 
 ### Leading Big Projects
 
-//153 IF YOU’RE FEELING OVERWHELMED…
+* Staff engineers can take on problems that seem intractable and make them
+  tractable.
+* It’s normal to feel overwhelmed by a huge project. The project is difficult.
+  That’s why it needs someone like you on it.
+* Set up the structures that will reduce ambiguity and make it easy to share
+  context.
+* Be clear on what success on the project will look like and how you’ll
+  measure it.
+* Leading a project means deliberately driving it, not just letting things
+  happen.
+* Smooth your path by building relationships and deliberately setting out to
+  build trust.
+* Write things down. Be clear and opinionated. Wrong gets corrected, vague
+  sticks around.
+* There will always be trade-offs. Be clear what you’re optimizing for when
+  you make decisions.
+* Communicate frequently with your audience in mind.
+* Expect problems to arise. Make plans that assume there will be changes in
+  direction, people quitting, and unavailable dependencies.
+
+### Why Have We Stopped?
+
+//189 Naming
