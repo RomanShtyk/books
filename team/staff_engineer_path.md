@@ -168,4 +168,18 @@ To Recap
 
 ### Why Have We Stopped?
 
-//189 Naming
+* As the project lead, you are responsible for understanding why your
+  project has stopped and getting it started again.
+* As a leader in your organization, you can help restart other people’s
+  projects too.
+* You can unblock projects by explaining what needs to happen, reducing
+  what other people need to do, clarifying the organizational support, escalating, or making alternative plans.
+* You can bring clarity to a project that’s adrift by defining your destination,
+  agreeing on roles, and asking for help when you need it.
+* Don’t declare victory unless the project is truly complete. Code completeness is just one milestone.
+* Whether you’re ready or not, sometimes it’s time for the project to end.
+  Celebrate, retrospect, and clean up.
+
+### Leveling Up
+
+//233 Seek out constructive criticism
