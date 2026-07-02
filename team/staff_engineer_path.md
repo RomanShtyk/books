@@ -182,4 +182,23 @@ To Recap
 
 ### Leveling Up
 
-//233 Seek out constructive criticism
+* Your words and actions carry more weight now. Be deliberate.
+* Invest the time to build knowledge and expertise. Competence comes from
+  experience.
+* Be self-aware about what you know and what you don’t.
+* Strive to be consistent, reliable, and trustworthy.
+* Get comfortable taking charge when nobody else is, including during a
+  crisis or an ambiguous project.
+* When someone needs to say something, say something.
+* Create calm. Make problems smaller, not bigger.
+* Be aware of your business, budgets, user needs, and the capabilities of
+  your team.
+* Help your future self by planning ahead and keeping your tools sharp.
+* Write things down, even when they’re “obvious.”
+* Expect failure and be ready for it.
+* Design software that’s easy to decommission.
+* The metric for success is whether other people want to work with you.
+
+### Good Influence at Scale
+
+//257 ADVICE
