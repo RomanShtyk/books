@@ -201,4 +201,17 @@ To Recap
 
 ### Good Influence at Scale
 
-//257 ADVICE
+* You can help your colleagues by providing advice, teaching, guardrails, or
+  opportunities. Understand what’s most helpful for the specific situation.
+* Think about whether you want to help one-on-one, level up your team, or
+  influence further.
+* Offer your experience and advice, but make sure it’s welcome. Writing and
+  public speaking can send your message further.
+* Teach through pairing, shadowing, review, and coaching. Teaching classes
+  or writing codelabs can scale your teaching time.
+* Guardrails can let people work autonomously. Offer review, or be a project
+  guardrail for your colleagues. Codify guardrails using processes, automation, and culture change.
+* Opportunities can be much more valuable than advice. Think about who
+  you’re sponsoring and delegating
+
+Building a network 291
