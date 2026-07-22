@@ -22,6 +22,7 @@
 * [Stream Lead 101](team/stream_lead_roadmap.md)
 * [The Mythical Man-Month](team/The_mythical_man-month.md)
 * [Staff Engineer Path](team/staff_engineer_path.md)
+* [The-Software-Engineer-s-Guidebook](team/The-Software-Engineer-s-Guidebook.md)
 
 **Tech**
 

@@ -214,4 +214,16 @@ To Recap
 * Opportunities can be much more valuable than advice. Think about who
   you’re sponsoring and delegating
 
-Building a network 291
+### What's Next?
+
+* You are responsible for your career and choices. There are a lot of options
+  about what to optimize for. Know what’s important to you. Be deliberate.
+* You’ll increase your access to opportunities with skills, visibility, relationships, and experiences.
+* Everything is learnable if it’s worth the time investment.
+* Check in with yourself occasionally and make sure your role is still giving
+  you what you need. Look at what’s good as well as what’s not working.
+* There are excellent reasons to spend a long time with one employer. There
+  are excellent reasons to move around too. Either way, you have several
+  options for paths onward.
+* Software has a massive influence on the lives and livelihoods of just about
+  everyone on earth. Take the responsibility seriously.
