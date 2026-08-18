@@ -18,3 +18,22 @@ Turn your manager into an ally: communicate, align on goals, and make their job 
 Pace yourself: balance stretching (growth), executing (steady work), and avoid long periods of coasting or burnout.
 
 III PERFORMANCE REVIEWS
+
+Start early: understand what your team/company values, how the review system works, who decides, and set goals aligned
+with those priorities.
+
+Build habits year-round: keep a work log/“brag doc,” regularly share wins and progress with your manager, and focus on
+shipping impactful work.
+
+Before the review: check deadlines, gather peer feedback, and prepare a concise self-review (what you delivered, how you
+worked, goals vs outcomes, competencies, peer feedback, praise).
+
+During/after: treat reviews as a snapshot, expect distribution (most get “meets”), avoid over-dependence on
+outcomes/bonuses, and use feedback—especially specific, actionable bits—to improve.
+
+Watch for biases (recency, halo/horns, similarity, etc.) and manager skill gaps; push back on vague feedback, but stay
+open to constructive criticism and keep a long-term career perspective.
+
+IV PROMOTIONS
+
+#Hybrid models
