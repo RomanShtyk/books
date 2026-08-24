@@ -36,4 +36,34 @@ open to constructive criticism and keep a long-term career perspective.
 
 IV PROMOTIONS
 
-#Hybrid models
+Promotions are decided by a mix of performance at the next level, measurable impact, business need/budget, available
+“space” at that level, and—critically—perception and internal support.
+
+Processes vary: informal (startup, visibility to decision-makers), lightweight (manager-driven with clearer criteria),
+heavyweight (self/manager/peer docs, committees; favors strong written artifacts and high-impact, quantifiable work), or
+hybrid.
+
+Big Tech specifics: promotions often require 12+ months tenure and strong performance; comp bands reset near the bottom
+of the next level; top performers at a lower level can out-earn average performers at the next; expectations are framed
+as “what” (impact) and “how” (competencies), with impact radius widening at senior/staff levels.
+
+“Terminal level” means the level you’re expected to reach (e.g., senior) with no guarantee of going beyond; many
+companies push “up or out” until that level, then accept plateauing above it is hard due to budget and opportunity
+constraints.
+
+To improve your odds: be realistic about your performance, learn how promotions really work at your company,
+self-evaluate against the ladder, get peer/mentor feedback, align with your manager (and skip-level for staff+), and run
+a written plan with goals.
+
+Organize work using “produce → organize → publish”: ship artifacts, create structure/initiatives, and make your impact
+visible via 1:1s, presentations, and documentation; keep a running achievements log.
+
+Manage relationships: get your manager’s advocacy early, ensure skip-level support for senior+ bids, and avoid
+over-reliance on a single manager by broadening visibility.
+
+Keep perspective: promotion rates drop at higher levels; don’t tie self-worth to titles, avoid burning relationships for
+short-term gains, and invest in breadth/depth and interesting work—even if it doesn’t immediately yield a title bump.
+
+V THRIVING IN DIFFERENT ENVIRONMENTS
+
+3 . "Peacetime" vs "Wartime"
