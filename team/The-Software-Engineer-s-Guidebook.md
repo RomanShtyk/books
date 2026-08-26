@@ -66,4 +66,34 @@ short-term gains, and invest in breadth/depth and interesting work—even if it 
 
 V THRIVING IN DIFFERENT ENVIRONMENTS
 
-3 . "Peacetime" vs "Wartime"
+Product teams reward product-minded engineers: proactive on product ideas, curious about “why,” data- and user-aware,
+strong communicators with PMs/design/ops, pragmatic on edge cases, fast validation loops, and end-to-end ownership
+including post-launch metrics.
+
+Platform teams serve internal customers with scalable, complex systems; upsides include engineering depth, broad impact,
+and freedom; downsides include harder-to-quantify business impact and being seen as a cost center. Thrive by building
+empathy for end users, staying close to platform consumers (office hours, rotations), and maintaining focus/urgency
+despite lower external pressure.
+
+Wartime vs peacetime: wartime = existential pressure, speed over perfection, ruthless prioritization, tolerated
+conflict, minimal process, low WLB; peacetime = stability, quality/alignment, consensus, process adherence, political
+savvy matters, risk of stagnation. Most companies cycle between modes; adapt your pace, quality bar, alliance-building,
+and priorities to the current mode.
+
+Company types:
+
+Big Tech/large: often peacetime with heavy platform investment; succeed by tracking impact, building networks, and
+navigating heavyweight reviews/promotions.
+
+Scaleups (Series B+): mostly wartime, product-team heavy, high turnover; tenure is valuable, onboarding is a leverage
+point, and profit-center teams are safer during cuts.
+
+Early-stage startups: wartime by default, almost no platform teams; focus on helping reach product–market fit, embrace
+autonomy, visibly communicate impact to founders, and prioritize shipping value fast.
+
+Universal plays: do standout work aligned to company values, help peers generously, and avoid burning
+bridges—relationships compound across a small industry.
+
+VI SWITCHING JOBS
+
+When you're happy i n a job
