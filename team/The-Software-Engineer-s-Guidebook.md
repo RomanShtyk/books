@@ -96,4 +96,32 @@ bridges—relationships compound across a small industry.
 
 VI SWITCHING JOBS
 
-When you're happy i n a job
+When to explore: actively look if you’re unhappy, underpaid, relocating, or blocked internally; stay passive-but-open if
+content but curious. Even when happy, interview occasionally to gauge market value, keep skills sharp, and unlock
+level/comp jumps.
+
+Promotion vs switching: promotions are backward-looking (6–12 months at next level); switching can accelerate title/comp
+early. But senior+ roles are riskier externally—political capital, context, and trust take 12+ months to build;
+frequent <2–3 year stints become a red flag at staff/principal. Stay long enough to see decisions play out.
+
+Interview prep: typical loop = resume screen → recruiter/HM call → technical screen (live/take-home) → onsite (coding,
+system design, behavioral/HM, bar-raiser). Tailor your resume to impact/numbers, get referrals, clarify evaluation
+criteria, and practice coding + system design with standard resources. Staff+ loops add domain deep dives, PM
+interviews, and extra design rounds.
+
+Down-leveling: common when moving up a tier (e.g., to Big Tech) or due to interview signals/stack mismatch; comp can
+rise despite a lower title. Research level definitions, push back respectfully with evidence, and be willing to walk
+away if the leveling misrepresents your scope.
+
+Up-leveling: happens with strong interviews, leverage (competing offers/willingness to walk), and internal champions.
+Clarify raised expectations immediately and plan to deliver at that bar from day one.
+
+Onboarding ownership: start before day 1 (align with manager, read The First 90 Days), keep a brag doc/journal, set
+1/3/6‑month goals. At small companies: ship in week 1, connect with senior tenured folks, ask how things work. At large
+companies: get a buddy, maintain a cheat sheet (acronyms, commands, links), learn the stack, accept initial confusion.
+Senior+/staff+: map priorities/outages, meet peer staff and product early, clarify 3/6/12‑month expectations with
+manager/skip, and intentionally build a cross-team network.
+
+Long-game mindset: careers span decades; optimize for learning, impact, and relationships—not just the next title.
+
+VII GETTING THINGS DONE
