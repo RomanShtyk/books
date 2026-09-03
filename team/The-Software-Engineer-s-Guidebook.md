@@ -125,3 +125,32 @@ manager/skip, and intentionally build a cross-team network.
 Long-game mindset: careers span decades; optimize for learning, impact, and relationships—not just the next title.
 
 VII GETTING THINGS DONE
+
+Getting things done means reliably delivering quality work: break it down, estimate realistically, unblock yourself, and
+work autonomously. This reputation leads to more challenging projects, greater trust, and faster career growth.
+
+Identify your single most important task and finish it on time. Protect it from lower-priority requests, and learn to
+say: “I’d like to help, but I’m currently committed to X. Which priority should change?”
+
+Recognize when you’re blocked—usually after 30–60 minutes without meaningful progress. Try debugging, documentation,
+rubber-ducking, prototyping, online research, AI tools, or pairing before asking for help.
+
+Escalate blockers gradually: explain the impact, ask for an update, warn before escalating, then involve managers if
+necessary. Be firm without damaging relationships.
+
+Break work into epics, tasks, and subtasks; prioritize the path to a working end-to-end result. Adapt the plan as
+requirements and constraints change—tasks are tools, not commitments carved in stone.
+
+Estimate based on experience, teammates’ input, prototypes, and timeboxes. Separate normal estimates from worst-case
+scenarios, and reduce unknowns before promising a date.
+
+Build a mentor network rather than relying on one mentor: use dedicated mentors, ad-hoc experts, and trusted technical
+writers or leaders online. Verify AI-generated advice.
+
+Maintain your goodwill balance: solve basic problems independently, ask focused questions with context, help others, and
+thank people who unblock you.
+
+Take initiative only after protecting your core commitments: document unclear systems, volunteer for investigations,
+test useful tools, and discuss upcoming work with your manager.
+
+VIII CODING
