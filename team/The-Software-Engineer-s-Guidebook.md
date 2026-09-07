@@ -154,3 +154,30 @@ Take initiative only after protecting your core commitments: document unclear sy
 test useful tools, and discuss upcoming work with your manager.
 
 VIII CODING
+Code daily and deliberately. Treat coding like athletic training: you improve mainly through volume and consistency.
+Work on meaningful tasks every day, seek extra code reviews (even on non-production code), and learn from repeated
+feedback patterns.
+
+Read as much code as you write. Study teammates’ changes, other teams’ repos, and active open-source projects in your
+language. This prevents idiosyncratic habits and accelerates understanding of conventions and patterns.
+
+Make code reviews a growth tool. Don’t take comments personally; treat them as signals about the code, not you. Ask
+clarifying questions, track recurring issues (e.g., functions doing too much, missing tests), and pair when reviews are
+hard to get. AI tools can help, but peer review is superior.
+
+Readable code is a social contract. Aim for code that’s correct and easy for others to maintain. Use clear, consistent
+naming; keep functions/classes small and single-purpose; avoid unnecessary complexity; apply DRY; and comment the
+“why” (business context, outage lessons), not the “how.” Refactor continuously as code grows.
+
+Use the right level of abstraction. Abstract to hide implementation details and reduce cognitive load, but avoid
+over-fragmentation. Good abstractions make changes localized (e.g., parsing JSON responses in one place) and improve
+reusability.
+
+Handle errors systematically. Adopt a consistent strategy (exceptions, logging, or both). Practice defensive
+programming: validate inputs, expect invalid or empty responses, and anticipate malicious data (SQL injection, XSS).
+
+Plan for “unknown” states. When mapping API responses, don’t force everything into success/failure. Introduce an
+“unknown” state and raise an alert so engineers can investigate new or unexpected codes—this avoids silent
+misclassification when APIs evolve.
+
+IX SOFTWARE DEVELOPMENT
