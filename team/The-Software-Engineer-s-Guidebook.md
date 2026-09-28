@@ -181,3 +181,36 @@ Plan for “unknown” states. When mapping API responses, don’t force everyth
 misclassification when APIs evolve.
 
 IX SOFTWARE DEVELOPMENT
+nothing useful, do good, do not bad
+X TOOLS OF THE PRODUCTIVE SOFTWARE ENGINEER
+nothing useful, do good, do not bad
+
+PART III The Well-Rounded Senior Engineer
+XII COLLABORATION AND TEAMWORK
+Code reviews should assess correctness, tests, maintainability, architecture, and the change’s “why”—not just style.
+Keep feedback specific, respectful, and question-based; distinguish blockers from nitpicks, automate recurring style
+issues, and switch to a conversation when comments become a long argument.
+
+Treat new joiners and distributed teammates fairly: explain unwritten conventions, allow for ramp-up, and handle
+timezone issues through overlapping hours or a quick call.
+
+Pairing is a high-leverage collaboration tool for onboarding, debugging, design, implementation, and learning. Define
+the problem and urgency first; under pressure, solve while explaining, then teach afterward. Avoid simply giving
+answers—help the other person develop the reasoning to solve similar problems independently.
+
+Mentorship can be informal or structured. A good mentor listens, asks questions, provides context and introductions, and
+helps the mentee reason through options rather than prescribing solutions. Mentees should arrive prepared, track
+actions, and follow through.
+
+Give feedback that is concrete and sincere. For corrective feedback, ask questions first, describe observations and
+impact, offer guidance empathetically, and reinforce improvement.
+
+Map the teams your team depends on, supports, overlaps with, or uses indirectly. Introduce yourself to relevant
+engineers or managers before you need something; relationships make cross-team work faster and less adversarial.
+
+Build influence through reliable, high-quality work, cross-functional relationships, RFCs/design docs, and shared
+projects—not empty self-promotion. Make your impact visible through demos, meetings, and work logs without confusing
+visibility with substance.
+
+XIII SOFTWARE ENGINEERING
+Know which dashboards and logging systems to look 
