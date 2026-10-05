@@ -213,4 +213,33 @@ projects—not empty self-promotion. Make your impact visible through demos, mee
 visibility with substance.
 
 XIII SOFTWARE ENGINEERING
-Know which dashboards and logging systems to look 
+
+Be a broad specialist: master at least one language/platform, but understand several. Learn different programming
+paradigms—imperative, declarative, and functional - to expand how you reason about problems.
+
+Become more full-stack: understand adjacent platforms well enough to debug across boundaries and lead end-to-end work.
+Read other teams’ code reviews, take small tasks, pair with experts, or do a temporary platform rotation.
+
+Debug systematically: learn your logs, metrics, dashboards, deployment process, secrets, certificates, and
+infrastructure. Understand your codebase’s structure and search tools; study current and historical outages to build
+practical debugging intuition.
+
+Treat tech debt as a tradeoff, not a moral failure: tolerate deliberate debt when speed matters, but track its cost.
+Prioritize repayment by measurable impact—reliability, development speed, cost, bugs, or operational risk—and clean up
+debt while touching high-impact systems.
+
+Prevent debt from accumulating: write readable, tested code; remove dead paths and flags; design sensible extension
+points; use established patterns only when they reduce complexity rather than add abstraction.
+
+Document for leverage: use design/RFC docs before complex work, test/rollout/migration plans during delivery, API and
+integration docs for consumers, onboarding guides for new engineers, handbooks for team operations, and runbooks for
+incidents. Keep documentation close to the systems and update it when behavior changes.
+
+Scale practices based on actual problems: don’t blindly impose “best practices.” Choose tools—automated tests, code
+reviews, staged rollouts, CI/CD, TDD, test environments, or safe production testing—according to the team’s bottleneck,
+such as regressions, slow reviews, or risky releases.
+
+Use evidence and iteration: adopt a practice, measure whether it improves the problem, and adjust or remove it if it
+creates more overhead than value.
+
+XIV TESTING
