@@ -243,3 +243,31 @@ Use evidence and iteration: adopt a practice, measure whether it improves the pr
 creates more overhead than value.
 
 XIV TESTING
+Testing validates behavior in three ways: manual verification, automated tests in CI/CD, and production monitoring that
+feeds back into automated tests. The real question is not whether to test, but which mix fits your system.
+
+Unit tests should be fast, deterministic, small, and focused. Dependency injection makes complex code testable and
+forces cleaner architecture; tests act as documentation, regression protection, and a safety net for refactoring.
+
+Integration tests exercise multiple components together (e.g., business logic + database, or two services), while
+UI/end-to-end tests simulate real user flows. E2E tests give the highest confidence but are slowest and most brittle;
+keep them selective.
+
+Choose a test strategy by context, not dogma: the testing pyramid favors many unit tests and few E2E tests (often good
+for backend/mobile), while the testing trophy emphasizes integration tests, especially for frontend/full-stack systems.
+
+Use specialized tests where they pay off: performance tests for latency, load tests for traffic spikes, chaos tests for
+resilience, snapshot tests for UI regressions, bundle-size tests, smoke tests for basic health, and sanity/manual tests
+for release checks.
+
+Testing in production can be safe and powerful with feature flags, canary deployments, blue-green deployments, automated
+rollbacks, and multi-tenancy. It improves confidence and reduces environment maintenance, but requires serious
+observability, infrastructure, and privacy/compliance safeguards.
+
+Automated tests are an investment: they catch regressions early, document behavior, enforce API contracts, and make
+large refactors safer—but they cost time to write, can become slow or flaky, and need ongoing maintenance.
+
+Pragmatic approach: build a broad testing toolkit, favor the test type with the best confidence-per-maintenance-cost for
+your current system, and continuously refine the suite rather than forcing it into a fixed model.
+
+XV SOFTWARE ARCHITECTURE
