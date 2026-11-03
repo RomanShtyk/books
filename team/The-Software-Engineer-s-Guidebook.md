@@ -271,3 +271,39 @@ Pragmatic approach: build a broad testing toolkit, favor the test type with the 
 your current system, and continuously refine the suite rather than forcing it into a fixed model.
 
 XV SOFTWARE ARCHITECTURE
+
+Architecture is planning + tradeoffs: early design decisions shape extensibility, maintainability, onboarding, and
+delivery speed. Unlike buildings, software constraints are softer—team skills, tech limits, and business context matter
+as much as technical elegance.
+
+Use RFCs/design docs to reduce rework: write them before non-trivial work to clarify thinking, surface
+misunderstandings, gather stakeholder feedback, and scale your reasoning beyond 1:1s. Choose the workflow by project
+risk: prototype → RFC → build, RFC → feedback → build, RFC → build in parallel, or build → document afterward.
+
+Architecture docs record decisions; RFCs invite debate. ADRs capture a decision, its rationale, tradeoffs, and
+consequences; C4 and Arc42 provide structured ways to document context, components, and system views. ADRs are
+especially useful as a decision log for future engineers.
+
+Prototype to kill unknowns: when a design has too many assumptions, build a deliberately throwaway proof of concept. It
+turns abstract debate into concrete evidence—but never ship a prototype as production code; rebuild it properly once
+validated.
+
+Use DDD when business complexity is the core problem: establish a shared ubiquitous language, split the domain into
+bounded contexts, model entities/value objects/aggregates, and make domain events explicit. This reduces
+engineering–business misunderstandings and makes code easier to extend.
+
+Make architecture ship: tie proposals to business outcomes (revenue, cost, churn, reliability, developer productivity),
+get early stakeholder input, and use a hybrid written-plus-conversation approach for buy-in.
+
+Break decision deadlocks pragmatically: define capability requirements first (latency, consistency, UX, business rules),
+appoint a neutral decision-maker in advance, prototype competing options, or let the implementer decide since they own
+maintenance.
+
+Roll out major changes deliberately: define success metrics, phased rollout criteria, a “bake” period, rollback plan,
+and pre-mortem failure scenarios.
+
+No architecture decision is permanent: prefer reversible decisions when tradeoffs are close; document rollbacks and
+lessons learned. Revisit designs after they’ve been in production long enough to see how they hold up under real
+maintenance and extension.
+
+XVI Pragmatic tech lead

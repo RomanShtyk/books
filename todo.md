@@ -6,6 +6,7 @@ Staff Engineer
 Linux System Programming
 
 100%:
+Thinking in systems
 System Design Interview An Insider’s Guide by Alex Xu
 Working Effectively with Legacy Code by Michael Feathers
 50%
